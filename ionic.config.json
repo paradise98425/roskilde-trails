@@ -1,0 +1,7 @@
+{
+  "name": "roskilde-trails",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
