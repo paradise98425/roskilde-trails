@@ -12,6 +12,9 @@ import { Platform } from '@ionic/angular';
 
 export class PhotoService {
   public photos: UserPhoto[] = [];
+  /**
+   * Storing the photos
+   */
   private PHOTO_STORAGE: string = "photos";
   private platform: Platform;
 
@@ -20,7 +23,9 @@ export class PhotoService {
   }
 
   public async addNewToGallery() {
-    // Take a photo
+    /**
+     * Take a photo
+     */ 
     const capturedPhoto = await Camera.getPhoto({
       resultType: CameraResultType.Uri, // file-based data; provides best performance
       source: CameraSource.Camera, // automatically take a new photo with the camera
