@@ -1,19 +1,4 @@
-ion-tab-bar, ion-tab-button{
-    background-color: #94ab51;
-   }
-
-ion-label{
-    color: white;
-  }
-  
-ion-tab-button{
-    opacity: 40%;
-}
-
-ion-tab-button:focus{
-    opacity: 100%;
-}
-  
+// This is css for Explore page
   #map {
     width: 100%;
     height: 100vh;
@@ -34,3 +19,5 @@ ion-tab-button:focus{
       margin-top: -41px;
     }
   }
+
+  // End of css for Explore Page
