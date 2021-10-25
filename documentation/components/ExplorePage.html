@@ -160,7 +160,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/pages/explore/explore.page.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/pages/explore/explore.page.ts:9</a></div>
                             </td>
                         </tr>
 
@@ -197,8 +197,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="12"
-                            class="link-to-prism">src/app/pages/explore/explore.page.ts:12</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="47"
+                            class="link-to-prism">src/app/pages/explore/explore.page.ts:47</a></div>
                 </td>
             </tr>
 
@@ -220,7 +220,8 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, ElementRef, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { CapacitorGoogleMaps } from &#x27;@capacitor-community/capacitor-googlemaps-native&#x27;;
 
 @Component({
   selector: &#x27;app-explore&#x27;,
@@ -231,6 +232,40 @@ export class ExplorePage implements OnInit {
 
   constructor() { }
 
+  // @ViewChild(&#x27;map&#x27;) mapView: ElementRef;
+ 
+  // ionViewDidEnter() {
+  //   this.createMap();
+  // }
+
+  // createMap() {
+  //   const boundingRect &#x3D; this.mapView.nativeElement.getBoundingClientRect() as DOMRect;
+ 
+  //   CapacitorGoogleMaps.create({
+  //     width: Math.round(boundingRect.width),
+  //     height: Math.round(boundingRect.height),
+  //     x: Math.round(boundingRect.x),
+  //     y: Math.round(boundingRect.y),
+  //     zoom: 5
+  //   });
+
+  //   CapacitorGoogleMaps.addListener(&#x27;onMapReady&#x27;, async () &#x3D;&gt; {
+  //     CapacitorGoogleMaps.setMapType({
+  //       type: &quot;normal&quot; // hybrid, satellite, terrain
+  //     });
+
+  //     this.showCurrentPosition();
+  //   });
+  // }
+
+  // async showCurrentPosition() {
+  //   // todo
+  // }
+
+  // ionViewDidLeave() {
+  //   CapacitorGoogleMaps.close();
+  // }
+
   ngOnInit() {
   }
 
@@ -239,15 +274,17 @@ export class ExplorePage implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;ion-header&gt;
-  &lt;ion-toolbar&gt;
-    &lt;ion-title&gt;explore&lt;/ion-title&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;!-- &lt;ion-header&gt;
+  &lt;ion-toolbar color&#x3D;&quot;primary&quot;&gt;
+    &lt;ion-title&gt;
+      Devdactic Maps
+    &lt;/ion-title&gt;
   &lt;/ion-toolbar&gt;
 &lt;/ion-header&gt;
-
+ 
 &lt;ion-content&gt;
-
-&lt;/ion-content&gt;
+  &lt;div id&#x3D;&quot;map&quot; #map&gt;&lt;/div&gt;
+&lt;/ion-content&gt; --&gt;
 </code></pre>
     </div>
 
@@ -255,7 +292,9 @@ export class ExplorePage implements OnInit {
                 <p class="comment">
                     <code>./explore.page.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <pre class="line-numbers"><code class="language-scss">// #map {
+//     height: 50vh;
+//   }</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -283,7 +322,7 @@ export class ExplorePage implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-header>  <ion-toolbar>    <ion-title>explore</ion-title>  </ion-toolbar></ion-header><ion-content></ion-content></div>'
+        var COMPONENT_TEMPLATE = '<div><!-- <ion-header>  <ion-toolbar color="primary">    <ion-title>      Devdactic Maps    </ion-title>  </ion-toolbar></ion-header> <ion-content>  <div id="map" #map></div></ion-content> --></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LoginPage', 'selector': 'app-login'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'ExplorePage'};

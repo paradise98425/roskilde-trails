@@ -17,7 +17,7 @@ const routes: Routes = [
   {
     path: 'gallery',
     loadChildren: () => import('./pages/gallery/gallery.module').then( m => m.GalleryPageModule)
-  },
+  }
 ];
 @NgModule({
   imports: [

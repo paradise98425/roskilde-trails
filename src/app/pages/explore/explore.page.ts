@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { CapacitorGoogleMaps } from '@capacitor-community/capacitor-googlemaps-native';
 
 @Component({
   selector: 'app-explore',
@@ -8,6 +9,40 @@ import { Component, OnInit } from '@angular/core';
 export class ExplorePage implements OnInit {
 
   constructor() { }
+
+  // @ViewChild('map') mapView: ElementRef;
+ 
+  // ionViewDidEnter() {
+  //   this.createMap();
+  // }
+
+  // createMap() {
+  //   const boundingRect = this.mapView.nativeElement.getBoundingClientRect() as DOMRect;
+ 
+  //   CapacitorGoogleMaps.create({
+  //     width: Math.round(boundingRect.width),
+  //     height: Math.round(boundingRect.height),
+  //     x: Math.round(boundingRect.x),
+  //     y: Math.round(boundingRect.y),
+  //     zoom: 5
+  //   });
+
+  //   CapacitorGoogleMaps.addListener('onMapReady', async () => {
+  //     CapacitorGoogleMaps.setMapType({
+  //       type: "normal" // hybrid, satellite, terrain
+  //     });
+
+  //     this.showCurrentPosition();
+  //   });
+  // }
+
+  // async showCurrentPosition() {
+  //   // todo
+  // }
+
+  // ionViewDidLeave() {
+  //   CapacitorGoogleMaps.close();
+  // }
 
   ngOnInit() {
   }
