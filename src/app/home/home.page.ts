@@ -28,6 +28,7 @@ export class HomePage implements OnInit {
   ngOnInit() {
     this.loadMap();
   }
+
   loadMap() {
     this.geolocation.getCurrentPosition().then((resp) => {
 
@@ -38,7 +39,8 @@ export class HomePage implements OnInit {
       let mapOptions = {
         center: latLng,
         zoom: 15,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: true
       }
 
       this.getAddressFromCoords(resp.coords.latitude, resp.coords.longitude);
