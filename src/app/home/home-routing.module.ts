@@ -25,6 +25,10 @@ const routes: Routes = [
         loadChildren: () => import('../pages/badges/badges.module').then( m => m.BadgesPageModule)
       },
       {
+        path: 'profile',
+        loadChildren: () => import('../pages/profile/profile.module').then( m => m.ProfilePageModule)
+      },
+      {
         path: '',
         redirectTo: '/home/home-component',
         pathMatch: 'full'
