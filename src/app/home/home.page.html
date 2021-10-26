@@ -1,4 +1,4 @@
-<ion-tabs>
+<ion-tabs style="contain: none;">
 
   <ion-tab-bar slot="bottom">
 
@@ -25,3 +25,20 @@
   </ion-tab-bar>
 
 </ion-tabs>
+  
+  <!-- This is the code for Explore Tab. Please move it accordingly? -->
+
+  <ion-content [fullscreen]="true">
+  
+    <div class="map-wrapper">
+      <div id="map_center">
+        <img src="../../assets/location.svg" />
+      </div>
+      <div #map id="map"></div>
+    </div>
+  </ion-content>
+
+  <ion-searchbar placeholder="Search field..."></ion-searchbar>
+
+  <!-- End of code for Explore Page -->
+
