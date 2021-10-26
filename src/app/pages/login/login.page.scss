@@ -1,0 +1,44 @@
+ion-content {
+    --background: #94ab51;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;   
+}
+
+.images-parent {
+    margin-top: 10vh;
+}
+
+.login-form {
+    top: 10px;
+    bottom:0;
+    height: 77vh;
+    border: 1px red solid;
+    background-color: white;
+}
+
+// .login-form {
+//     background-color: white;
+//     border: 1px red solid;
+//     display: flex;
+//     flex-direction: column;
+//     flex-grow: 1;
+// }
+
+// .image1 {
+//     position: relative;
+//     top: 0;
+//     left: 0;
+// }
+// .image2 {
+//     position: absolute;
+//     top: 30px;
+//     left: 0px;
+//   }
+
+
+
+
+
