@@ -242,16 +242,33 @@ export class HomePage implements OnInit {
         <pre class="line-numbers"><code class="language-html">&lt;ion-tabs&gt;
 
   &lt;ion-tab-bar slot&#x3D;&quot;bottom&quot;&gt;
-    &lt;ion-tab-button tab&#x3D;&quot;explore&quot;&gt;
-      &lt;ion-icon name&#x3D;&quot;triangle&quot;&gt;&lt;/ion-icon&gt;
-      &lt;ion-label&gt;Explore&lt;/ion-label&gt;
-    &lt;/ion-tab-button&gt;
 
     &lt;ion-tab-button tab&#x3D;&quot;gallery&quot;&gt;
       &lt;ion-icon name&#x3D;&quot;images&quot;&gt;&lt;/ion-icon&gt;
       &lt;ion-label&gt;Camera&lt;/ion-label&gt;
     &lt;/ion-tab-button&gt;
-  &lt;/ion-tab-bar&gt;
+
+  &lt;ion-tab-button tab&#x3D;&quot;component&quot;&gt;
+    &lt;ion-icon src&#x3D;&quot;../../assets/home.svg&quot;&gt;&lt;/ion-icon&gt;
+    &lt;ion-label&gt;Home&lt;/ion-label&gt;
+  &lt;/ion-tab-button&gt;
+
+  &lt;ion-tab-button tab&#x3D;&quot;explore&quot;&gt;
+    &lt;ion-icon src&#x3D;&quot;../../assets/explore.svg&quot;&gt;&lt;/ion-icon&gt;
+    &lt;ion-label&gt;Explore&lt;/ion-label&gt;
+  &lt;/ion-tab-button&gt;
+
+  &lt;ion-tab-button tab&#x3D;&quot;badges&quot;&gt;
+    &lt;ion-icon src&#x3D;&quot;../../assets/md-badge.svg&quot;&gt;&lt;/ion-icon&gt;
+    &lt;ion-label&gt;Badges&lt;/ion-label&gt;
+  &lt;/ion-tab-button&gt;
+
+  &lt;ion-tab-button tab&#x3D;&quot;profile&quot;&gt;
+    &lt;ion-icon src&#x3D;&quot;../../assets/person.svg&quot;&gt;&lt;/ion-icon&gt;
+    &lt;ion-label&gt;Profile&lt;/ion-label&gt;
+  &lt;/ion-tab-button&gt;
+
+&lt;/ion-tab-bar&gt;
 
 &lt;/ion-tabs&gt;
 </code></pre>
@@ -261,7 +278,22 @@ export class HomePage implements OnInit {
                 <p class="comment">
                     <code>./home.page.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <pre class="line-numbers"><code class="language-scss">ion-tab-bar, ion-tab-button{
+    background-color: #94ab51;
+   }
+  
+  ion-label{
+    color: white;
+  }
+  
+  ion-tab-button{
+    opacity: 40%;
+  }
+  
+  ion-tab-button:focus{
+    opacity: 100%;
+  }
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -289,8 +321,8 @@ export class HomePage implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-tabs>  <ion-tab-bar slot="bottom">    <ion-tab-button tab="explore">      <ion-icon name="triangle"></ion-icon>      <ion-label>Explore</ion-label>    </ion-tab-button>    <ion-tab-button tab="gallery">      <ion-icon name="images"></ion-icon>      <ion-label>Camera</ion-label>    </ion-tab-button>  </ion-tab-bar></ion-tabs></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LoginPage', 'selector': 'app-login'}];
+        var COMPONENT_TEMPLATE = '<div><ion-tabs>  <ion-tab-bar slot="bottom">    <ion-tab-button tab="gallery">      <ion-icon name="images"></ion-icon>      <ion-label>Camera</ion-label>    </ion-tab-button>  <ion-tab-button tab="component">    <ion-icon src="../../assets/home.svg"></ion-icon>    <ion-label>Home</ion-label>  </ion-tab-button>  <ion-tab-button tab="explore">    <ion-icon src="../../assets/explore.svg"></ion-icon>    <ion-label>Explore</ion-label>  </ion-tab-button>  <ion-tab-button tab="badges">    <ion-icon src="../../assets/md-badge.svg"></ion-icon>    <ion-label>Badges</ion-label>  </ion-tab-button>  <ion-tab-button tab="profile">    <ion-icon src="../../assets/person.svg"></ion-icon>    <ion-label>Profile</ion-label>  </ion-tab-button></ion-tab-bar></ion-tabs></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LoginPage', 'selector': 'app-login'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'HomePage'};
 </script>
