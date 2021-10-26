@@ -18,6 +18,14 @@ const routes: Routes = [
     path: 'gallery',
     loadChildren: () => import('./pages/gallery/gallery.module').then( m => m.GalleryPageModule)
   },
+  {
+    path: 'explore',
+    loadChildren: () => import('./pages/explore/explore.module').then( m => m.ExplorePageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+  },
 ];
 @NgModule({
   imports: [

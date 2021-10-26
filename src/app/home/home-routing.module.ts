@@ -17,8 +17,20 @@ const routes: Routes = [
         loadChildren: () => import('../pages/gallery/gallery.module').then( m => m.GalleryPageModule)
       },
       {
+        path: 'home-component',
+        loadChildren: () => import('../pages/home-component/home-component.module').then( m => m.HomeComponentPageModule)
+      },
+      {
+        path: 'badges',
+        loadChildren: () => import('../pages/badges/badges.module').then( m => m.BadgesPageModule)
+      },
+      {
+        path: 'profile',
+        loadChildren: () => import('../pages/profile/profile.module').then( m => m.ProfilePageModule)
+      },
+      {
         path: '',
-        redirectTo: '/home/explore',
+        redirectTo: '/home/home-component',
         pathMatch: 'full'
       }
     ]

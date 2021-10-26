@@ -54,13 +54,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/AppModule.html" data-type="entity-link" >AppModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-AppModule-60bb3d7be07a944fba89fc8cf9a8cd08"' : 'data-target="#xs-components-links-module-AppModule-60bb3d7be07a944fba89fc8cf9a8cd08"' }>
+                                            'data-target="#components-links-module-AppModule-4b1377e6244533a2659f511595c434bf"' : 'data-target="#xs-components-links-module-AppModule-4b1377e6244533a2659f511595c434bf"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AppModule-60bb3d7be07a944fba89fc8cf9a8cd08"' :
-                                            'id="xs-components-links-module-AppModule-60bb3d7be07a944fba89fc8cf9a8cd08"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AppModule-4b1377e6244533a2659f511595c434bf"' :
+                                            'id="xs-components-links-module-AppModule-4b1377e6244533a2659f511595c434bf"' }>
                                             <li class="link">
                                                 <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >AppComponent</a>
                                             </li>
@@ -109,6 +109,26 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </li>
                             <li class="link">
                                 <a href="modules/GalleryPageRoutingModule.html" data-type="entity-link" >GalleryPageRoutingModule</a>
+                            </li>
+                            <li class="link">
+                                <a href="modules/HomeComponentPageModule.html" data-type="entity-link" >HomeComponentPageModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-HomeComponentPageModule-8d5e166718ddb9ee57bc3f16afb74ba5"' : 'data-target="#xs-components-links-module-HomeComponentPageModule-8d5e166718ddb9ee57bc3f16afb74ba5"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-HomeComponentPageModule-8d5e166718ddb9ee57bc3f16afb74ba5"' :
+                                            'id="xs-components-links-module-HomeComponentPageModule-8d5e166718ddb9ee57bc3f16afb74ba5"' }>
+                                            <li class="link">
+                                                <a href="components/HomeComponentPage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >HomeComponentPage</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/HomeComponentPageRoutingModule.html" data-type="entity-link" >HomeComponentPageRoutingModule</a>
                             </li>
                             <li class="link">
                                 <a href="modules/HomePageModule.html" data-type="entity-link" >HomePageModule</a>
