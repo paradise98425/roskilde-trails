@@ -3,6 +3,26 @@
     <div class="images-parent">
       <img class="image1" src="../../../assets/login-background.svg" />
     </div>
-    <div class="login-form">Hello world</div>
+    <div class="login-form">
+      <form>
+        <ion-text color="dark">
+          <h1 style="font-weight: bold; margin-top: 5vh; margin-bottom: 4vh;">Log in</h1>
+        </ion-text>
+
+        <ion-item lines="full" style="margin-bottom: 4vh;">
+          <ion-input type="text" placeholder="Username" required></ion-input>
+        </ion-item>
+
+        <ion-item lines="full" style="margin-bottom: 4vh;">
+          <ion-input type="password" placeholder="***********" required></ion-input>
+        </ion-item>
+
+        <ion-button>Login</ion-button>
+      </form>
+      <br />
+      <ion-text color="dark">
+        <p style="margin-top: 8vh; padding-left: 6vw; font-weight: 500;">Don't have an account? <ion-text style="color: #94ab51"><u>Sign up </u></ion-text></p>
+      </ion-text>
+    </div>
   </div>
 </ion-content>

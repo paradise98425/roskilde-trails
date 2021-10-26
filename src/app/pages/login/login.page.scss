@@ -8,35 +8,30 @@ ion-content {
 }
 
 .images-parent {
-    margin-top: 10vh;
+    margin-top: 27vh;
 }
 
 .login-form {
-    top: 10px;
+    margin-top: -6px;
+    padding-left: 10vw;
+    padding-right: 10vw;
     bottom:0;
-    height: 77vh;
-    border: 1px red solid;
+    height: 60.5vh;
     background-color: white;
 }
+ion-input {
+    border-radius: 30px !important;
+    border: 1px solid #ffffff;
+}
 
-// .login-form {
-//     background-color: white;
-//     border: 1px red solid;
-//     display: flex;
-//     flex-direction: column;
-//     flex-grow: 1;
-// }
+ion-button {
+    --background: #758c35;
+    --background-activated: #758c35;
+    --ripple-color: #94ab51;
+    --border-radius: 0px;
+    float: right;
+}
 
-// .image1 {
-//     position: relative;
-//     top: 0;
-//     left: 0;
-// }
-// .image2 {
-//     position: absolute;
-//     top: 30px;
-//     left: 0px;
-//   }
 
 
 
