@@ -1,9 +1,12 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>explore</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content>
-
+<ion-content [fullscreen]="true">
+  
+  <div class="map-wrapper">
+    <div id="map_center">
+      <img src="../../assets/location.svg" />
+    </div>
+    <div #map id="map"></div>
+  </div>
 </ion-content>
+
+<ion-searchbar placeholder="Search field..."></ion-searchbar>
