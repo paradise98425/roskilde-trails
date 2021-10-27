@@ -1,9 +1,52 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>home-component</ion-title>
-  </ion-toolbar>
+  <span>Hello Ligma</span>
+  <p>Here is a list of recommended trails</p>
 </ion-header>
 
 <ion-content>
+
+  <div class="wrapper"> 
+
+    <div class="left">
+
+      <ion-card [routerLink]="['explore']"> 
+        <img src="../../assets/top-rated.png" alt="Top Rated">
+      </ion-card>
+
+      <ion-card>
+        <img src="../../assets/sightseeing.png" alt="Sightseeing">
+      </ion-card>
+
+      <ion-card>
+        <img src="../../assets/nature.png" alt="Nature">
+      </ion-card>
+
+      <ion-card>
+        <img src="../../assets/long-trails.png" alt="Long Trails">
+      </ion-card>
+
+    </div>
+
+    <div class="right">
+
+      <ion-card>
+        <img src="../../assets/short-trails.png" alt="Short Trails">
+      </ion-card>
+
+      <ion-card>
+        <img src="../../assets/city.png" alt="City">
+      </ion-card>
+
+      <ion-card>
+        <img src="../../assets/sightseeing2.png" alt="Sightseeing">
+      </ion-card>
+
+      <ion-card>
+        <img src="../../assets/nature.png" alt="Nature">
+      </ion-card>
+
+    </div>
+
+  </div>
 
 </ion-content>

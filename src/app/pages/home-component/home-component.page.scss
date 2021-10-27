@@ -1,0 +1,41 @@
+.header-md::after{
+    background-image: none;
+}
+ion-header{
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+ion-header > span{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+ion-header > p{
+    font-family: Roboto;
+    font-size: 16px;
+    color: #94ab51;
+    font-weight: 500;
+    margin: 0 0 0 0;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    padding: 5% 5% 0 5%;
+}
+
+// .left{
+//     border: 1px solid red;
+// }
+
+// .right{
+//     border: 1px solid green;
+// }
+
+ ion-card{
+     margin: 0;
+     box-shadow: none;
+ }
