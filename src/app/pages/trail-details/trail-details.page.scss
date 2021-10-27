@@ -1,3 +1,6 @@
+.header-md::after{
+    background-image: none;
+}
 .image > img{
     border: 1px solid gray;
     border-radius: 25px;
@@ -25,7 +28,7 @@
     margin: -14% 8% 5% 10%;
     position: relative;
     z-index: 99;
-    height: 20%;
+    height: 12%;
 }
 .text > span{
     font-family: Roboto;
