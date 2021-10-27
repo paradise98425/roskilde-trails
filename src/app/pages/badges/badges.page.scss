@@ -1,0 +1,51 @@
+.header-md::after{
+    background-image: none;
+}
+ion-header{
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+ion-header > span{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+ion-header > p{
+    font-family: Roboto;
+    font-size: 18px;
+    color: #94ab51;
+    font-weight: 500;
+    margin: 12px 0 0 0;
+}
+
+.card-badge-img {
+    height: 47px;
+    opacity: 0.3;
+}
+
+ion-progress-bar {
+    --background: #94ab51;
+    --buffer-background: #d5deba;
+    --progress-background: #94ab51;
+    margin-top: 8px;
+  }
+
+.latest-acheivement {
+    margin: 5vh 5vh 0vh 5vh;
+}
+
+.acheivements {
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    padding: 12px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgb(182, 175, 175);
+    -moz-box-shadow: 2px 2px 5px 0px rgb(190, 185, 185);
+    box-shadow: 2px 2px 5px 0px rgb(187, 184, 184);
+}
+
+.all-acheivement {
+    margin: 5vh 5vh 0vh 5vh;
+}
