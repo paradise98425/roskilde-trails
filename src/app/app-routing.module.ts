@@ -38,6 +38,10 @@ const routes: Routes = [
     path: 'nature',
     loadChildren: () => import('./pages/nature/nature.module').then( m => m.NaturePageModule)
   },
+  {
+    path: 'trail-details',
+    loadChildren: () => import('./pages/trail-details/trail-details.module').then( m => m.TrailDetailsPageModule)
+  },
 ];
 @NgModule({
   imports: [

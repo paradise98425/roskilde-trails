@@ -41,6 +41,10 @@ const routes: Routes = [
         loadChildren: () => import('../pages/nature/nature.module').then( m => m.NaturePageModule)
       },
       {
+        path: 'home-component/top-rated/details',
+        loadChildren: () => import('../pages/trail-details/trail-details.module').then( m => m.TrailDetailsPageModule)
+      },
+      {
         path: '',
         redirectTo: '/home/home-component',
         pathMatch: 'full'
