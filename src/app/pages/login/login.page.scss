@@ -1,4 +1,4 @@
-ion-content {
+  ion-content {
     --background: #94ab51;
   }
   
@@ -40,12 +40,14 @@ ion-content {
     --highlight-background: unset;
   }
   
-  
-  
   ion-button {
     --background: #758c35;
     --background-activated: #758c35;
     --ripple-color: #94ab51;
     --border-radius: 0px;
     float: right;
+  }
+
+  .error-message {
+      color: var(--ion-color-danger);
   }

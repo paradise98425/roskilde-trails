@@ -4,20 +4,22 @@
       <img class="image1" src="../../../assets/login-background.svg" />
     </div>
     <div class="login-form">
-      <form>
+      <form [formGroup]="loginForm" (ngSubmit)="submitForm()" novalidate>
         <ion-text color="dark" lines="none">
           <h1 style="font-weight: bold; margin-top: 5vh; margin-bottom: 4vh;">Log in</h1>
         </ion-text>
 
+        <small class="error-message" *ngIf="isSubmitted && errorControl.username.errors?.required">Username is required</small>
         <ion-item lines="full" style="margin-bottom: 4vh;">
-          <ion-input type="text" placeholder="Username" required></ion-input>
+          <ion-input type="text" placeholder="Username" formControlName="username" required></ion-input>
+        </ion-item>
+        
+        <small class="error-message" *ngIf="isSubmitted && errorControl.password.errors?.required">Password is required</small>
+        <ion-item lines="full" style="margin-bottom: 4vh;">
+          <ion-input type="password" placeholder="***********" formControlName="password" required></ion-input>
         </ion-item>
 
-        <ion-item lines="full" style="margin-bottom: 4vh;">
-          <ion-input type="password" placeholder="***********" required></ion-input>
-        </ion-item>
-
-        <ion-button [routerLink]="['/home']">Login</ion-button>
+        <ion-button type="submit" >Login</ion-button>
       </form>
       <br />
       <ion-text color="dark">
