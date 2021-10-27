@@ -29,6 +29,10 @@ const routes: Routes = [
         loadChildren: () => import('../pages/profile/profile.module').then( m => m.ProfilePageModule)
       },
       {
+        path: 'home-component/top-rated',
+        loadChildren: () => import('../pages/top-rated/top-rated.module').then( m => m.TopRatedPageModule)
+      },
+      {
         path: '',
         redirectTo: '/home/home-component',
         pathMatch: 'full'
