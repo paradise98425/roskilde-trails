@@ -37,7 +37,7 @@ ion-header > p{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     gap: 5%;
-    height: 165px;
+    height: 160px;
 
 }
 
@@ -55,7 +55,7 @@ ion-header > p{
 .title{
     font-family: Roboto;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
 }
 
@@ -76,5 +76,5 @@ ion-button{
     background-color: #000000 !important;
     border-radius: 25px;
     padding: 1% 2% 1% 2%;
-    margin-left: 5%;
+    margin-left: 3%;
 }

@@ -33,6 +33,14 @@ const routes: Routes = [
         loadChildren: () => import('../pages/top-rated/top-rated.module').then( m => m.TopRatedPageModule)
       },
       {
+        path: 'home-component/lake',
+        loadChildren: () => import('../pages/lake/lake.module').then( m => m.LakePageModule)
+      },
+      {
+        path: 'home-component/nature',
+        loadChildren: () => import('../pages/nature/nature.module').then( m => m.NaturePageModule)
+      },
+      {
         path: '',
         redirectTo: '/home/home-component',
         pathMatch: 'full'

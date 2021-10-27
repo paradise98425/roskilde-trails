@@ -30,6 +30,14 @@ const routes: Routes = [
     path: 'top-rated',
     loadChildren: () => import('./pages/top-rated/top-rated.module').then( m => m.TopRatedPageModule)
   },
+  {
+    path: 'lake',
+    loadChildren: () => import('./pages/lake/lake.module').then( m => m.LakePageModule)
+  },
+  {
+    path: 'nature',
+    loadChildren: () => import('./pages/nature/nature.module').then( m => m.NaturePageModule)
+  },
 ];
 @NgModule({
   imports: [
