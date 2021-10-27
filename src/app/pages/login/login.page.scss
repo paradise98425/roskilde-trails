@@ -1,0 +1,51 @@
+ion-content {
+    --background: #94ab51;
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;   
+  }
+  
+  @media(max-width: 768px) {
+    .images-parent {
+        margin-top: 27vh;
+    }
+    .login-form {
+        margin-top: -6px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        bottom:0;
+        height: 60.5vh;
+        background-color: white;
+    }
+  }
+  
+  @media(min-width: 768px) {
+    .login-form {
+        margin-top: -6px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        bottom:0;
+        height: 74.5vh;
+        background-color: white;
+    }
+  }
+  
+  ion-item {
+    border: 1px lightgray solid;
+  }
+  
+  .item-interactive {
+    --highlight-background: unset;
+  }
+  
+  
+  
+  ion-button {
+    --background: #758c35;
+    --background-activated: #758c35;
+    --ripple-color: #94ab51;
+    --border-radius: 0px;
+    float: right;
+  }
