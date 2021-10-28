@@ -1,5 +1,6 @@
 <ion-header>
-  <span>Hello Ligma!</span>
+  <span >Hello, </span>
+  <span *ngFor="let item of storageItems">{{item['name']}}</span>
   <p>Here is a list of recommended trails</p>
 </ion-header>
 
