@@ -91,8 +91,36 @@ const routes: Routes &#x3D; [
         loadChildren: () &#x3D;&gt; &quot;import(&#x27;../pages/gallery/gallery.module&#x27;).then( m &#x3D;&gt; m.GalleryPageModule)&quot;
       },
       {
+        path: &#x27;home-component&#x27;,
+        loadChildren: () &#x3D;&gt; &quot;import(&#x27;../pages/home-component/home-component.module&#x27;).then( m &#x3D;&gt; m.HomeComponentPageModule)&quot;
+      },
+      {
+        path: &#x27;badges&#x27;,
+        loadChildren: () &#x3D;&gt; &quot;import(&#x27;../pages/badges/badges.module&#x27;).then( m &#x3D;&gt; m.BadgesPageModule)&quot;
+      },
+      {
+        path: &#x27;profile&#x27;,
+        loadChildren: () &#x3D;&gt; &quot;import(&#x27;../pages/profile/profile.module&#x27;).then( m &#x3D;&gt; m.ProfilePageModule)&quot;
+      },
+      {
+        path: &#x27;home-component/top-rated&#x27;,
+        loadChildren: () &#x3D;&gt; &quot;import(&#x27;../pages/top-rated/top-rated.module&#x27;).then( m &#x3D;&gt; m.TopRatedPageModule)&quot;
+      },
+      {
+        path: &#x27;home-component/lake&#x27;,
+        loadChildren: () &#x3D;&gt; &quot;import(&#x27;../pages/lake/lake.module&#x27;).then( m &#x3D;&gt; m.LakePageModule)&quot;
+      },
+      {
+        path: &#x27;home-component/nature&#x27;,
+        loadChildren: () &#x3D;&gt; &quot;import(&#x27;../pages/nature/nature.module&#x27;).then( m &#x3D;&gt; m.NaturePageModule)&quot;
+      },
+      {
+        path: &#x27;home-component/top-rated/details&#x27;,
+        loadChildren: () &#x3D;&gt; &quot;import(&#x27;../pages/trail-details/trail-details.module&#x27;).then( m &#x3D;&gt; m.TrailDetailsPageModule)&quot;
+      },
+      {
         path: &#x27;&#x27;,
-        redirectTo: &#x27;/home/explore&#x27;,
+        redirectTo: &#x27;/home/home-component&#x27;,
         pathMatch: &#x27;full&#x27;
       }
     ]

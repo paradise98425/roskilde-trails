@@ -655,7 +655,8 @@ export class ExplorePage implements OnInit {
   &lt;/div&gt;
 &lt;/ion-content&gt;
 
-&lt;ion-searchbar placeholder&#x3D;&quot;Search field...&quot;&gt;&lt;/ion-searchbar&gt;</code></pre>
+&lt;ion-searchbar placeholder&#x3D;&quot;Search field...&quot;&gt;&lt;/ion-searchbar&gt;
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
@@ -663,42 +664,42 @@ export class ExplorePage implements OnInit {
                     <code>./explore.page.scss</code>
                 </p>
                 <pre class="line-numbers"><code class="language-scss">#map {
-    width: 100%;
-    height: 150vh;
-  }
-  
-  .map-wrapper {
-    position: relative;
+  width: 100%;
+  height: 150vh;
+}
 
-  
-    #map_center {
-      position: absolute;
-      z-index: 99;
-      height: 40px;
-      width: 40px;
-      top: 50%;
-      left: 50%;
-      margin-left: -21px;
-      margin-top: -41px;
-    }
-  }
+.map-wrapper {
+  position: relative;
 
-  ion-tab-bar, ion-tab-button{
-    background-color: #94ab51;
-   }
-  
-  ion-label{
-    color: white;
+
+  #map_center {
+    position: absolute;
+    z-index: 99;
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    margin-left: -21px;
+    margin-top: -41px;
   }
-  
-  ion-tab-button{
-    opacity: 40%;
-  }
-  
-  ion-tab-button:focus{
-    opacity: 100%;
-  }
-  </code></pre>
+}
+
+ion-tab-bar, ion-tab-button{
+  background-color: #94ab51;
+ }
+
+ion-label{
+  color: white;
+}
+
+ion-tab-button{
+  opacity: 40%;
+}
+
+ion-tab-button:focus{
+  opacity: 100%;
+}
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -727,7 +728,7 @@ export class ExplorePage implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><ion-content [fullscreen]="true">    <div class="map-wrapper">    <div id="map_center">      <img src="../../assets/location.svg" />    </div>    <div #map id="map"></div>  </div></ion-content><ion-searchbar placeholder="Search field..."></ion-searchbar></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LoginPage', 'selector': 'app-login'}];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgesPage', 'selector': 'app-badges'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LakePage', 'selector': 'app-lake'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'NaturePage', 'selector': 'app-nature'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'TopRatedPage', 'selector': 'app-top-rated'},{'name': 'TrailDetailsPage', 'selector': 'app-trail-details'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'ExplorePage'};
 </script>
