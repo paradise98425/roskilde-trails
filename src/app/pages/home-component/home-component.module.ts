@@ -8,12 +8,16 @@ import { HomeComponentPageRoutingModule } from './home-component-routing.module'
 
 import { HomeComponentPage } from './home-component.page';
 
+import { IonicStorageModule } from '@ionic/storage-angular';
+
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomeComponentPageRoutingModule
+    HomeComponentPageRoutingModule,
+    IonicStorageModule.forRoot()
   ],
   declarations: [HomeComponentPage]
 })
