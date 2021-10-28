@@ -5,7 +5,7 @@
   </div>
 
   <div class="personal-info">
-    <span>Ivana Ligma</span>
+    <span *ngFor="let item of storageItems">{{item['name']}}</span>
     <p>Profile overview</p>
   </div>
 

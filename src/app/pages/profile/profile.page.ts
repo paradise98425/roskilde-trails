@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Storage } from '@ionic/storage-angular';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilePage implements OnInit {
 
-  constructor() { }
+  constructor(private storage: Storage) { }
 
-  ngOnInit() {
+  storageItems = []
+  async ngOnInit() {
+    await this.storage.create();
+    const name = await this.storage.get('name')
+    this.storageItems.push({'name': name})
+
+    console.log('storageItems', this.storageItems)
   }
+
+ 
+
+  // const name = await this.storage.get('name');
+  // console.log('name from ionic/angular storage', name);
 
 }
