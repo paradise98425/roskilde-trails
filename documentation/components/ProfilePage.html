@@ -38,7 +38,7 @@
   <li>Components</li>
   <li
   >
-  HomeComponentPage</li>
+  ProfilePage</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -64,7 +64,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/pages/home-component/home-component.page.ts</code>
+    <code>src/app/pages/profile/profile.page.ts</code>
 </p>
 
 
@@ -95,19 +95,19 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-home-component</code></td>
+                <td class="col-md-9"><code>app-profile</code></td>
             </tr>
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>./home-component.page.scss</code></td>
+                <td class="col-md-9"><code>./profile.page.scss</code></td>
             </tr>
 
 
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./home-component.page.html</code></td>
+                <td class="col-md-9"><code>./profile.page.html</code></td>
             </tr>
 
 
@@ -175,7 +175,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/pages/home-component/home-component.page.ts:9</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/pages/profile/profile.page.ts:9</a></div>
                             </td>
                         </tr>
 
@@ -245,7 +245,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="14"
-                            class="link-to-prism">src/app/pages/home-component/home-component.page.ts:14</a></div>
+                            class="link-to-prism">src/app/pages/profile/profile.page.ts:14</a></div>
                 </td>
             </tr>
 
@@ -291,7 +291,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/pages/home-component/home-component.page.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/pages/profile/profile.page.ts:13</a></div>
                         </td>
                     </tr>
 
@@ -308,11 +308,11 @@
 import { Storage } from &#x27;@ionic/storage-angular&#x27;;
 
 @Component({
-  selector: &#x27;app-home-component&#x27;,
-  templateUrl: &#x27;./home-component.page.html&#x27;,
-  styleUrls: [&#x27;./home-component.page.scss&#x27;],
+  selector: &#x27;app-profile&#x27;,
+  templateUrl: &#x27;./profile.page.html&#x27;,
+  styleUrls: [&#x27;./profile.page.scss&#x27;],
 })
-export class HomeComponentPage implements OnInit {
+export class ProfilePage implements OnInit {
 
   constructor(private storage: Storage) { }
 
@@ -325,69 +325,55 @@ export class HomeComponentPage implements OnInit {
     console.log(&#x27;storageItems&#x27;, this.storageItems)
   }
 
+ 
+
+  // const name &#x3D; await this.storage.get(&#x27;name&#x27;);
+  // console.log(&#x27;name from ionic/angular storage&#x27;, name);
+
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;ion-header&gt;
-  &lt;span &gt;Hello, &lt;/span&gt;
-  &lt;span *ngFor&#x3D;&quot;let item of storageItems&quot;&gt;{{item[&#x27;name&#x27;]}}&lt;/span&gt;
-  &lt;p&gt;Here is a list of recommended trails&lt;/p&gt;
+
+  &lt;div class&#x3D;&quot;profile-pic&quot;&gt;
+    &lt;img src&#x3D;&quot;../../assets/profilepic.png&quot; alt&#x3D;&quot;Profile picture&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;personal-info&quot;&gt;
+    &lt;span *ngFor&#x3D;&quot;let item of storageItems&quot;&gt;{{item[&#x27;name&#x27;]}}&lt;/span&gt;
+    &lt;p&gt;Profile overview&lt;/p&gt;
+  &lt;/div&gt;
+
 &lt;/ion-header&gt;
 
 &lt;ion-content&gt;
 
-  &lt;div class&#x3D;&quot;wrapper&quot;&gt; 
-
-    &lt;div class&#x3D;&quot;left&quot;&gt;
-
-      &lt;ion-card [routerLink]&#x3D;&quot;[&#x27;top-rated&#x27;]&quot;&gt; 
-        &lt;img src&#x3D;&quot;../../assets/top-rated.png&quot; alt&#x3D;&quot;Top Rated&quot;&gt;
-      &lt;/ion-card&gt;
-
-      &lt;ion-card&gt;
-        &lt;img src&#x3D;&quot;../../assets/sightseeing.png&quot; alt&#x3D;&quot;Sightseeing&quot;&gt;
-      &lt;/ion-card&gt;
-
-      &lt;ion-card&gt;
-        &lt;img src&#x3D;&quot;../../assets/short-trails.png&quot; alt&#x3D;&quot;Short trails&quot;&gt;
-      &lt;/ion-card&gt;
-
-      &lt;ion-card&gt;
-        &lt;img src&#x3D;&quot;../../assets/long-trails.png&quot; alt&#x3D;&quot;Long Trails&quot;&gt;
-      &lt;/ion-card&gt;
-
+  &lt;div class&#x3D;&quot;stats&quot;&gt;
+    &lt;div class&#x3D;&quot;stats-info&quot;&gt;
+      &lt;span class&#x3D;&quot;number&quot;&gt;45,7&lt;/span&gt;
+      &lt;span class&#x3D;&quot;text&quot;&gt;km walked&lt;/span&gt;
     &lt;/div&gt;
-
-    &lt;div class&#x3D;&quot;right&quot;&gt;
-
-      &lt;ion-card [routerLink]&#x3D;&quot;[&#x27;nature&#x27;]&quot;&gt;
-        &lt;img src&#x3D;&quot;../../assets/nature.png&quot; alt&#x3D;&quot;Nature&quot;&gt;
-      &lt;/ion-card&gt;
-
-      &lt;ion-card [routerLink]&#x3D;&quot;[&#x27;lake&#x27;]&quot;&gt; 
-        &lt;img src&#x3D;&quot;../../assets/lake.png&quot; alt&#x3D;&quot;Lake&quot;&gt;
-      &lt;/ion-card&gt;
-
-      &lt;ion-card&gt;
-        &lt;img src&#x3D;&quot;../../assets/long-trails.png&quot; alt&#x3D;&quot;Long trails&quot;&gt;
-      &lt;/ion-card&gt;
-
-      &lt;ion-card&gt;
-        &lt;img src&#x3D;&quot;../../assets/city.png&quot; alt&#x3D;&quot;Nature&quot;&gt;
-      &lt;/ion-card&gt;
-
+    &lt;div class&#x3D;&quot;stats-info&quot;&gt;
+      &lt;span class&#x3D;&quot;number&quot;&gt;8&lt;/span&gt;
+      &lt;span class&#x3D;&quot;text&quot;&gt;trails completed&lt;/span&gt;
     &lt;/div&gt;
-
   &lt;/div&gt;
 
-  &lt;div class&#x3D;&quot;wrapper-saved&quot;&gt;
+  &lt;div class&#x3D;&quot;tab&quot;&gt;
+    &lt;span class&#x3D;&quot;saved-trails&quot;&gt;Saved trails&lt;/span&gt;
 
-    &lt;div class&#x3D;&quot;tab&quot;&gt;
-      &lt;span class&#x3D;&quot;saved-trails&quot;&gt;Saved trails&lt;/span&gt;
-    &lt;/div&gt;
-    
+    &lt;select name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
+      &lt;option value&#x3D;&quot;date-added&quot;&gt;Date added&lt;/option&gt;
+      &lt;option value&#x3D;&quot;most-popular&quot;&gt;Most popular&lt;/option&gt;
+      &lt;option value&#x3D;&quot;shortest-first&quot;&gt;Shortest first&lt;/option&gt;
+      &lt;option value&#x3D;&quot;longest-first&quot;&gt;Longest first&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;wrapper&quot;&gt;
+
     &lt;!-- Trial start --&gt;
         &lt;div class&#x3D;&quot;trail&quot; style&#x3D;&quot;background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake.jpg);&quot;&gt;
           &lt;div class&#x3D;&quot;fave&quot;&gt;
@@ -508,52 +494,62 @@ export class HomeComponentPage implements OnInit {
 
     <div class="tab-pane fade " id="c-styleData">
                 <p class="comment">
-                    <code>./home-component.page.scss</code>
+                    <code>./profile.page.scss</code>
                 </p>
                 <pre class="line-numbers"><code class="language-scss">.header-md::after{
     background-image: none;
 }
 ion-header{
-    padding-top: 10%;
-    padding-left: 10%;
+    padding-top: 8%;
+    padding-left: 8%;
+    display: flex;
+    gap: 10%;
 }
-
-ion-header &gt; span{
+.personal-info{
+    margin-top: 2%;
+}
+.personal-info &gt; span{
     font-family: Roboto;
     font-weight: bold;
     font-size: 36px;
 }
-
-ion-header &gt; p{
+.personal-info &gt; p{
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 16px;
     color: #94ab51;
-    font-weight: 500;
-    margin: 12px 0 0 0;
+    font-weight: medium;
+    margin: -5px 0 0 0;
+ }
+.profile-pic &gt; img{
+    height: 85px;
 }
-
-.wrapper{
+.stats-info{
+    border-radius: 5%;
+    padding: 5% 14% 5% 15%;
+    box-shadow: 2px 2px 5px 0px rgb(182, 175, 175);
+    display: grid;
+}
+.stats{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 100%;
-    padding: 5% 5% 0 5%;
+    gap: 5%;
+    margin: 5% 10% 5% 10%;
 }
-
-// .left{
-//     border: 1px solid red;
-// }
-
-// .right{
-//     border: 1px solid green;
-// }
-
-ion-card{
-     margin: 0;
-     box-shadow: none;
- }
-
- .tab{
-    padding: 0% 0% 5% 5%;
+.stats-info &gt; span{
+    text-align: center;
+}
+.number{
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: bold;
+}
+.text{
+    font-family: Roboto;
+    font-size: 14px;
+    color: #6D6D6D;
+}
+.tab{
+    padding: 2% 10% 2% 10%;
 }
 select{
     float: right;
@@ -566,11 +562,10 @@ select{
     font-size: 18px;
     font-weight: bold;
 }
-/* changed name for saved trails to work on home */
-.wrapper-saved{
+.wrapper{
     display: inline-block;
     height: 100%;
-    padding:30% 10% 5% 10%;
+    padding: 5% 10% 5% 10%;
 }
 .trail{
     border: 1px solid #707070;
@@ -645,10 +640,10 @@ ion-button{
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-header>  <span >Hello, </span>  <span *ngFor="let item of storageItems">{{item[\'name\']}}</span>  <p>Here is a list of recommended trails</p></ion-header><ion-content>  <div class="wrapper">     <div class="left">      <ion-card [routerLink]="[\'top-rated\']">         <img src="../../assets/top-rated.png" alt="Top Rated">      </ion-card>      <ion-card>        <img src="../../assets/sightseeing.png" alt="Sightseeing">      </ion-card>      <ion-card>        <img src="../../assets/short-trails.png" alt="Short trails">      </ion-card>      <ion-card>        <img src="../../assets/long-trails.png" alt="Long Trails">      </ion-card>    </div>    <div class="right">      <ion-card [routerLink]="[\'nature\']">        <img src="../../assets/nature.png" alt="Nature">      </ion-card>      <ion-card [routerLink]="[\'lake\']">         <img src="../../assets/lake.png" alt="Lake">      </ion-card>      <ion-card>        <img src="../../assets/long-trails.png" alt="Long trails">      </ion-card>      <ion-card>        <img src="../../assets/city.png" alt="Nature">      </ion-card>    </div>  </div>  <div class="wrapper-saved">    <div class="tab">      <span class="saved-trails">Saved trails</span>    </div>        <!-- Trial start -->        <div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake.jpg);">          <div class="fave">            <ion-button fill=clear>            <img src="../../assets/not-fave.png" alt="">          </ion-button>          </div>              <div class="info">                <span>              <span class="title">Boserup Skov - Kattinge Værk - Boserup Sø</span>              <span class="rating">                <img src="../../assets/star.png" alt="">                 4,5              </span>            </span>                <span>              <span class="extra">Length: 7,4 km</span>              <span class="extra"> • Est: 2h 10m</span>            </span>              </div>            </div>    <!-- Trial end -->    <!-- Trial start 2 --><div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/boserup.jpg);">  <div class="fave">    <ion-button fill=clear>    <img src="../../assets/not-fave.png" alt="">  </ion-button>  </div>  <div class="info">    <span>      <span class="title">Bognæs og Storskov</span>      <span class="rating">        <img src="../../assets/star.png" alt="">         4,5      </span>    </span>    <span>      <span class="extra">Length: 9,0 km</span>      <span class="extra"> • Est: 2h 37m</span>    </span>  </div></div><!-- Trial end --><!-- Trial start 3 --><div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/forest.jpg);">  <div class="fave">    <ion-button fill=clear>    <img src="../../assets/not-fave.png" alt="">  </ion-button>  </div>  <div class="info">    <span>      <span class="title">Boserup Skov - kattinge Værk - Boserup Sø</span>      <span class="rating">        <img src="../../assets/star.png" alt="">         4,5      </span>    </span>    <span>      <span class="extra">Length: 7,4 km</span>      <span class="extra"> • Est: 2h 10m</span>    </span>  </div></div><!-- Trial end --><!-- Trial start 4 --><div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake2.jpg);">  <div class="fave">    <ion-button fill=clear>    <img src="../../assets/not-fave.png" alt="">  </ion-button>  </div>  <div class="info">    <span>      <span class="title" style="font-size: 18px !important">Trekroner Himmelev Skov</span>      <span class="rating">        <img src="../../assets/star.png" alt="">         4,0      </span>    </span>    <span>      <span class="extra">Length: 8,2 km</span>      <span class="extra"> • Est: 4h 20m</span>    </span>  </div></div><!-- Trial end -->  </div></ion-content></div>'
+        var COMPONENT_TEMPLATE = '<div><ion-header>  <div class="profile-pic">    <img src="../../assets/profilepic.png" alt="Profile picture">  </div>  <div class="personal-info">    <span *ngFor="let item of storageItems">{{item[\'name\']}}</span>    <p>Profile overview</p>  </div></ion-header><ion-content>  <div class="stats">    <div class="stats-info">      <span class="number">45,7</span>      <span class="text">km walked</span>    </div>    <div class="stats-info">      <span class="number">8</span>      <span class="text">trails completed</span>    </div>  </div>  <div class="tab">    <span class="saved-trails">Saved trails</span>    <select name="" id="">      <option value="date-added">Date added</option>      <option value="most-popular">Most popular</option>      <option value="shortest-first">Shortest first</option>      <option value="longest-first">Longest first</option>    </select>  </div>  <div class="wrapper">    <!-- Trial start -->        <div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake.jpg);">          <div class="fave">            <ion-button fill=clear>            <img src="../../assets/not-fave.png" alt="">          </ion-button>          </div>              <div class="info">                <span>              <span class="title">Boserup Skov - Kattinge Værk - Boserup Sø</span>              <span class="rating">                <img src="../../assets/star.png" alt="">                 4,5              </span>            </span>                <span>              <span class="extra">Length: 7,4 km</span>              <span class="extra"> • Est: 2h 10m</span>            </span>              </div>            </div>    <!-- Trial end -->    <!-- Trial start 2 --><div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/boserup.jpg);">  <div class="fave">    <ion-button fill=clear>    <img src="../../assets/not-fave.png" alt="">  </ion-button>  </div>  <div class="info">    <span>      <span class="title">Bognæs og Storskov</span>      <span class="rating">        <img src="../../assets/star.png" alt="">         4,5      </span>    </span>    <span>      <span class="extra">Length: 9,0 km</span>      <span class="extra"> • Est: 2h 37m</span>    </span>  </div></div><!-- Trial end --><!-- Trial start 3 --><div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/forest.jpg);">  <div class="fave">    <ion-button fill=clear>    <img src="../../assets/not-fave.png" alt="">  </ion-button>  </div>  <div class="info">    <span>      <span class="title">Boserup Skov - kattinge Værk - Boserup Sø</span>      <span class="rating">        <img src="../../assets/star.png" alt="">         4,5      </span>    </span>    <span>      <span class="extra">Length: 7,4 km</span>      <span class="extra"> • Est: 2h 10m</span>    </span>  </div></div><!-- Trial end --><!-- Trial start 4 --><div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake2.jpg);">  <div class="fave">    <ion-button fill=clear>    <img src="../../assets/not-fave.png" alt="">  </ion-button>  </div>  <div class="info">    <span>      <span class="title" style="font-size: 18px !important">Trekroner Himmelev Skov</span>      <span class="rating">        <img src="../../assets/star.png" alt="">         4,0      </span>    </span>    <span>      <span class="extra">Length: 8,2 km</span>      <span class="extra"> • Est: 4h 20m</span>    </span>  </div></div><!-- Trial end -->  </div></ion-content></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgesPage', 'selector': 'app-badges'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LakePage', 'selector': 'app-lake'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'NaturePage', 'selector': 'app-nature'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'TopRatedPage', 'selector': 'app-top-rated'},{'name': 'TrailDetailsPage', 'selector': 'app-trail-details'}];
     var DIRECTIVES = [];
-    var ACTUAL_COMPONENT = {'name': 'HomeComponentPage'};
+    var ACTUAL_COMPONENT = {'name': 'ProfilePage'};
 </script>
 <script src="../js/tree.js"></script>
 
@@ -683,7 +678,7 @@ ion-button{
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'HomeComponentPage.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'ProfilePage.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

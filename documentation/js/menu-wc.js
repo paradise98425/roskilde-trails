@@ -71,6 +71,26 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/AppRoutingModule.html" data-type="entity-link" >AppRoutingModule</a>
                             </li>
                             <li class="link">
+                                <a href="modules/BadgesPageModule.html" data-type="entity-link" >BadgesPageModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-BadgesPageModule-15083ccc043dcbc079622a1b37f04a40"' : 'data-target="#xs-components-links-module-BadgesPageModule-15083ccc043dcbc079622a1b37f04a40"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-BadgesPageModule-15083ccc043dcbc079622a1b37f04a40"' :
+                                            'id="xs-components-links-module-BadgesPageModule-15083ccc043dcbc079622a1b37f04a40"' }>
+                                            <li class="link">
+                                                <a href="components/BadgesPage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >BadgesPage</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/BadgesPageRoutingModule.html" data-type="entity-link" >BadgesPageRoutingModule</a>
+                            </li>
+                            <li class="link">
                                 <a href="modules/ExplorePageModule.html" data-type="entity-link" >ExplorePageModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
@@ -114,13 +134,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/HomeComponentPageModule.html" data-type="entity-link" >HomeComponentPageModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-HomeComponentPageModule-8d5e166718ddb9ee57bc3f16afb74ba5"' : 'data-target="#xs-components-links-module-HomeComponentPageModule-8d5e166718ddb9ee57bc3f16afb74ba5"' }>
+                                            'data-target="#components-links-module-HomeComponentPageModule-dfd1210ad9c94df661e762adb0b64fa5"' : 'data-target="#xs-components-links-module-HomeComponentPageModule-dfd1210ad9c94df661e762adb0b64fa5"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-HomeComponentPageModule-8d5e166718ddb9ee57bc3f16afb74ba5"' :
-                                            'id="xs-components-links-module-HomeComponentPageModule-8d5e166718ddb9ee57bc3f16afb74ba5"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-HomeComponentPageModule-dfd1210ad9c94df661e762adb0b64fa5"' :
+                                            'id="xs-components-links-module-HomeComponentPageModule-dfd1210ad9c94df661e762adb0b64fa5"' }>
                                             <li class="link">
                                                 <a href="components/HomeComponentPage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >HomeComponentPage</a>
                                             </li>
@@ -171,16 +191,36 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/IndexPageRoutingModule.html" data-type="entity-link" >IndexPageRoutingModule</a>
                             </li>
                             <li class="link">
-                                <a href="modules/LoginPageModule.html" data-type="entity-link" >LoginPageModule</a>
+                                <a href="modules/LakePageModule.html" data-type="entity-link" >LakePageModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-LoginPageModule-7eaa1484e3471e6cee0c029adf093ff3"' : 'data-target="#xs-components-links-module-LoginPageModule-7eaa1484e3471e6cee0c029adf093ff3"' }>
+                                            'data-target="#components-links-module-LakePageModule-951c56931004b7bf310110bd22cd8a1b"' : 'data-target="#xs-components-links-module-LakePageModule-951c56931004b7bf310110bd22cd8a1b"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-LoginPageModule-7eaa1484e3471e6cee0c029adf093ff3"' :
-                                            'id="xs-components-links-module-LoginPageModule-7eaa1484e3471e6cee0c029adf093ff3"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-LakePageModule-951c56931004b7bf310110bd22cd8a1b"' :
+                                            'id="xs-components-links-module-LakePageModule-951c56931004b7bf310110bd22cd8a1b"' }>
+                                            <li class="link">
+                                                <a href="components/LakePage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >LakePage</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/LakePageRoutingModule.html" data-type="entity-link" >LakePageRoutingModule</a>
+                            </li>
+                            <li class="link">
+                                <a href="modules/LoginPageModule.html" data-type="entity-link" >LoginPageModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-LoginPageModule-3c45fc122de8fe48626e88c6b2f5bf35"' : 'data-target="#xs-components-links-module-LoginPageModule-3c45fc122de8fe48626e88c6b2f5bf35"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-LoginPageModule-3c45fc122de8fe48626e88c6b2f5bf35"' :
+                                            'id="xs-components-links-module-LoginPageModule-3c45fc122de8fe48626e88c6b2f5bf35"' }>
                                             <li class="link">
                                                 <a href="components/LoginPage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >LoginPage</a>
                                             </li>
@@ -189,6 +229,86 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </li>
                             <li class="link">
                                 <a href="modules/LoginPageRoutingModule.html" data-type="entity-link" >LoginPageRoutingModule</a>
+                            </li>
+                            <li class="link">
+                                <a href="modules/NaturePageModule.html" data-type="entity-link" >NaturePageModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-NaturePageModule-75fd38e317bd6d977990de72b89aca69"' : 'data-target="#xs-components-links-module-NaturePageModule-75fd38e317bd6d977990de72b89aca69"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-NaturePageModule-75fd38e317bd6d977990de72b89aca69"' :
+                                            'id="xs-components-links-module-NaturePageModule-75fd38e317bd6d977990de72b89aca69"' }>
+                                            <li class="link">
+                                                <a href="components/NaturePage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >NaturePage</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/NaturePageRoutingModule.html" data-type="entity-link" >NaturePageRoutingModule</a>
+                            </li>
+                            <li class="link">
+                                <a href="modules/ProfilePageModule.html" data-type="entity-link" >ProfilePageModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-ProfilePageModule-eb052985e91e533393b85fd928df9659"' : 'data-target="#xs-components-links-module-ProfilePageModule-eb052985e91e533393b85fd928df9659"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-ProfilePageModule-eb052985e91e533393b85fd928df9659"' :
+                                            'id="xs-components-links-module-ProfilePageModule-eb052985e91e533393b85fd928df9659"' }>
+                                            <li class="link">
+                                                <a href="components/ProfilePage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >ProfilePage</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/ProfilePageRoutingModule.html" data-type="entity-link" >ProfilePageRoutingModule</a>
+                            </li>
+                            <li class="link">
+                                <a href="modules/TopRatedPageModule.html" data-type="entity-link" >TopRatedPageModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-TopRatedPageModule-597db81652e9167680330e651c9e64b7"' : 'data-target="#xs-components-links-module-TopRatedPageModule-597db81652e9167680330e651c9e64b7"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-TopRatedPageModule-597db81652e9167680330e651c9e64b7"' :
+                                            'id="xs-components-links-module-TopRatedPageModule-597db81652e9167680330e651c9e64b7"' }>
+                                            <li class="link">
+                                                <a href="components/TopRatedPage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >TopRatedPage</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/TopRatedPageRoutingModule.html" data-type="entity-link" >TopRatedPageRoutingModule</a>
+                            </li>
+                            <li class="link">
+                                <a href="modules/TrailDetailsPageModule.html" data-type="entity-link" >TrailDetailsPageModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-TrailDetailsPageModule-bc88b29fd79b5a7d539fe78c3a34912d"' : 'data-target="#xs-components-links-module-TrailDetailsPageModule-bc88b29fd79b5a7d539fe78c3a34912d"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-TrailDetailsPageModule-bc88b29fd79b5a7d539fe78c3a34912d"' :
+                                            'id="xs-components-links-module-TrailDetailsPageModule-bc88b29fd79b5a7d539fe78c3a34912d"' }>
+                                            <li class="link">
+                                                <a href="components/TrailDetailsPage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >TrailDetailsPage</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/TrailDetailsPageRoutingModule.html" data-type="entity-link" >TrailDetailsPageRoutingModule</a>
                             </li>
                 </ul>
                 </li>
