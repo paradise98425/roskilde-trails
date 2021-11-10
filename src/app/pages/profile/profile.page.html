@@ -1,12 +1,15 @@
 <ion-header>
 
   <div class="profile-pic">
-    <img src="../../assets/profilepic.png" alt="Profile picture">
+    <img src="../../assets/profile.bmp" alt="Profile picture">
+     <button (click)="actionsheet()" class="buttonProfile">  <ion-icon name="settings"></ion-icon>
+</button>
   </div>
 
   <div class="personal-info">
     <span *ngFor="let item of storageItems">{{item['name']}}</span>
     <p>Profile overview</p>
+   
   </div>
 
 </ion-header>

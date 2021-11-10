@@ -1,27 +1,39 @@
 import { Component, OnInit } from '@angular/core';
 import { Storage } from '@ionic/storage-angular';
+import { ActionSheetController } from '@ionic/angular';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.page.html',
   styleUrls: ['./profile.page.scss'],
 })
-export class ProfilePage implements OnInit {
+export class ProfilePage {
 
-  constructor(private storage: Storage) { }
+   constructor(
+    private actionSheetController: ActionSheetController) { }
 
-  storageItems = []
-  async ngOnInit() {
-    await this.storage.create();
-    const name = await this.storage.get('name')
-    this.storageItems.push({'name': name})
-
-    console.log('storageItems', this.storageItems)
+  async actionsheet() {
+    const actionSheet = await this.actionSheetController.create({
+      header: 'Profile Settings',
+      buttons: [{
+        text: 'Delete profile',
+        role: 'destructive',
+      }, 
+       {
+        text: 'Update picture',       
+      },{
+        text: 'Cancel',
+        role: 'cancel',
+      }]
+    });
+    await actionSheet.present();
   }
+}
+
 
  
 
   // const name = await this.storage.get('name');
   // console.log('name from ionic/angular storage', name);
 
-}
+

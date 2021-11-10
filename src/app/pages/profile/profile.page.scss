@@ -1,116 +1,162 @@
-.header-md::after{
-    background-image: none;
+.header-md::after {
+  background-image: none;
 }
-ion-header{
-    padding-top: 8%;
-    padding-left: 8%;
-    display: flex;
-    gap: 10%;
+
+ion-header {
+  padding-top: 8%;
+  padding-left: 8%;
+  display: flex;
+  gap: 10%;
 }
-.personal-info{
-    margin-top: 2%;
+
+.personal-info {
+  margin-top: 2%;
 }
-.personal-info > span{
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 36px;
+
+.personal-info>span {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
 }
-.personal-info > p{
-    font-family: Roboto;
-    font-size: 16px;
-    color: #94ab51;
-    font-weight: medium;
-    margin: -5px 0 0 0;
- }
-.profile-pic > img{
+
+.personal-info>p {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #94ab51;
+  font-weight: medium;
+  margin: -5px 0 0 0;
+}
+
+.profile-pic>img {
+  height: 85px;
+  
+  border-radius: 50%;
+}
+
+.profile-pic{
+    max-width: 85px;
     height: 85px;
+    position: relative;
 }
-.stats-info{
-    border-radius: 5%;
-    padding: 5% 14% 5% 15%;
-    box-shadow: 2px 2px 5px 0px rgb(182, 175, 175);
-    display: grid;
+
+.stats-info {
+  border-radius: 5%;
+  padding: 5% 14% 5% 15%;
+  box-shadow: 2px 2px 5px 0px rgb(182, 175, 175);
+  display: grid;
 }
-.stats{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5%;
-    margin: 5% 10% 5% 10%;
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+  margin: 5% 10% 5% 10%;
 }
-.stats-info > span{
-    text-align: center;
+
+.stats-info>span {
+  text-align: center;
 }
-.number{
-    font-family: Roboto;
-    font-size: 28px;
-    font-weight: bold;
+
+.number {
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: bold;
 }
-.text{
-    font-family: Roboto;
-    font-size: 14px;
-    color: #6D6D6D;
+
+.text {
+  font-family: Roboto;
+  font-size: 14px;
+  color: #6D6D6D;
 }
-.tab{
-    padding: 2% 10% 2% 10%;
+
+.tab {
+  padding: 2% 10% 2% 10%;
 }
-select{
-    float: right;
-    font-family: Roboto;
-    font-size: 12;
-    border: none;
+
+select {
+  float: right;
+  font-family: Roboto;
+  font-size: 12;
+  border: none;
 }
-.saved-trails{
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: bold;
+
+.saved-trails {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
 }
-.wrapper{
-    display: inline-block;
-    height: 100%;
-    padding: 5% 10% 5% 10%;
+
+.wrapper {
+  display: inline-block;
+  height: 100%;
+  padding: 5% 10% 5% 10%;
 }
-.trail{
-    border: 1px solid #707070;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(145,145,145,1) 100%);
-    border-radius: 20px;
-    opacity: 70%;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 5%;
-    height: 165px;
-    margin-bottom: 5%;
+
+.trail {
+  border: 1px solid #707070;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(145, 145, 145, 1) 100%);
+  border-radius: 20px;
+  opacity: 70%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5%;
+  height: 165px;
+  margin-bottom: 5%;
 
 }
-.info{
-    display: grid;
-    gap: 5%;
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 5%;
+
+.info {
+  display: grid;
+  gap: 5%;
+  grid-template-columns: repeat(1, 1fr);
+  padding-bottom: 5%;
 }
-.info > span{
-    margin-left: 5%;
+
+.info>span {
+  margin-left: 5%;
 }
-.title{
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
+
+.title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
 }
-.extra{
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
+
+.extra {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
 }
-ion-button{
-    float: right;
+
+.rating {
+  color: white;
+  border: 1px solid #000000;
+  background-color: #000000 !important;
+  border-radius: 25px;
+  padding: 1% 2% 1% 2%;
+  margin-left: 5%;
 }
-.rating{
-    color: white;
-    border: 1px solid #000000;
-    background-color: #000000 !important;
-    border-radius: 25px;
-    padding: 1% 2% 1% 2%;
-    margin-left: 5%;
-}
+
+button {
+    background: #ffffff;
+    border-radius: 50%;
+    height: 32px;
+    aspect-ratio: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+    box-shadow: 2px 2px 5px 0px #b6afaf;
+    ion-icon {
+      color: #000000;
+      margin-top: 2px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  
+
