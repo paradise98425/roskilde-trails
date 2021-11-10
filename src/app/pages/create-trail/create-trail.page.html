@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Welcome Admin! Here you can add Trails in the Roskilde trails app!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="submit-form">
+    <div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          required
+          [(ngModel)]="trail.name"
+          name="name"/>
+      </div>
+  
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input
+          class="form-control"
+          id="description"
+          required
+          [(ngModel)]="trail.description"
+          name="description"/>
+      </div>
+
+      <div class="form-group">
+        <label for="lenght">Length</label>
+        <input
+          class="form-control"
+          id="length"
+          required
+          [(ngModel)]="trail.length"
+          name="length"/>
+      </div>
+  
+      <button (click)="addTrail()" class="btn btn-success">Add</button>
+    </div>
+
+</div>
+</ion-content>
