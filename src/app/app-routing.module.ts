@@ -42,6 +42,14 @@ const routes: Routes = [
     path: 'trail-details',
     loadChildren: () => import('./pages/trail-details/trail-details.module').then( m => m.TrailDetailsPageModule)
   },
+  {
+    path: 'admin',
+    loadChildren: () => import('./pages/admin/admin.module').then( m => m.AdminPageModule)
+  },
+  {
+    path: 'create-trail',
+    loadChildren: () => import('./pages/create-trail/create-trail.module').then( m => m.CreateTrailPageModule)
+  },
 ];
 @NgModule({
   imports: [
