@@ -77,4 +77,56 @@
     Remove All Trials
   </button>
 
+
+      <!-- update trail -->
+
+  <div *ngIf="currentTrail" class="edit-form">
+    <h4>Trail</h4>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          [(ngModel)]="currentTrail.name"
+          name="name"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input
+          type="text"
+          class="form-control"
+          id="description"
+          [(ngModel)]="currentTrail.description"
+          name="description"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="length">Length</label>
+        <input
+          type="text"
+          class="form-control"
+          id="length"
+          [(ngModel)]="currentTrail.lenght"
+          name="length"
+        />
+      </div>
+
+      <button type="submit" class="badge badge-success" (click)="updateTrail()">
+        Update
+      </button>
+      <p>{{ message }}</p>
+
+      <button class="badge badge-danger mr-2" (click)="deleteTrail()">
+        Delete
+      </button>
+
+      </form>
+
+    </div>
+
 </ion-content>

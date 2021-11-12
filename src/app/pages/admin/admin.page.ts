@@ -21,11 +21,15 @@ export class AdminPage implements OnInit{
   currentIndex = -1;
 
   name = '';
+  message = '';
+
 
   constructor(private trailService: TrailService) { }
 
   ngOnInit() {
     this.retrieveTrails();
+    this.message = '';
+
   }
 
   //get all trails
@@ -87,6 +91,44 @@ addTrail() {
   //delete all trails
   removeAllTrails() {
     this.trailService.deleteAll()
+      .subscribe(
+        response => {
+          console.log(response);
+          this.retrieveTrails();
+        },
+        error => {
+          console.log(error);
+        });
+  }
+
+  //get trail
+  getTrail(id) {
+    this.trailService.get(id)
+      .subscribe(
+        data => {
+          this.currentTrail = data;
+          console.log(data);
+        },
+        error => {
+          console.log(error);
+        });
+  }
+
+  //update trail
+  updateTrail() {
+    this.trailService.update(this.currentTrail.id, this.currentTrail)
+      .subscribe(
+        response => {
+          console.log(response);
+          this.message = 'The tutorial was updated successfully!';
+        },
+        error => {
+          console.log(error);
+        });
+  }
+
+  deleteTrail() {
+    this.trailService.delete(this.currentTrail.id)
       .subscribe(
         response => {
           console.log(response);
