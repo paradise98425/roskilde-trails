@@ -120,7 +120,7 @@ addTrail() {
       .subscribe(
         response => {
           console.log(response);
-          this.message = 'The tutorial was updated successfully!';
+          this.message = 'The trail was updated successfully!';
         },
         error => {
           console.log(error);
