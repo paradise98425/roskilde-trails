@@ -1,132 +1,96 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Welcome Admin! Here you can edit all trails in Roskilde trails app
-    </ion-title>
-  </ion-toolbar>
+<ion-header>
+  <span>Admin page</span>
+  <p>Add, update and delete trails</p>
 </ion-header>
 
-<ion-content class="ion-padding">
-  <div class="submit-form">
-    <div>
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input
-          type="text"
-          class="form-control"
-          id="name"
-          required
-          [(ngModel)]="trail.name"
-          name="name"/>
-      </div>
-  
-      <div class="form-group">
-        <label for="description">Description</label>
-        <input
-          class="form-control"
-          id="description"
-          required
-          [(ngModel)]="trail.description"
-          name="description"/>
+
+<ion-content class="">
+  <div class="paddings">
+    <div class="submit-form">
+      <div>
+        <div class="form-group">
+          <label for="name"></label>
+          <input placeholder="Name" type="text" class="form-control" id="name" required [(ngModel)]="trail.name"
+            name="name" />
+        </div>
+
+        <div class="form-group">
+          <label for="lenght"></label>
+          <input type="tel" placeholder="Length" class="form-control" id="length" required [(ngModel)]="trail.length"
+            name="length" maxlength="2" />
+
+        </div>
+
+        <div class="form-group inputfield">
+          <label for="description"></label>
+          <textarea rows="3" placeholder="Trail description" class="form-control" id="description" required
+            [(ngModel)]="trail.description" name="description"></textarea>
+
+        </div>
+        <div class="buttongroup">
+          <button (click)="addTrail()" class="btn btn-success">Add Trail</button>
+          <button class="m-3 btn btn-sm btn-danger" (click)="removeAllTrails()">delete all</button>
+        </div>
       </div>
 
-      <div class="form-group">
-        <label for="lenght">Length</label>
-        <input
-          class="form-control"
-          id="length"
-          required
-          [(ngModel)]="trail.length"
-          name="length"/>
+    </div>
+    <div class="col-md-8">
+      <ion-header class="headerpadding">
+        <span>Added Trails</span>
+        <p>Added trails will appear here</p>
+      </ion-header>
+      <div class="input-group mb-3">
+        <div class="input-group-append searchfield">
+          <input type="text" class="form-control" placeholder="Search added trails" [(ngModel)]="name" />
+          <button class="btn btn-outline-secondary" type="button" (click)="searchName()">
+            🔎︎
+          </button>
+        </div>
       </div>
-  
-      <button (click)="addTrail()" class="btn btn-success">Add</button>
     </div>
 
-</div>
-<div class="col-md-8">
-  <div class="input-group mb-3">
-    <input
-      type="text"
-      class="form-control"
-      placeholder="Search by name"
-      [(ngModel)]="name"
-    />
-    <div class="input-group-append">
-      <button
-        class="btn btn-outline-secondary"
-        type="button"
-        (click)="searchName()"
-      >
-        Search
-      </button>
-    </div>
-  </div>
-</div>
-
-  <ion-list>
-      <ion-item  *ngFor="let trail of trails; let i = index"
-      [class.active]="i == currentIndex"
-      (click)="setActiveTrail(trail, i)">
+    <ion-list>
+      <ion-item *ngFor="let trail of trails; let i = index" [class.active]="i == currentIndex"
+        (click)="setActiveTrail(trail, i)">
         {{ trail.name }}
+
       </ion-item>
-  </ion-list>
+    </ion-list>
 
 
-  <button class="m-3 btn btn-sm btn-danger" (click)="removeAllTrails()">
-    Remove All Trials
-  </button>
 
 
-      <!-- update trail -->
 
-  <div *ngIf="currentTrail" class="edit-form">
-    <h4>Trail</h4>
-    <form>
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input
-          type="text"
-          class="form-control"
-          id="name"
-          [(ngModel)]="currentTrail.name"
-          name="name"
-        />
-      </div>
+    <!-- update trail -->
+        <div *ngIf="currentTrail" class="edit-form">
+          <form>
+            <div class="form-group">
+              <label for="name"></label>
+              <input type="text" class="form-control" id="name" [(ngModel)]="currentTrail.name" name="name" />
+            </div>
 
-      <div class="form-group">
-        <label for="description">Description</label>
-        <input
-          type="text"
-          class="form-control"
-          id="description"
-          [(ngModel)]="currentTrail.description"
-          name="description"
-        />
-      </div>
+            <div class="form-group">
+              <label for="description"></label>
 
-      <div class="form-group">
-        <label for="length">Length</label>
-        <input
-          type="text"
-          class="form-control"
-          id="length"
-          [(ngModel)]="currentTrail.lenght"
-          name="length"
-        />
-      </div>
+              <textarea type="text" class="form-control" id="description" [(ngModel)]="currentTrail.description"
+                name="description"></textarea>
+            </div>
 
-      <button type="submit" class="badge badge-success" (click)="updateTrail()">
-        Update
-      </button>
-      <p>{{ message }}</p>
+            <div class="form-group">
+              <label for="length"></label>
+              <input type="text" class="form-control" id="length" [(ngModel)]="currentTrail.length" name="length" />
+            </div>
+            <div class="buttongroup">
+              <button type="submit" class="badge badge-success" (click)="updateTrail()">
+                Update
+              </button>
+              <button class="badge badge-danger mr-2" (click)="deleteTrail()">
+                Delete
+              </button>
+            </div>
+            <p>{{ message }}</p>
+          </form>
+        </div>
 
-      <button class="badge badge-danger mr-2" (click)="deleteTrail()">
-        Delete
-      </button>
-
-      </form>
-
-    </div>
-
+  </div>
 </ion-content>
