@@ -121,6 +121,7 @@ addTrail() {
         response => {
           console.log(response);
           this.message = 'The trail was updated successfully!';
+          this.retrieveTrails();
         },
         error => {
           console.log(error);
