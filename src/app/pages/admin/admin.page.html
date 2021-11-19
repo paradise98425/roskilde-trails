@@ -17,7 +17,8 @@
         <div class="form-group">
           <label for="lenght"></label>
           <input type="tel" placeholder="Length" class="form-control" id="length" required [(ngModel)]="trail.length"
-            name="length" maxlength="2" />
+            name="length" />
+            <!-- maxlength="2" -->
 
         </div>
 
@@ -29,7 +30,7 @@
         </div>
         <div class="buttongroup">
           <button (click)="addTrail()" class="btn btn-success">Add Trail</button>
-          <button class="m-3 btn btn-sm btn-danger" (click)="removeAllTrails()">delete all</button>
+          <!-- <button class="m-3 btn btn-sm btn-danger" (click)="removeAllTrails()">delete all</button> -->
         </div>
       </div>
 
@@ -56,8 +57,6 @@
 
       </ion-item>
     </ion-list>
-
-
 
 
 
