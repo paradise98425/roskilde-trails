@@ -12,7 +12,8 @@ export class TopRatedPage implements OnInit {
   trail = {
     name: '',
     description: '',
-    length: ''
+    length: '',
+    est_time: ''
   };
   trails: Trail[];
 

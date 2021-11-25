@@ -11,7 +11,8 @@ export class CreateTrailPage implements OnInit {
   trail = {
     name: '',
     description: '',
-    length: ''
+    length: '',
+    est_time: ''
   };
 
   constructor(private trailService: TrailService) { }
@@ -23,7 +24,8 @@ export class CreateTrailPage implements OnInit {
     const data = {
       name: this.trail.name,
       description: this.trail.description,
-      length: this.trail.length
+      length: this.trail.length,
+      est_time: this.trail.est_time
     };
 
     this.trailService.create(data)

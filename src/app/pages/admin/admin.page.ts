@@ -54,6 +54,7 @@ addTrail() {
     est_time: this.trail.est_time,
     length: this.trail.length
   };
+  console.log(this.trail.est_time);
 
   this.trailService.create(data)
     .subscribe(
