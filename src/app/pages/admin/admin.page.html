@@ -6,6 +6,8 @@
 
 <ion-content class="">
   <div class="paddings">
+
+    <!-- Form for adding a trail -->
     <div class="submit-form">
       <div>
         <div class="form-group">
@@ -28,6 +30,12 @@
             [(ngModel)]="trail.description" name="description"></textarea>
 
         </div>
+
+        <div class="form-group">
+          <label for="est_time"></label>
+          <input type="text" class="form-control" id="est_time" [(ngModel)]="trail.est_time" name="est_time" />
+        </div>
+
         <div class="buttongroup">
           <button (click)="addTrail()" class="btn btn-success">Add Trail</button>
           <!-- <button class="m-3 btn btn-sm btn-danger" (click)="removeAllTrails()">delete all</button> -->
@@ -35,6 +43,9 @@
       </div>
 
     </div>
+    <!-- End of form for adding a trail -->
+
+    <!-- Display list of trails -->
     <div class="col-md-8">
       <ion-header class="headerpadding">
         <span>Added Trails</span>
@@ -58,9 +69,12 @@
       </ion-item>
     </ion-list>
 
+        <!-- End of display list of trails -->
 
 
-    <!-- update trail -->
+
+
+    <!-- Update or delete trail -->
         <div *ngIf="currentTrail" class="edit-form">
           <form>
             <div class="form-group">
@@ -79,6 +93,12 @@
               <label for="length"></label>
               <input type="text" class="form-control" id="length" [(ngModel)]="currentTrail.length" name="length" />
             </div>
+
+            <div class="form-group">
+              <label for="est_time"></label>
+              <input type="text" class="form-control" id="est_time" [(ngModel)]="currentTrail.est_time" name="est_time" />
+            </div>
+
             <div class="buttongroup">
               <button type="submit" class="badge badge-success" (click)="updateTrail()">
                 Update
@@ -90,6 +110,8 @@
             <p>{{ message }}</p>
           </form>
         </div>
+            <!-- End of update or delete trail -->
+
 
   </div>
 </ion-content>

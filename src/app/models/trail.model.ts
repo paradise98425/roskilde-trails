@@ -3,4 +3,5 @@ export class Trail {
     name?: string;
     description?: string;
     length?: string;
+    est_time?: string;
   }
