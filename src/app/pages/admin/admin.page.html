@@ -33,7 +33,8 @@
 
         <div class="form-group">
           <label for="est_time"></label>
-          <input type="text" class="form-control" id="est_time" [(ngModel)]="trail.est_time" name="est_time" />
+          <input placeholder="Estimated completion time" type="text" class="form-control" id="est_time" required [(ngModel)]="trail.est_time"
+            name="est_time" />
         </div>
 
         <div class="buttongroup">
