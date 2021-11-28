@@ -15,7 +15,8 @@ export class AdminPage implements OnInit{
     length: '',
     est_time: '',
     category: '',
-    trail_pic: ''
+    trail_pic: '',
+    rating: ''
   };
 
   trails: Trail[];
@@ -56,7 +57,8 @@ addTrail() {
     est_time: this.trail.est_time,
     length: this.trail.length,
     category: this.trail.category,
-    trail_pic: this.trail.trail_pic
+    trail_pic: this.trail.trail_pic,
+    rating: this.trail.rating
   };
   console.log(this.trail.est_time);
 

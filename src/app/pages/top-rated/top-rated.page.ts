@@ -52,5 +52,7 @@ export class TopRatedPage implements OnInit {
   setActiveTrail(trail, index) {
     this.currentTrail = trail;
     this.currentIndex = index;
+    this.currentTrail.name = name;
+    console.log(this.trail);
   }
 }
