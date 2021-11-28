@@ -1,0 +1,52 @@
+@import url("../../theme/variables.scss");
+.TrailCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  height: 100px;
+  background: var(--card-background-primary);
+  border-radius: var(--border-radius-default);
+  color: var(--ion-background-color);
+}
+
+.TrailCard-image img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  aspect-ratio: 1;
+  border-radius: var(--border-radius-default);
+}
+
+.TrailCard-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.TrailCard-content-info {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+
+.TrailCard-content-info span:nth-child(2) {
+  margin: 0 0.2rem;
+}
+
+.TrailCard-content-info p {
+  margin: 0;
+}
+
+.TrailCard-content-info p span {
+  margin: 0;
+}
+
+.TrailCard h2 {
+  padding: 0;
+  margin: 0;
+  font-family: var(--header-font);
+  font-weight: bold;
+}

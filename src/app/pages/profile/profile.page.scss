@@ -1,116 +1,137 @@
-.header-md::after{
+@import url("../../../theme/variables.scss");
+
+.header-md {
+  &::after {
     background-image: none;
+  }
 }
-ion-header{
-    padding-top: 8%;
-    padding-left: 8%;
-    display: flex;
-    gap: 10%;
+
+ion-header {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  gap: 1rem;
 }
-.personal-info{
-    margin-top: 2%;
-}
-.personal-info > span{
-    font-family: Roboto;
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  span {
     font-weight: bold;
-    font-size: 36px;
-}
-.personal-info > p{
-    font-family: Roboto;
-    font-size: 16px;
-    color: #94ab51;
+    font-size: 1.625rem;
+    color: var(--ion-headings-color);
+    font-family: var(--header-font);
+    text-transform: capitalize;
+    
+  } 
+  p {
+    font-size: var(--default-font-size);
+    font-weight: 300;
+    color: var(--ion-text-color);
     font-weight: medium;
-    margin: -5px 0 0 0;
- }
-.profile-pic > img{
-    height: 85px;
+    margin: 0;
+    text-decoration: underline;
+  }
 }
-.stats-info{
-    border-radius: 5%;
-    padding: 5% 14% 5% 15%;
-    box-shadow: 2px 2px 5px 0px rgb(182, 175, 175);
-    display: grid;
+
+
+
+
+.profile-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 4.5rem;
+    border-radius: var(--border-radius-default);
+    
+  }
 }
-.stats{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5%;
-    margin: 5% 10% 5% 10%;
-}
-.stats-info > span{
-    text-align: center;
-}
-.number{
-    font-family: Roboto;
-    font-size: 28px;
-    font-weight: bold;
-}
-.text{
-    font-family: Roboto;
-    font-size: 14px;
-    color: #6D6D6D;
-}
-.tab{
-    padding: 2% 10% 2% 10%;
-}
-select{
-    float: right;
-    font-family: Roboto;
-    font-size: 12;
-    border: none;
-}
-.saved-trails{
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: bold;
-}
-.wrapper{
-    display: inline-block;
-    height: 100%;
-    padding: 5% 10% 5% 10%;
-}
-.trail{
-    border: 1px solid #707070;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(145,145,145,1) 100%);
-    border-radius: 20px;
-    opacity: 70%;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 5%;
-    height: 165px;
-    margin-bottom: 5%;
+
+
+.stats {
+  margin: 2rem;
+  margin-top: 1rem;
+  display: flex; 
+  flex-direction: row;
+  background-color: var(--ion-color-primary);
+  align-items: center;
+  height: 4rem;
+  justify-content: center;
+  border-radius: var(--border-radius-default);
+  .stats-info {
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      width: 50%;
+      height: 100%;
+      .number{
+          font-size: var(--default-font-size);
+      }
+
+      .text {
+        font-size: 0.9rem;
+        color: var(--greyed-out-text);
+      }
+      
+      &:nth-child(1){
+          border-right: 1px solid var(--ion-background-color);
+      }
+
+      &:nth-child(2) {
+        border-left: 1px solid var(--ion-background-color);
+      }
+      
+
+    span {
+      text-align: center;
+    }
+  }
 
 }
-.info{
-    display: grid;
-    gap: 5%;
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 5%;
+
+
+
+
+
+select {
+  float: right;
+  font-size: 12;
+  border: none;
 }
-.info > span{
-    margin-left: 5%;
+
+
+.tab {
+  margin: 2rem;
+  margin-bottom: 0;
+  .saved-trails {
+    font-weight: 600;
+    font-size: var(--default-font-size);
+    font-family: var(--header-font);
+  }
+  select {
+    color: var(--greyed-out-text);
+    background: transparent;
+    border: 0;
+    outline: 0;
+    option{
+      color: var(--greyed-out-text);
+      background: var(--ion-background-color);
+      
+    }
+  }
+
 }
-.title{
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
+
+
+.wrapper {
+  display: inline-block;
+  height: 100%;
+  padding: 1px 2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
-.extra{
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
-}
-ion-button{
-    float: right;
-}
-.rating{
-    color: white;
-    border: 1px solid #000000;
-    background-color: #000000 !important;
-    border-radius: 25px;
-    padding: 1% 2% 1% 2%;
-    margin-left: 5%;
-}
+
+

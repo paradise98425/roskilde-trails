@@ -1,0 +1,123 @@
+@import url("../../../theme/variables.scss");
+.header-md::after {
+  background-image: none;
+}
+
+ion-header {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.personal-info span {
+  font-weight: bold;
+  font-size: 1.625rem;
+  color: var(--ion-headings-color);
+  font-family: var(--header-font);
+  text-transform: capitalize;
+}
+
+.personal-info p {
+  font-size: var(--default-font-size);
+  font-weight: 300;
+  color: var(--ion-text-color);
+  font-weight: medium;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.profile-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic img {
+  height: 4.5rem;
+  border-radius: var(--border-radius-default);
+}
+
+.stats {
+  margin: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--ion-color-primary);
+  align-items: center;
+  height: 4rem;
+  justify-content: center;
+  border-radius: var(--border-radius-default);
+}
+
+.stats .stats-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.stats .stats-info .number {
+  font-size: var(--default-font-size);
+}
+
+.stats .stats-info .text {
+  font-size: 0.9rem;
+  color: var(--greyed-out-text);
+}
+
+.stats .stats-info:nth-child(1) {
+  border-right: 1px solid var(--ion-background-color);
+}
+
+.stats .stats-info:nth-child(2) {
+  border-left: 1px solid var(--ion-background-color);
+}
+
+.stats .stats-info span {
+  text-align: center;
+}
+
+select {
+  float: right;
+  font-size: 12;
+  border: none;
+}
+
+.tab {
+  margin: 2rem;
+  margin-bottom: 0;
+}
+
+.tab .saved-trails {
+  font-weight: 600;
+  font-size: var(--default-font-size);
+  font-family: var(--header-font);
+}
+
+.tab select {
+  color: var(--greyed-out-text);
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.tab select option {
+  color: var(--greyed-out-text);
+  background: var(--ion-background-color);
+}
+
+.wrapper {
+  display: inline-block;
+  height: 100%;
+  padding: 1px 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
