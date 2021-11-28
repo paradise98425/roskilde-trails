@@ -1,26 +1,26 @@
 <ion-header>
 
   <div class="profile-pic">
-    <img src="../../assets/profilepic.png" alt="Profile picture">
+    <img src="../../assets/profilepic1.png" alt="Profile picture">
   </div>
 
   <div class="personal-info">
     <span *ngFor="let item of storageItems">{{item['name']}}</span>
-    <p>Profile overview</p>
+    <p>Edit profile</p>
   </div>
 
 </ion-header>
 
 <ion-content>
-
+  
   <div class="stats">
     <div class="stats-info">
       <span class="number">45,7</span>
-      <span class="text">km walked</span>
+      <span class="text">Km walked</span>
     </div>
     <div class="stats-info">
       <span class="number">8</span>
-      <span class="text">trails completed</span>
+      <span class="text">Trails completed</span>
     </div>
   </div>
 
@@ -38,116 +38,8 @@
   <div class="wrapper">
 
     <!-- Trial start -->
-        <div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake.jpg);">
-          <div class="fave">
-            <ion-button fill=clear>
-            <img src="../../assets/not-fave.png" alt="">
-          </ion-button>
-          </div>
+    <app-trailcard></app-trailcard>
     
-          <div class="info">
-    
-            <span>
-              <span class="title">Boserup Skov - Kattinge Værk - Boserup Sø</span>
-              <span class="rating">
-                <img src="../../assets/star.png" alt="">
-                 4,5
-              </span>
-            </span>
-    
-            <span>
-              <span class="extra">Length: 7,4 km</span>
-              <span class="extra"> • Est: 2h 10m</span>
-            </span>
-    
-          </div>
-    
-        </div>
-    <!-- Trial end -->
-
-    <!-- Trial start 2 -->
-<div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/boserup.jpg);">
-  <div class="fave">
-    <ion-button fill=clear>
-    <img src="../../assets/not-fave.png" alt="">
-  </ion-button>
-  </div>
-
-  <div class="info">
-
-    <span>
-      <span class="title">Bognæs og Storskov</span>
-      <span class="rating">
-        <img src="../../assets/star.png" alt="">
-         4,5
-      </span>
-    </span>
-
-    <span>
-      <span class="extra">Length: 9,0 km</span>
-      <span class="extra"> • Est: 2h 37m</span>
-    </span>
-
-  </div>
-
-</div>
-<!-- Trial end -->
-
-<!-- Trial start 3 -->
-<div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/forest.jpg);">
-  <div class="fave">
-    <ion-button fill=clear>
-    <img src="../../assets/not-fave.png" alt="">
-  </ion-button>
-  </div>
-
-  <div class="info">
-
-    <span>
-      <span class="title">Boserup Skov - kattinge Værk - Boserup Sø</span>
-      <span class="rating">
-        <img src="../../assets/star.png" alt="">
-         4,5
-      </span>
-    </span>
-
-    <span>
-      <span class="extra">Length: 7,4 km</span>
-      <span class="extra"> • Est: 2h 10m</span>
-    </span>
-
-  </div>
-
-</div>
-<!-- Trial end -->
-
-<!-- Trial start 4 -->
-<div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake2.jpg);">
-  <div class="fave">
-    <ion-button fill=clear>
-    <img src="../../assets/not-fave.png" alt="">
-  </ion-button>
-  </div>
-
-  <div class="info">
-
-    <span>
-      <span class="title" style="font-size: 18px !important">Trekroner Himmelev Skov</span>
-      <span class="rating">
-        <img src="../../assets/star.png" alt="">
-         4,0
-      </span>
-    </span>
-
-    <span>
-      <span class="extra">Length: 8,2 km</span>
-      <span class="extra"> • Est: 4h 20m</span>
-    </span>
-
-  </div>
-
-</div>
-<!-- Trial end -->
 
   </div>
 

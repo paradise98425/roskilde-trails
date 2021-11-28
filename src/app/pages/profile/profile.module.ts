@@ -8,6 +8,8 @@ import { ProfilePageRoutingModule } from './profile-routing.module';
 
 import { ProfilePage } from './profile.page';
 import { IonicStorageModule } from '@ionic/storage-angular';
+import { TrailcardComponent } from '../../trailcard/trailcard.component';
+
 
 @NgModule({
   imports: [
@@ -17,6 +19,6 @@ import { IonicStorageModule } from '@ionic/storage-angular';
     ProfilePageRoutingModule,
     IonicStorageModule.forRoot()
   ],
-  declarations: [ProfilePage]
+  declarations: [ProfilePage, TrailcardComponent]
 })
 export class ProfilePageModule {}
