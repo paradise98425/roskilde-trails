@@ -4,10 +4,10 @@
 </ion-header>
 
 <ion-content>
-  <div class="wrapper">
+  <div>
 
 <!-- Trial start 1 -->
-<div *ngFor="let trail of trails; let i = index" [class.active]="i == currentIndex"
+<div class="wrapper" *ngFor="let trail of trails; let i = index" [class.active]="i == currentIndex"
     (click)="setActiveTrail(trail, i)"> 
 
     <div class="trail" *ngIf="trail.category === 'Lake'" [routerLink]="['details']" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%),url({{trail.trail_pic}});">
@@ -23,7 +23,7 @@
             <span class="title" >{{ trail.name }}</span>
             <span class="rating">
               <img src="../../assets/star.png" alt="">
-              5,0
+              {{trail.rating}}
             </span>
           </span>
 

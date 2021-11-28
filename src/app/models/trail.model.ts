@@ -6,4 +6,5 @@ export class Trail {
     est_time?: string;
     category?: string;
     trail_pic?: string;
+    rating?: string;
   }

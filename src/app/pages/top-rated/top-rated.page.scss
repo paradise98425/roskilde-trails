@@ -4,6 +4,7 @@
 ion-header{
     padding-top: 10%;
     padding-left: 10%;
+    padding-bottom: 5%;
 }
 
 ion-header > span{
@@ -21,11 +22,11 @@ ion-header > p{
 }
 
 .wrapper{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 5%;
-    height: 100%;
-    padding: 10% 5% 0 5%;
+    // display: grid;
+    // grid-template-columns: repeat(1, 1fr);
+    // gap: 5%;
+    // height: 100%;
+    padding: 5% 5% 0 5%;
 }
 
 .trail{

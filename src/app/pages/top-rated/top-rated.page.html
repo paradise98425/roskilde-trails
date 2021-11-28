@@ -4,12 +4,13 @@
 </ion-header>
 
 <ion-content>
-  <div class="wrapper">
 
+    <div class="wrapper" *ngFor="let trail of trails; let i = index" [class.active]="i == currentIndex"
+    (click)="setActiveTrail(trail, i)">
 <!-- Trial start -->
-    <div class="trail" *ngFor="let trail of trails; let i = index" [class.active]="i == currentIndex"
-    (click)="setActiveTrail(trail, i)" [routerLink]="['details']" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url({{trail.trail_pic}});">
-  
+
+    <div class="trail" *ngIf="trail.rating =='4.1' || trail.rating >'4.1' " [routerLink]="['details']" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url({{trail.trail_pic}});">
+
       <div class="fave">
         <ion-button fill=clear>
         <img src="../../assets/not-fave.png" alt="">
@@ -22,7 +23,7 @@
           <span class="title">{{ trail.name }}</span>
            <span class="rating">
             <img src="../../assets/star.png" alt="">
-             4,5
+             {{ trail.rating }}
           </span> 
         </span>
 
@@ -32,8 +33,12 @@
         </span>
 
       </div>
+  </div>
 
     </div>
+
+  </ion-content>
+
 <!-- Trial end -->
 
 <!-- Trial start -->
@@ -232,6 +237,4 @@
 </div> -->
 <!-- Trial end -->
   
-  </div>
 
-</ion-content>

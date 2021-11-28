@@ -47,7 +47,12 @@
           <label for="trail_pic"></label>
           <textarea rows="3" placeholder="Link to trial picture" class="form-control" id="trail_pic" required
             [(ngModel)]="trail.trail_pic" name="trail_pic"></textarea>
+        </div>
 
+        <div class="form-group">
+          <label for="rating"></label>
+          <input placeholder="Trail rating" type="text" class="form-control" id="rating" required [(ngModel)]="trail.rating"
+            name="rating" />
         </div>
 
         <div class="buttongroup">
@@ -120,8 +125,15 @@
             <div class="form-group">
               <label for="trail_pic"></label>
               <textarea type="text" class="form-control" id="trail_pic" [(ngModel)]="currentTrail.trail_pic"
-                name="trail_pic"></textarea>
+                name="trail_pic">
+              </textarea>
+            </div> 
+
+            <div class="form-group">
+              <label for="rating"></label>
+              <input type="text" class="form-control" id="rating" [(ngModel)]="currentTrail.rating" name="rating" />
             </div>
+
 
             <div class="buttongroup">
               <button type="submit" class="badge badge-success" (click)="updateTrail()">
