@@ -12,7 +12,9 @@ export class LakePage implements OnInit {
   trail = {
     name: '',
     description: '',
-    length: ''
+    length: '',
+    est_time: '',
+    category: ''
   };
   trails: Trail[];
 
