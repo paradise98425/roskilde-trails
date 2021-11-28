@@ -37,6 +37,19 @@
             name="est_time" />
         </div>
 
+        <div class="form-group">
+          <label for="category"></label>
+          <input placeholder="Category" type="text" class="form-control" id="category" required [(ngModel)]="trail.category"
+            name="category"/>
+        </div>
+
+        <div class="form-group inputfield">
+          <label for="trail_pic"></label>
+          <textarea rows="3" placeholder="Link to trial picture" class="form-control" id="trail_pic" required
+            [(ngModel)]="trail.trail_pic" name="trail_pic"></textarea>
+
+        </div>
+
         <div class="buttongroup">
           <button (click)="addTrail()" class="btn btn-success">Add Trail</button>
           <!-- <button class="m-3 btn btn-sm btn-danger" (click)="removeAllTrails()">delete all</button> -->
@@ -85,7 +98,6 @@
 
             <div class="form-group">
               <label for="description"></label>
-
               <textarea type="text" class="form-control" id="description" [(ngModel)]="currentTrail.description"
                 name="description"></textarea>
             </div>
@@ -98,6 +110,17 @@
             <div class="form-group">
               <label for="est_time"></label>
               <input type="text" class="form-control" id="est_time" [(ngModel)]="currentTrail.est_time" name="est_time" />
+            </div>
+
+            <div class="form-group">
+              <label for="category"></label>
+              <input type="text" class="form-control" id="category" [(ngModel)]="currentTrail.category" name="category" />
+            </div>
+
+            <div class="form-group">
+              <label for="trail_pic"></label>
+              <textarea type="text" class="form-control" id="trail_pic" [(ngModel)]="currentTrail.trail_pic"
+                name="trail_pic"></textarea>
             </div>
 
             <div class="buttongroup">

@@ -4,4 +4,6 @@ export class Trail {
     description?: string;
     length?: string;
     est_time?: string;
+    category?: string;
+    trail_pic?: string;
   }

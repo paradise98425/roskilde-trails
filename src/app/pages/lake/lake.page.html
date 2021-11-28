@@ -7,32 +7,34 @@
   <div class="wrapper">
 
 <!-- Trial start 1 -->
-    <div class="trail" *ngFor="let trail of trails; let i = index" [class.active]="i == currentIndex"
-    (click)="setActiveTrail(trail, i)" [routerLink]="['details']" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%),url(../../assets/lake.jpg);">
-      <div class="fave">
-        <ion-button fill=clear>
-        <img src="../../assets/not-fave.png" alt="">
-      </ion-button>
-      </div>
+<div *ngFor="let trail of trails; let i = index" [class.active]="i == currentIndex"
+    (click)="setActiveTrail(trail, i)"> 
 
-      <div class="info">
+    <div class="trail" *ngIf="trail.category === 'Lake'" [routerLink]="['details']" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%),url({{trail.trail_pic}});">
+    <div class="fave">
+          <ion-button fill=clear>
+          <img src="../../assets/not-fave.png" alt="">
+        </ion-button>
+        </div>
 
-        <span>
-          <span class="title" >{{ trail.name }}</span>
-          <span class="rating">
-            <img src="../../assets/star.png" alt="">
-             5,0
+        <div class="info">
+
+          <span>
+            <span class="title" >{{ trail.name }}</span>
+            <span class="rating">
+              <img src="../../assets/star.png" alt="">
+              5,0
+            </span>
           </span>
-        </span>
 
-        <span>
-          <span class="extra">Length: {{ trail.length }} km</span>
-          <span class="extra"> • Est: 5h 22m</span>
-        </span>
+          <span>
+            <span class="extra">Length: {{ trail.length }} km</span>
+            <span class="extra"> • Est: 5h 22m</span>
+          </span>
 
-      </div>
-
-    </div>
+        </div>
+      </div> 
+  </div>
 <!-- Trial end -->
 
 <!-- Trial start 2 -->
