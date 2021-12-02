@@ -1,24 +1,55 @@
+
+ion-header {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  gap: 1rem;
+background: rgb(0, 0, 0);
+background: -moz-linear-gradient(to bottom, var(--ion-background-color), rgba(27, 27, 27, 0.5) 75%, rgba(0, 0, 0, 0) 100%);
+background: -webkit-linear-gradient(to bottom, var(--ion-background-color), rgba(27, 27, 27, 0.5) 75%, rgba(0, 0, 0, 0) 100%);
+background: linear-gradient(to bottom, var(--ion-background-color), rgba(27, 27, 27, 0.5) 75%, rgba(0, 0, 0, 0) 100%);
+
+/* W3C */
+
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+  
+
+  h2, span {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--ion-headings-color);
+    font-family: var(--header-font);
+    text-transform: capitalize;
+    margin: 0;
+
+  }
+
+  p {
+    font-size: var(--default-font-size);
+    font-weight: 300;
+    color: var(--ion-text-color);
+    font-weight: medium;
+    margin: 0;
+    
+  }
+}
+
+ion-content{
+        position: absolute;
+        height: 100vh;
+}
+
+
 .header-md::after{
     background-image: none;
 }
-ion-header{
-    padding-top: 10%;
-    padding-left: 10%;
-}
 
-ion-header > span{
-     
-    font-weight: bold;
-    font-size: 36px;
-}
-
-ion-header > p{
-     
-    font-size: 18px;
-    color: #94ab51;
-    font-weight: 500;
-    margin: 12px 0 0 0;
-}
 
 .wrapper{
     display: grid;
