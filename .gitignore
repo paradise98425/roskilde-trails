@@ -29,3 +29,16 @@ npm-debug.log*
 /platforms
 /plugins
 /www
+src/theme/variables.scss
+src/theme/variables.css
+src/app/trailcard/trailcard.component.scss
+src/app/trailcard/trailcard.component.css
+src/app/pages/home-component/home-component.page.scss
+src/app/pages/home-component/home-component.page.html
+src/app/pages/home-component/home-component.page.css
+src/app/pages/home-component/home-component.module.ts
+src/app/categorycard/categorycard.component.ts
+src/app/categorycard/categorycard.component.spec.ts
+src/app/categorycard/categorycard.component.scss
+src/app/categorycard/categorycard.component.html
+src/app/categorycard/categorycard.component.css

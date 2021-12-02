@@ -1,0 +1,74 @@
+.login-container {
+  height: 100%;
+  border: 1px solid red;
+  box-sizing: border-box;
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-container .images-parent img {
+  filter: invert(0.9);
+}
+
+.login-container .login-form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.login-container .login-form form {
+  padding: 2rem;
+}
+
+.login-container .login-form form ion-text p {
+  font-weight: 600;
+  margin-top: 0.1rem;
+}
+
+.login-container .login-form form ion-text u {
+  color: var(--ion-headings-color);
+}
+
+.login-container .login-form form ion-text h1 {
+  font-family: var(--header-font);
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.login-container .login-form form ion-item {
+  padding-inline-start: 0;
+}
+
+.login-container .login-form form ion-item ion-input {
+  background: var(--ion-color-primary);
+  height: 3rem;
+  border-radius: var(--border-radius-default);
+  padding-left: 1rem !important;
+  margin-bottom: 1rem;
+}
+
+.login-container .login-form form ion-item ion-input ion-icon {
+  margin-right: 0.5rem;
+  color: grey;
+}
+
+.login-container .login-form form ion-button {
+  width: 100%;
+  margin-top: 30%;
+  justify-self: end;
+  border-radius: var(--border-radius-default);
+  height: 4rem;
+  font-weight: bold;
+  --background: var(--ion-headings-color) !important;
+  color: var(--ion-background-color);
+  font-weight: bold;
+  font-size: 1.45rem;
+}
+
+ion-input:focus-within ion-icon {
+  color: white !important;
+}

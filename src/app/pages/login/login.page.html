@@ -1,31 +1,34 @@
 <ion-content>
   <div class="login-container">
-    <div class="images-parent">
+    
+    <div class="login-form"><div class="images-parent">
       <img class="image1" src="../../../assets/login-background.svg" />
     </div>
-    <div class="login-form">
       <form [formGroup]="loginForm" (ngSubmit)="submitForm()" novalidate>
-        <ion-text color="dark" lines="none">
-          <h1 style="font-weight: bold; margin-top: 5vh; margin-bottom: 4vh;">Log in</h1>
+        <ion-text color="light" lines="none">
+          <h1>Welcome to Roskilde!</h1>
         </ion-text>
 
-        <small class="error-message" *ngIf="isSubmitted && errorControl.username.errors?.required">Username is required</small>
-        <ion-item lines="full" style="margin-bottom: 4vh;">
-          <ion-input type="text" placeholder="Username" formControlName="username" required></ion-input>
-        </ion-item>
-        
-        <small class="error-message" *ngIf="isSubmitted && errorControl.password.errors?.required">Password is required</small>
-        <ion-item lines="full" style="margin-bottom: 4vh;">
-          <ion-input type="password" placeholder="***********" formControlName="password" required></ion-input>
+        <small class="error-message" *ngIf="isSubmitted && errorControl.username.errors?.required">Username is
+          required</small>
+        <ion-item lines="none" class="ion-no-padding" >
+          <ion-input class="ion-no-padding" type="text" placeholder="Username" formControlName="username" required><ion-icon name="person"></ion-icon></ion-input>
         </ion-item>
 
-        <ion-button type="submit" >Login</ion-button>
+        <small class="error-message" *ngIf="isSubmitted && errorControl.password.errors?.required">Password is
+          required</small>
+        <ion-item lines="none" class="ion-no-padding" >
+          <ion-input class="ion-no-padding" type="password" placeholder="***********" formControlName="password" required><ion-icon name="lock-closed"></ion-icon></ion-input>
+        </ion-item>
+        <ion-text color="light">
+          <p >Don't have an account? <ion-text
+              ><u>Sign up </u></ion-text>
+          </p>
+        </ion-text>
+        <ion-button class="button-color" type="submit">Log in</ion-button>
       </form>
       <br />
-      <ion-text color="dark">
-        <p style="margin-top: 8vh; padding-left: 6vw; font-weight: 400;">Don't have an account? <ion-text style="color: #94ab51"><u>Sign up </u></ion-text></p>
-      </ion-text>
+
     </div>
   </div>
 </ion-content>
-
