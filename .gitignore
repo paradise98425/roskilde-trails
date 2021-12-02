@@ -29,6 +29,7 @@ npm-debug.log*
 /platforms
 /plugins
 /www
+<<<<<<< Updated upstream
 src/theme/variables.scss
 src/theme/variables.css
 src/app/trailcard/trailcard.component.scss
@@ -37,6 +38,9 @@ src/app/pages/home-component/home-component.page.scss
 src/app/pages/home-component/home-component.page.html
 src/app/pages/home-component/home-component.page.css
 src/app/pages/home-component/home-component.module.ts
+=======
+src/app/pages/home-component/home-component.page.css
+>>>>>>> Stashed changes
 src/app/categorycard/categorycard.component.ts
 src/app/categorycard/categorycard.component.spec.ts
 src/app/categorycard/categorycard.component.scss
