@@ -8,6 +8,9 @@ import { TopRatedPageRoutingModule } from './top-rated-routing.module';
 
 import { TopRatedPage } from './top-rated.page';
 
+import { TopratedTrailcardComponent } from '../../toprated-trailcard/toprated-trailcard.component';
+
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +18,6 @@ import { TopRatedPage } from './top-rated.page';
     IonicModule,
     TopRatedPageRoutingModule
   ],
-  declarations: [TopRatedPage]
+  declarations: [TopRatedPage, TopratedTrailcardComponent]
 })
 export class TopRatedPageModule {}

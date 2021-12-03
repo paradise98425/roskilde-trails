@@ -8,6 +8,9 @@ import { TrailDetailsPageRoutingModule } from './trail-details-routing.module';
 
 import { TrailDetailsPage } from './trail-details.page';
 
+import { SavedTrailcardComponent } from '../../saved-trailcard/saved-trailcard.component';
+
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +18,6 @@ import { TrailDetailsPage } from './trail-details.page';
     IonicModule,
     TrailDetailsPageRoutingModule
   ],
-  declarations: [TrailDetailsPage]
+  declarations: [TrailDetailsPage, SavedTrailcardComponent]
 })
 export class TrailDetailsPageModule {}

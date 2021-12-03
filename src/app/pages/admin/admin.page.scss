@@ -1,21 +1,12 @@
-ion-header {
-  padding-top: 10%;
-  padding-left: 10%;
-  padding-bottom: 1rem;
-
-
-  p {
-     
-    font-size: 16px;
-    color: #94ab51;
-    font-weight: 500;
-    margin: 0 0 0 0;
-  }
-
-  span {
-     
+.personal-info {
+  h2, span {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 2rem;
+    color: var(--ion-headings-color);
+    font-family: var(--header-font);
+    text-transform: capitalize;
+    margin: 0;
+
   }
 }
 

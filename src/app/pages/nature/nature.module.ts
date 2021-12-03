@@ -8,6 +8,9 @@ import { NaturePageRoutingModule } from './nature-routing.module';
 
 import { NaturePage } from './nature.page';
 
+import { NatureTrailcardComponent } from '../../nature-trailcard/nature-trailcard.component';
+
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +18,6 @@ import { NaturePage } from './nature.page';
     IonicModule,
     NaturePageRoutingModule
   ],
-  declarations: [NaturePage]
+  declarations: [NaturePage, NatureTrailcardComponent]
 })
 export class NaturePageModule {}

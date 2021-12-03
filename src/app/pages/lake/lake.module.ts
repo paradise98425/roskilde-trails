@@ -8,6 +8,9 @@ import { LakePageRoutingModule } from './lake-routing.module';
 
 import { LakePage } from './lake.page';
 
+import { LakeTrailcardComponent } from '../../lake-trailcard/lake-trailcard.component';
+
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +18,6 @@ import { LakePage } from './lake.page';
     IonicModule,
     LakePageRoutingModule
   ],
-  declarations: [LakePage]
+  declarations: [LakePage, LakeTrailcardComponent]
 })
 export class LakePageModule {}
