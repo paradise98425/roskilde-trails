@@ -9,6 +9,7 @@ import { HomeComponentPageRoutingModule } from './home-component-routing.module'
 import { HomeComponentPage } from './home-component.page';
 
 import { IonicStorageModule } from '@ionic/storage-angular';
+import { CategoriesComponent } from '../../categories/categories.component';
 
 
 @NgModule({
@@ -16,10 +17,9 @@ import { IonicStorageModule } from '@ionic/storage-angular';
     CommonModule,
     FormsModule,
     IonicModule,
-    
     HomeComponentPageRoutingModule,
     IonicStorageModule.forRoot()
   ],
-  declarations: [HomeComponentPage]
+  declarations: [HomeComponentPage, CategoriesComponent]
 })
 export class HomeComponentPageModule {}
