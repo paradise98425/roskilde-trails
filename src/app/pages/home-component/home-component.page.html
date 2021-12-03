@@ -1,13 +1,17 @@
-<ion-header>
-  <span >Hello, </span>
-  <span *ngFor="let item of storageItems">{{item['name']}}</span>
-  <p>Here is a list of recommended trails</p>
+
+
+<ion-header >
+  <div class="personal-info">
+    
+    <h2>Hello <span *ngFor="let item of storageItems">{{item['name']}}</span></h2>
+    <p>Welcome to Roskilde!</p>
+  </div>
 </ion-header>
 
-<ion-content>
-
-  <div class="wrapper"> 
-
+ <ion-content>
+<div style="height: 100px; " ></div>
+  <!--<div class="wrapper"> 
+    
     <div class="left">
 
       <ion-card [routerLink]="['top-rated']"> 
@@ -56,7 +60,7 @@
       <span class="saved-trails">Saved trails</span>
     </div>
     
-    <!-- Trial start -->
+    Trial start
         <div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake.jpg);">
           <div class="fave">
             <ion-button fill=clear>
@@ -82,9 +86,9 @@
           </div>
     
         </div>
-    <!-- Trial end -->
+    Trial end
 
-    <!-- Trial start 2 -->
+    Trial start 2
 <div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/boserup.jpg);">
   <div class="fave">
     <ion-button fill=clear>
@@ -110,9 +114,9 @@
   </div>
 
 </div>
-<!-- Trial end -->
+Trial end
 
-<!-- Trial start 3 -->
+Trial start 3
 <div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/forest.jpg);">
   <div class="fave">
     <ion-button fill=clear>
@@ -138,9 +142,9 @@
   </div>
 
 </div>
-<!-- Trial end -->
+Trial end
 
-<!-- Trial start 4 -->
+Trial start 4
 <div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake2.jpg);">
   <div class="fave">
     <ion-button fill=clear>
@@ -166,8 +170,8 @@
   </div>
 
 </div>
-<!-- Trial end -->
+Trial end
 
-  </div>
+  </div>-->
 
-</ion-content>
+</ion-content> 

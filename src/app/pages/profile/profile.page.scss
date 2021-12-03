@@ -6,32 +6,9 @@
   }
 }
 
-ion-header {
-  padding-top: 2rem;
-  padding-left: 2rem;
-  display: flex;
-  gap: 1rem;
-}
 
-.personal-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  span {
-    font-weight: bold;
-    font-size: 1.625rem;
-    color: var(--ion-headings-color);
-    font-family: var(--header-font);
-    text-transform: capitalize;
-    
-  } 
-  p {
-    font-size: var(--default-font-size);
-    font-weight: 300;
-    color: var(--ion-text-color);
-    font-weight: medium;
-    margin: 0;
+.personal-info{
+  p{
     text-decoration: underline;
   }
 }
@@ -126,12 +103,5 @@ select {
 }
 
 
-.wrapper {
-  display: inline-block;
-  height: 100%;
-  padding: 1px 2rem;
-  width: 100%;
-  box-sizing: border-box;
-}
 
 

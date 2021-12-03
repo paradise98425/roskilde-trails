@@ -16,6 +16,7 @@ import { IonicStorageModule } from '@ionic/storage-angular';
     CommonModule,
     FormsModule,
     IonicModule,
+    
     HomeComponentPageRoutingModule,
     IonicStorageModule.forRoot()
   ],

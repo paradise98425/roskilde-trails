@@ -3,33 +3,7 @@
   background-image: none;
 }
 
-ion-header {
-  padding-top: 2rem;
-  padding-left: 2rem;
-  display: flex;
-  gap: 1rem;
-}
-
-.personal-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.personal-info span {
-  font-weight: bold;
-  font-size: 1.625rem;
-  color: var(--ion-headings-color);
-  font-family: var(--header-font);
-  text-transform: capitalize;
-}
-
 .personal-info p {
-  font-size: var(--default-font-size);
-  font-weight: 300;
-  color: var(--ion-text-color);
-  font-weight: medium;
-  margin: 0;
   text-decoration: underline;
 }
 
@@ -112,12 +86,4 @@ select {
 .tab select option {
   color: var(--greyed-out-text);
   background: var(--ion-background-color);
-}
-
-.wrapper {
-  display: inline-block;
-  height: 100%;
-  padding: 1px 2rem;
-  width: 100%;
-  box-sizing: border-box;
 }

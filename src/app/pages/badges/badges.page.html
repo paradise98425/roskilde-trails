@@ -1,114 +1,123 @@
 <ion-header>
-  <span>Badges</span>
-  <p>You almost have your next badge</p>
+
+
+
+  <div class="personal-info">
+    <span *ngFor="let item of storageItems">{{item['name']}}'s badges</span>
+    <p>You almost have your next badge!</p>
+  </div>
+
 </ion-header>
 
 <ion-content>
-  <ion-card style="margin: 5vh 4vh 0vh 4vh; border-radius: 3%;">
-    <ion-item lines="none" style="margin-top: 7px;">
-      <ion-label slot="start" style="  font-weight: bold;font-size: 20px;">Next badge
-        <br>
-        <span style="font-weight: 400; font-size: 18px; color: #94ab51">Walk 20km</span>
-      </ion-label>
-      
-      <ion-img src="../../assets/badge_20km.svg" slot="end" class="card-badge-img">View</ion-img>
-    </ion-item>
-  
-    <ion-card-content>
+  <div style="height: 100px; "></div>
+  <div class="wrapper">
+    <ion-card>
+      <ion-item class="ion-no-padding" color="transparent" lines="none">
+        <ion-label slot="start">Next badge
+          <br>
+          <span>Walk 20km</span>
+        </ion-label>
+        <ion-img src="../../assets/badge_20km.svg" slot="end" class="card-badge-img">View</ion-img>
+      </ion-item>
+      <ion-card-content class="ion-no-padding">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+              <p><b>25%</b></p>
+            </ion-col>
+            <ion-col size="10">
+              <ion-progress-bar value="0.25" buffer="0.5"></ion-progress-bar>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+
+    <div class="latest-acheivement">
+      <p><b>Latest badges</b></p>
       <ion-grid>
         <ion-row>
-          <ion-col size="2"><p style="font-size: 16px;"><b>25%</b></p></ion-col>
-          <ion-col size="10">
-            <ion-progress-bar value="0.25" buffer="0.5"></ion-progress-bar>
+          <ion-col size="3">
+            <div class="acheivements">
+              <ion-img src="../../assets/badge_10km.svg"></ion-img>
+            </div>
+            <p><b>10 km walked</b></p>
+          </ion-col>
+          <ion-col size="3">
+            <div class="acheivements">
+              <ion-img src="../../assets/badge_2days.svg"></ion-img>
+            </div>
+            <p><b>2 days in a row</b></p>
           </ion-col>
         </ion-row>
       </ion-grid>
-    </ion-card-content>
-  </ion-card>
+    </div>
 
-  <div class="latest-acheivement">
-    <p style="font-size: 19px;" color="dark"><b>Latest acheivement</b></p>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="4" >
-          <div class="acheivements">
-            <ion-img src="../../assets/badge_10km.svg"></ion-img>
-          </div>
-          <p style="margin-top: 12px; font-size: 10px; font-weight: 400;"><b>10 km walked</b></p>
-        </ion-col>
-        <ion-col size="4" >
-          <div class="acheivements">
-            <ion-img src="../../assets/badge_2days.svg"></ion-img>
-          </div>
-          <p style="margin-top: 12px; font-size: 10px; font-weight: 400;"><b>2 days in a row</b></p>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
+    <div class="all-acheivement">
+      <p color="dark"><b>All badges</b></p>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="3">
+            <div class="acheivements">
+              <ion-img src="../../assets/badge_1km.svg"></ion-img>
+            </div>
+            <p><b>1 km walked</b></p>
+          </ion-col>
+          <ion-col size="3">
+            <div class="acheivements">
+              <ion-img src="../../assets/badge_5km.svg"></ion-img>
+            </div>
+            <p><b>5 km walked</b></p>
+          </ion-col>
+          <ion-col size="3">
+            <div class="acheivements">
+              <ion-img src="../../assets/badge_10km.svg"></ion-img>
+            </div>
+            <p><b>10 km walked</b></p>
+          </ion-col>          <ion-col size="3">
+            <div class="acheivements">
+              <ion-img src="../../assets/badge_20km.svg" style="opacity: 0.3;"></ion-img>
+            </div>
+            <p><b>20 km walked</b></p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
 
-  <div class="all-acheivement">
-    <p style="font-size: 19px;" color="dark"><b>All acheivement</b></p>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="4" >
-          <div class="acheivements">
-            <ion-img src="../../assets/badge_1km.svg"></ion-img>
-          </div>
-          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>1 km walked</b></p>
-        </ion-col>
-        <ion-col size="4" >
-          <div class="acheivements">
-            <ion-img src="../../assets/badge_5km.svg"></ion-img>
-          </div>
-          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>5 km walked</b></p>
-        </ion-col>
-        <ion-col size="4" >
-          <div class="acheivements">
-            <ion-img src="../../assets/badge_10km.svg"></ion-img>
-          </div>
-          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>10 km walked</b></p>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="4" >
-          <div class="acheivements">
-            <ion-img src="../../assets/badge_20km.svg" style="opacity: 0.3;"></ion-img>
-          </div>
-          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>20 km walked</b></p>
-        </ion-col>
-        <ion-col size="4" >
-          <div class="acheivements">
-            <ion-img src="../../assets/badge_2days.svg"></ion-img>
-          </div>
-          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>2 days in a row</b></p>
-        </ion-col>
-        <ion-col size="4" >
-          <div class="acheivements">
-            <ion-img src="../../assets/badge_3days.svg"></ion-img>
-          </div>
-          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>3 days in a row</b></p>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="4" >
-          <div class="acheivements">
-            <ion-img src="../../assets/badge_4days.svg" style="opacity: 0.3;"></ion-img>
-          </div>
-          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>4 days in a row</b></p>
-        </ion-col>
-        <ion-col size="4" >
-          <div class="acheivements">
-            <ion-img src="../../assets/badge_5days.svg"></ion-img>
-          </div>
-          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>5 days in a row</b></p>
-        </ion-col>
-        <ion-col size="4" >
-          <div class="acheivements">
-            <ion-img src="../../assets/badge_1trail.svg"></ion-img>
-          </div>
-          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>1 trail completed</b></p>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
+          <ion-col size="3">
+            <div class="acheivements">
+              <ion-img src="../../assets/badge_2days.svg" ></ion-img>
+            </div>
+            <p><b>2 days in a row</b></p>
+          </ion-col>
+          <ion-col size="3">
+            <div class="acheivements">
+              <ion-img src="../../assets/badge_3days.svg"></ion-img>
+            </div>
+            <p><b>3 days in a row</b></p>
+          </ion-col> <ion-col size="3">
+            <div class="acheivements">
+              <ion-img src="../../assets/badge_4days.svg"  style="opacity: 0.3;"></ion-img>
+            </div>
+            <p><b>4 days in a row</b></p>
+          </ion-col>
+          <ion-col size="3">
+            <div class="acheivements">
+              <ion-img src="../../assets/badge_5days.svg" style="opacity: 0.3;"></ion-img>
+            </div>
+            <p><b>5 days in a row</b></p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+         
+          <ion-col size="3">
+            <div class="acheivements">
+              <ion-img src="../../assets/badge_1trail.svg"></ion-img>
+            </div>
+            <p><b>1 trail completed</b></p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div><div style="height: 180px; " ></div>
 </ion-content>

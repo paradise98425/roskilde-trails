@@ -1,53 +1,86 @@
-  ion-content {
-    --background: #94ab51;
-  }
-  
-  .login-container {
-    display: flex;
-    flex-direction: column;   
-  }
-  
-  @media(max-width: 768px) {
-    .images-parent {
-        margin-top: 27vh;
+.login-container {
+
+  height: 100%;
+  border: 1px solid red;
+  box-sizing: border-box;
+  background: hsl(0, 0%, 10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .images-parent {
+    img {
+      filter: invert(0.9);
     }
-    .login-form {
-        margin-top: -6px;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        bottom:0;
-        height: 60.5vh;
-        background-color: white;
-    }
-  }
-  
-  @media(min-width: 768px) {
-    .login-form {
-        margin-top: -6px;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        bottom:0;
-        height: 74.5vh;
-        background-color: white;
-    }
-  }
-  
-  ion-item {
-    border: 1px lightgray solid;
-  }
-  
-  .item-interactive {
-    --highlight-background: unset;
-  }
-  
-  ion-button {
-    --background: #758c35;
-    --background-activated: #758c35;
-    --ripple-color: #94ab51;
-    --border-radius: 0px;
-    float: right;
   }
 
-  .error-message {
-      color: var(--ion-color-danger);
+  .login-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    form {
+      padding: 2rem;
+      ion-text {
+        p {
+          font-weight: 600;
+          margin-top: 0.1rem;
+        }
+
+        u {
+          color: var(--ion-headings-color);
+        }
+
+        h1 {
+          font-family: var(--header-font);
+          font-weight: 600;
+          font-size: 1.1rem;
+          letter-spacing: 1px;
+        }
+      }
+
+      ion-item {
+        padding-inline-start: 0;
+
+        ion-input {
+          background: var(--ion-color-primary);
+          height: 3rem;
+          border-radius: var(--border-radius-default);
+          padding-left: 1rem !important;
+          margin-bottom: 1rem;
+
+
+          ion-icon {
+            margin-right: 0.5rem;
+            color: grey;
+
+          }
+        }
+      }
+      ion-button{
+        width: 100%;
+        margin-top: 30%;
+        justify-self: end;
+        border-radius: var(--border-radius-default);
+        height: 4rem;
+        font-weight: bold;
+        --background: var(--ion-headings-color) !important;
+        color: var(--ion-background-color);
+
+        font-weight: bold;
+        font-size: 1.45rem;
+        
+
+
+        
+      }
+    }
   }
+}
+
+ion-input:focus-within {
+  ion-icon {
+    color: white !important;
+  }
+}
