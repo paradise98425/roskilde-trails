@@ -1,24 +1,8 @@
 
-ion-header {
-  padding-top: 2rem;
-  padding-left: 2rem;
-  display: flex;
-  gap: 1rem;
-background: rgb(0, 0, 0);
-background: -moz-linear-gradient(to bottom, var(--ion-background-color), rgba(27, 27, 27, 0.5) 75%, rgba(0, 0, 0, 0) 100%);
-background: -webkit-linear-gradient(to bottom, var(--ion-background-color), rgba(27, 27, 27, 0.5) 75%, rgba(0, 0, 0, 0) 100%);
-background: linear-gradient(to bottom, var(--ion-background-color), rgba(27, 27, 27, 0.5) 75%, rgba(0, 0, 0, 0) 100%);
 
-/* W3C */
-
-}
 
 .personal-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 20px;
-  
+ 
 
   h2, span {
     font-weight: bold;
@@ -30,109 +14,12 @@ background: linear-gradient(to bottom, var(--ion-background-color), rgba(27, 27,
 
   }
 
-  p {
-    font-size: var(--default-font-size);
-    font-weight: 300;
-    color: var(--ion-text-color);
-    font-weight: medium;
-    margin: 0;
-    
-  }
-}
 
-ion-content{
-        position: absolute;
-        height: 100vh;
 }
 
 
-.header-md::after{
-    background-image: none;
-}
 
 
-.wrapper{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 100%;
-    padding: 5% 5% 0 5%;
-}
 
-// .left{
-//     border: 1px solid red;
-// }
 
-// .right{
-//     border: 1px solid green;
-// }
 
-ion-card{
-     margin: 0;
-     box-shadow: none;
- }
-
- .tab{
-    padding: 0% 0% 5% 5%;
-}
-select{
-    float: right;
-     
-    font-size: 12;
-    border: none;
-}
-.saved-trails{
-     
-    font-size: 18px;
-    font-weight: bold;
-}
-/* changed name for saved trails to work on home */
-.wrapper-saved{
-    display: inline-block;
-    height: 100%;
-    padding:30% 10% 5% 10%;
-}
-.trail{
-    border: 1px solid #707070;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(145,145,145,1) 100%);
-    border-radius: 20px;
-    opacity: 70%;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 5%;
-    height: 165px;
-    margin-bottom: 5%;
-
-}
-.info{
-    display: grid;
-    gap: 5%;
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 5%;
-}
-.info > span{
-    margin-left: 5%;
-}
-.title{
-     
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-}
-.extra{
-     
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
-}
-ion-button{
-    float: right;
-}
-.rating{
-    color: white;
-    border: 1px solid #000000;
-    background-color: #000000 !important;
-    border-radius: 25px;
-    padding: 1% 2% 1% 2%;
-    margin-left: 5%;
-}
