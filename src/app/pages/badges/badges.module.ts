@@ -7,13 +7,17 @@ import { IonicModule } from '@ionic/angular';
 import { BadgesPageRoutingModule } from './badges-routing.module';
 
 import { BadgesPage } from './badges.page';
+import { IonicStorageModule } from '@ionic/storage-angular';
+
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BadgesPageRoutingModule
+    BadgesPageRoutingModule,
+    IonicStorageModule.forRoot()
   ],
   declarations: [BadgesPage]
 })

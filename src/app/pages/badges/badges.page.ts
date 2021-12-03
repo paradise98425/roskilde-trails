@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Storage } from '@ionic/storage-angular';
+
+
 @Component({
   selector: 'app-badges',
   templateUrl: './badges.page.html',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BadgesPage implements OnInit {
 
-  constructor() { }
+    constructor(private storage: Storage) { }
 
-  ngOnInit() {
+  storageItems = []
+  async ngOnInit() {
+    await this.storage.create();
+    const name = await this.storage.get('name')
+    this.storageItems.push({'name': name})
+
+    console.log('storageItems', this.storageItems)
   }
+
+
+  
 
 }

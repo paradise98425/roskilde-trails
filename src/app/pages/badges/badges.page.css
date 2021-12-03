@@ -1,0 +1,27 @@
+@import url("../../../theme/variables.scss");
+.header-md::after {
+  background-image: none;
+}
+
+ion-card {
+  background: var(--ion-color-primary);
+  padding: 1rem;
+  margin: 0;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ion-item ion-label {
+  font-family: var(--header-font);
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  font-size: 1rem;
+}
+
+ion-item ion-label span {
+  font-family: var(--ion-font-family);
+  font-weight: 200;
+  margin-top: 10px;
+}

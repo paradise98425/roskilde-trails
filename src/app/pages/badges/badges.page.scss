@@ -1,52 +1,32 @@
-/* bagdes css */
+@import url("../../../theme/variables.scss");
+
 .header-md::after{
     background-image: none;
 }
-ion-header{
-    padding-top: 10%;
-    padding-left: 10%;
+ion-card{
+    background: var(--ion-color-primary);
+    padding: 1rem;
+    margin: 0;
+    height:9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-ion-header > span{
-     
-    font-weight: bold;
-    font-size: 36px;
-}
 
-ion-header > p{
-     
-    font-size: 18px;
-    color: #94ab51;
-    font-weight: 500;
-    margin: 12px 0 0 0;
-}
+ion-item{
+   
+    ion-label{
+       
+       font-family: var(--header-font);
+       font-weight: 600;
+       letter-spacing: 0.7px;
+       font-size: 1rem;
 
-.card-badge-img {
-    height: 47px;
-    opacity: 0.3;
-}
-
-ion-progress-bar {
-    --background: #94ab51;
-    --buffer-background: #d5deba;
-    --progress-background: #94ab51;
-    margin-top: 8px;
-  }
-
-.latest-acheivement {
-    margin: 5vh 5vh 0vh 5vh;
-}
-
-.acheivements {
-    height: 70px;
-    width: 70px;
-    border-radius: 35px;
-    padding: 12px;
-    -webkit-box-shadow: 2px 2px 5px 0px rgb(182, 175, 175);
-    -moz-box-shadow: 2px 2px 5px 0px rgb(190, 185, 185);
-    box-shadow: 2px 2px 5px 0px rgb(187, 184, 184);
-}
-
-.all-acheivement {
-    margin: 5vh 5vh 0vh 5vh;
+       span{
+           font-family: var(--ion-font-family);
+           font-weight: 200;
+           margin-top: 10px;
+       }
+    }
 }
