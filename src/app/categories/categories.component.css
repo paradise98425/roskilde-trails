@@ -1,5 +1,6 @@
 @import url("../../theme/variables.scss");
 .CategoryCard {
+  position: relative;
   width: 100%;
   padding: 1rem;
   margin-top: 1rem;
@@ -9,10 +10,16 @@
   color: var(--ion-background-color);
 }
 
+.CategoryCard-image {
+  position: absolute;
+  top: 2rem;
+}
+
 .CategoryCard-image img {
   height: 100%;
-  width: 100%;
+  width: 50%;
   display: block;
+  margin-left: auto;
   aspect-ratio: 1;
   border-radius: var(--border-radius-default);
 }
@@ -21,6 +28,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
 .CategoryCard-content-info {
