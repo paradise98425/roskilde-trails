@@ -1,13 +1,29 @@
-<div class="TrailCard">
+<div class="TrailCard" style="background-color: #688DE2;" [routerLink]="['top-rated']">
   <div class="TrailCard-content">
-    <h2>Boserup Skov</h2>
-    <div class="TrailCard-content-info">
-      <p>10<span>km</span></p>
-      <span>•</span>
-      <p>2<span>h</span> 13<span>m</span></p>
-    </div>
-    <span>stars</span>
+    <h2 style="font-size: 18px;">Top rated trails in Roskilde</h2>
+  <br><br>
+    <span>View all</span>
   </div>
 
-  <div class="TrailCard-image"><img src="../../assets/boserup.jpg"/></div>
+  <div class="TrailCard-image"><img src="../../assets/roskildecity.jpg"/></div>
+</div>
+
+<div class="TrailCard" style="height: 120px; background-color: #DA714F;" [routerLink]="['nature']">
+  <div class="TrailCard-content">
+    <h2 style="font-size: 18px;">Trails by the forest</h2>
+    <br><br>
+    <span>View all</span>
+  </div>
+
+  <div class="TrailCard-image"><img style="height:85px; width: 85px;" src="../../assets/boserup.jpg"/></div>
+</div>
+
+<div class="TrailCard" style="height: 120px; background-color: #DA714F;" [routerLink]="['lake']">
+  <div class="TrailCard-content">
+    <h2 style="font-size: 18px;">Trails by the lake</h2>
+    <br><br>
+    <span>View all</span>
+  </div>
+
+  <div class="TrailCard-image"><img style="height:85px; width: 85px;" src="../../assets/lake4.jpg"/></div>
 </div>

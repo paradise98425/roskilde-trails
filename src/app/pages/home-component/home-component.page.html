@@ -1,5 +1,4 @@
 
-
 <ion-header >
   <div class="personal-info">
     
@@ -8,51 +7,32 @@
   </div>
 </ion-header>
 
- <ion-content>
-<div style="height: 100px; " ></div>
-  <!--<div class="wrapper"> 
+<ion-content>
+  <div style="height: 100px;"></div>
+
+  <div class="wrapper"> 
+
+    <div class="input-group mb-3" id="search">
+      <div class="input-group-append searchfield">
+        <input type="text" class="form-control" placeholder="Search added trails" [(ngModel)]="name" />
+        <button class="btn btn-outline-secondary" type="button" (click)="searchName()">
+          🔎︎
+        </button>
+      </div>
+    </div>
     
-    <div class="left">
-
-      <ion-card [routerLink]="['top-rated']"> 
-        <img src="../../assets/top-rated.png" alt="Top Rated">
-      </ion-card>
-
-      <ion-card>
-        <img src="../../assets/sightseeing.png" alt="Sightseeing">
-      </ion-card>
-
-      <ion-card>
-        <img src="../../assets/short-trails.png" alt="Short trails">
-      </ion-card>
-
-      <ion-card>
-        <img src="../../assets/long-trails.png" alt="Long Trails">
-      </ion-card>
+    <ion-list>
+      <ion-item *ngFor="let trail of trails; let i = index" [class.active]="i == currentIndex"
+        (click)="setActiveTrail(trail, i)" style="color: white;">
+        {{ trail.name }}
+      </ion-item>
+    </ion-list>
+<br>
+    <app-trailcard></app-trailcard>
 
     </div>
 
-    <div class="right">
-
-      <ion-card [routerLink]="['nature']">
-        <img src="../../assets/nature.png" alt="Nature">
-      </ion-card>
-
-      <ion-card [routerLink]="['lake']"> 
-        <img src="../../assets/lake.png" alt="Lake">
-      </ion-card>
-
-      <ion-card>
-        <img src="../../assets/long-trails.png" alt="Long trails">
-      </ion-card>
-
-      <ion-card>
-        <img src="../../assets/city.png" alt="Nature">
-      </ion-card>
-
-    </div>
-
-  </div>
+  <div style="height:15px;"></div>
 
   <div class="wrapper-saved">
 
@@ -60,118 +40,10 @@
       <span class="saved-trails">Saved trails</span>
     </div>
     
-    Trial start
-        <div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake.jpg);">
-          <div class="fave">
-            <ion-button fill=clear>
-            <img src="../../assets/not-fave.png" alt="">
-          </ion-button>
-          </div>
-    
-          <div class="info">
-    
-            <span>
-              <span class="title">Boserup Skov - Kattinge Værk - Boserup Sø</span>
-              <span class="rating">
-                <img src="../../assets/star.png" alt="">
-                 4,5
-              </span>
-            </span>
-    
-            <span>
-              <span class="extra">Length: 7,4 km</span>
-              <span class="extra"> • Est: 2h 10m</span>
-            </span>
-    
-          </div>
-    
-        </div>
-    Trial end
-
-    Trial start 2
-<div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/boserup.jpg);">
-  <div class="fave">
-    <ion-button fill=clear>
-    <img src="../../assets/not-fave.png" alt="">
-  </ion-button>
+    <app-saved-trailcard></app-saved-trailcard>
+    <div style="height:125px;"></div>
   </div>
 
-  <div class="info">
-
-    <span>
-      <span class="title">Bognæs og Storskov</span>
-      <span class="rating">
-        <img src="../../assets/star.png" alt="">
-         4,5
-      </span>
-    </span>
-
-    <span>
-      <span class="extra">Length: 9,0 km</span>
-      <span class="extra"> • Est: 2h 37m</span>
-    </span>
-
-  </div>
-
-</div>
-Trial end
-
-Trial start 3
-<div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/forest.jpg);">
-  <div class="fave">
-    <ion-button fill=clear>
-    <img src="../../assets/not-fave.png" alt="">
-  </ion-button>
-  </div>
-
-  <div class="info">
-
-    <span>
-      <span class="title">Boserup Skov - kattinge Værk - Boserup Sø</span>
-      <span class="rating">
-        <img src="../../assets/star.png" alt="">
-         4,5
-      </span>
-    </span>
-
-    <span>
-      <span class="extra">Length: 7,4 km</span>
-      <span class="extra"> • Est: 2h 10m</span>
-    </span>
-
-  </div>
-
-</div>
-Trial end
-
-Trial start 4
-<div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake2.jpg);">
-  <div class="fave">
-    <ion-button fill=clear>
-    <img src="../../assets/not-fave.png" alt="">
-  </ion-button>
-  </div>
-
-  <div class="info">
-
-    <span>
-      <span class="title" style="font-size: 18px !important">Trekroner Himmelev Skov</span>
-      <span class="rating">
-        <img src="../../assets/star.png" alt="">
-         4,0
-      </span>
-    </span>
-
-    <span>
-      <span class="extra">Length: 8,2 km</span>
-      <span class="extra"> • Est: 4h 20m</span>
-    </span>
-
-  </div>
-
-</div>
-Trial end
-
-  </div>-->
+  
 
 </ion-content> 

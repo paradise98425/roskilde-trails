@@ -1,6 +1,9 @@
+
 <ion-header>
-  <span>Admin page</span>
-  <p>Add, update and delete trails</p>
+  <div class="personal-info">
+    <h2>Admin page</h2>
+    <p>Add, update and delete trails</p>
+  </div>
 </ion-header>
 
 
@@ -8,7 +11,8 @@
   <div class="paddings">
 
     <!-- Form for adding a trail -->
-    <div class="submit-form">
+    <div style="height: 125px;"></div>
+    <div class="submit-form" style="color:black;">
       <div>
         <div class="form-group">
           <label for="name"></label>
@@ -67,9 +71,12 @@
     <!-- Display list of trails -->
     <div class="col-md-8">
       <ion-header class="headerpadding">
-        <span>Added Trails</span>
-        <p>Added trails will appear here</p>
+        <div class="personal-info">
+          <h2>Added trails</h2>
+          <p>Added trails will appear here</p>
+        </div>
       </ion-header>
+      <!-- Search -->
       <div class="input-group mb-3">
         <div class="input-group-append searchfield">
           <input type="text" class="form-control" placeholder="Search added trails" [(ngModel)]="name" />
@@ -80,11 +87,12 @@
       </div>
     </div>
 
+<div style="height: 100px;"></div>
+
     <ion-list>
       <ion-item *ngFor="let trail of trails; let i = index" [class.active]="i == currentIndex"
-        (click)="setActiveTrail(trail, i)">
+        (click)="setActiveTrail(trail, i)" style="color: white;">
         {{ trail.name }}
-
       </ion-item>
     </ion-list>
 
@@ -94,7 +102,7 @@
 
 
     <!-- Update or delete trail -->
-        <div *ngIf="currentTrail" class="edit-form">
+        <div *ngIf="currentTrail" class="edit-form" style="color:black;">
           <form>
             <div class="form-group">
               <label for="name"></label>

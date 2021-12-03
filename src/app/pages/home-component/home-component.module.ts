@@ -10,6 +10,12 @@ import { HomeComponentPage } from './home-component.page';
 
 import { IonicStorageModule } from '@ionic/storage-angular';
 
+import { SavedTrailcardComponent } from '../../saved-trailcard/saved-trailcard.component';
+
+import { TrailcardComponent } from '../../trailcard/trailcard.component';
+
+
+
 
 @NgModule({
   imports: [
@@ -20,6 +26,6 @@ import { IonicStorageModule } from '@ionic/storage-angular';
     HomeComponentPageRoutingModule,
     IonicStorageModule.forRoot()
   ],
-  declarations: [HomeComponentPage]
+  declarations: [HomeComponentPage, SavedTrailcardComponent, TrailcardComponent]
 })
 export class HomeComponentPageModule {}

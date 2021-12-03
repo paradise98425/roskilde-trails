@@ -1,0 +1,31 @@
+
+<div *ngFor="let trail of trails; let i = index" [class.active]="i == currentIndex"
+(click)="setActiveTrail(trail, i)"> 
+
+<div class="trail" *ngIf="trail.category === 'Nature'" [routerLink]="['details']">
+
+<div class="TrailCard">
+
+<div class="TrailCard-content">
+
+  <p class="name" style="width:75%;">{{trail.name}}</p>
+
+  <div class="TrailCard-content-info" style="padding-top: 10px; padding-bottom: 10px;">
+    <p>{{trail.length}} <span>km</span></p>
+    <span>•</span>
+    <p>{{trail.est_time}}</p>
+  </div>
+
+  <span class="rating">
+    <img src="../../assets/star.png" alt="">
+    {{ trail.rating }}
+  </span> 
+
+</div>
+
+  <div class="TrailCard-image"><img src="{{trail.trail_pic}}"/></div>
+
+</div>
+
+</div>
+</div>
