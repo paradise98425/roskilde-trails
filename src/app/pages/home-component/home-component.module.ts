@@ -14,6 +14,8 @@ import { SavedTrailcardComponent } from '../../saved-trailcard/saved-trailcard.c
 
 import { TrailcardComponent } from '../../trailcard/trailcard.component';
 
+import { CategoryComponent } from '../../category/category.component';
+import { CategoryvariantComponent } from '../../categoryvariant/categoryvariant.component';
 
 
 
@@ -26,6 +28,6 @@ import { TrailcardComponent } from '../../trailcard/trailcard.component';
     HomeComponentPageRoutingModule,
     IonicStorageModule.forRoot()
   ],
-  declarations: [HomeComponentPage, SavedTrailcardComponent, TrailcardComponent]
+  declarations: [HomeComponentPage, SavedTrailcardComponent, TrailcardComponent, CategoryComponent, CategoryvariantComponent]
 })
 export class HomeComponentPageModule {}

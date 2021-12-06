@@ -1,7 +1,6 @@
-
-<ion-header >
+<ion-header>
   <div class="personal-info">
-    
+
     <h2>Hello <span *ngFor="let item of storageItems">{{item['name']}}</span></h2>
     <p>Welcome to Roskilde!</p>
   </div>
@@ -10,40 +9,43 @@
 <ion-content>
   <div style="height: 100px;"></div>
 
-  <div class="wrapper"> 
+  <div class="wrapper">
 
-    <div class="input-group mb-3" id="search">
+     <!--<div class="input-group mb-3" id="search">
       <div class="input-group-append searchfield">
         <input type="text" class="form-control" placeholder="Search added trails" [(ngModel)]="name" />
         <button class="btn btn-outline-secondary" type="button" (click)="searchName()">
           🔎︎
         </button>
       </div>
-    </div>
-    
+    </div>-->
+    <ion-searchbar placeholder="Search for trails" color="primary"></ion-searchbar>
+
     <ion-list>
       <ion-item *ngFor="let trail of trails; let i = index" [class.active]="i == currentIndex"
         (click)="setActiveTrail(trail, i)" style="color: white;">
         {{ trail.name }}
       </ion-item>
     </ion-list>
-<br>
-    <app-trailcard></app-trailcard>
+    <br>
 
-    </div>
+    <app-category [routerLink]="['top-rated']" categorytitle="Top Rated" ></app-category>
+    <app-categoryvariant [routerLink]="['lake']" categoryvarianttitle="Lakes"></app-categoryvariant>
+    <app-categoryvariant [routerLink]="['nature']" categoryvarianttitle="Nature"></app-categoryvariant>
+  </div> 
 
-  <div style="height:15px;"></div>
+
 
   <div class="wrapper-saved">
 
     <div class="tab">
       <span class="saved-trails">Saved trails</span>
     </div>
-    
+
     <app-saved-trailcard></app-saved-trailcard>
     <div style="height:125px;"></div>
   </div>
 
-  
 
-</ion-content> 
+
+</ion-content>

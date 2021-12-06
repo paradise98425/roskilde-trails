@@ -1,0 +1,66 @@
+@import url("../../theme/variables.scss");
+.CategoryCard {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  height: 160px;
+  background: var(--category-primary);
+  border-radius: var(--border-radius-default);
+  color: var(--ion-background-color);
+}
+
+.CategoryCardvariant {
+  background: var(--category-secondary);
+}
+
+.CategoryCard-image {
+  position: absolute;
+  top: 1.1rem;
+}
+
+.CategoryCard-image img {
+  height: 100%;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  aspect-ratio: 1;
+  border-radius: var(--border-radius-default);
+}
+
+.CategoryCard-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.CategoryCard-content-info {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+
+.CategoryCard-content-info span:nth-child(2) {
+  margin: 0 0.2rem;
+}
+
+.CategoryCard-content-info p {
+  margin: 0;
+}
+
+.CategoryCard-content-info p span {
+  margin: 0;
+}
+
+.CategoryCard h2 {
+  padding: 0;
+  margin: 0;
+  font-family: var(--header-font);
+  font-weight: bold;
+}
+
+.svg-clipped {
+  -webkit-clip-path: url(#svgPath);
+  clip-path: url(#svgPath);
+}
