@@ -19,7 +19,7 @@
         </button>
       </div>
     </div>-->
-    <ion-searchbar placeholder="Search for trails" color="primary"></ion-searchbar>
+    <ion-searchbar placeholder="Search for trails" color="primary" [(ngModel)]="name" (click)="searchName()" ></ion-searchbar>
 
     <ion-list>
       <ion-item *ngFor="let trail of trails; let i = index" [class.active]="i == currentIndex"
@@ -39,7 +39,7 @@
   <div class="wrapper-saved">
 
     <div class="tab">
-      <span class="saved-trails">Saved trails</span>
+      <span class="saved-trails">Favourite trails</span>
     </div>
 
     <app-saved-trailcard></app-saved-trailcard>
