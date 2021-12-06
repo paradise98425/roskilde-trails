@@ -101,4 +101,10 @@ textarea {
   color: black;
 }
 
+ion-searchbar{
+  background: var(--ion-color-primary);
+  border-radius: var(--border-radius-default);
+  --padding-start: 10px;
+  height: 3rem;
+}
 

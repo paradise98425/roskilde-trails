@@ -1,0 +1,40 @@
+@import url("../../theme/variables.scss");
+.CategoryCard {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  height: 100px;
+  background: var(--category-secondary);
+  border-radius: var(--border-radius-default);
+  color: var(--ion-background-color);
+}
+
+.CategoryCard-image img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  aspect-ratio: 1;
+  border-radius: var(--border-radius-default);
+}
+
+.CategoryCard-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.CategoryCard-content .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.CategoryCard h2 {
+  padding: 0;
+  margin: 0;
+  font-family: var(--header-font);
+  font-weight: bold;
+}
