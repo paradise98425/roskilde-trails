@@ -60,7 +60,7 @@
         </div>
 
         <div class="buttongroup">
-          <button (click)="addTrail()" class="btn btn-success">Add Trail</button>
+          <button (click)="addTrail()" class="btn-full">Add Trail</button>
           <!-- <button class="m-3 btn btn-sm btn-danger" (click)="removeAllTrails()">delete all</button> -->
         </div>
       </div>
@@ -72,7 +72,7 @@
     <div class="col-md-8">
       <ion-header class="headerpadding">
         <div class="personal-info">
-          <h2>Added trails</h2>
+          <h3>Added trails</h3>
           <p>Added trails will appear here</p>
         </div>
       </ion-header>
@@ -144,11 +144,11 @@
 
 
             <div class="buttongroup">
-              <button type="submit" class="badge badge-success" (click)="updateTrail()">
-                Update
+              <button type="submit" class="btn-half" (click)="updateTrail()">
+                Update trail
               </button>
-              <button class="badge badge-danger mr-2" (click)="deleteTrail()">
-                Delete
+              <button class="btn-half" (click)="deleteTrail()">
+                Delete trail
               </button>
             </div>
             <p>{{ message }}</p>

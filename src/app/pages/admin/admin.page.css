@@ -1,0 +1,112 @@
+@import url("../../../theme/variables.scss");
+.personal-info h2,
+.personal-info span {
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--ion-headings-color);
+  font-family: var(--header-font);
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.personal-info h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--ion-headings-color);
+  font-family: var(--header-font);
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.headerpadding {
+  padding: unset;
+  padding-bottom: 1rem;
+}
+
+.headerpadding span {
+  font-size: 1.5rem;
+  color: #6b6b6b;
+}
+
+.btn-full {
+  width: 100%;
+  margin-top: 1rem;
+  justify-self: end;
+  border-radius: var(--border-radius-default);
+  height: 4rem;
+  font-weight: bold;
+  background: var(--ion-headings-color) !important;
+  color: var(--ion-background-color);
+  font-weight: bold;
+  font-size: 1.45rem;
+}
+
+.paddings {
+  padding: 0px 10%;
+}
+
+.paddings .submit-form {
+  padding-top: 1rem;
+  border-top: 2px solid #ccc;
+  margin-bottom: 3rem;
+}
+
+.buttongroup {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.buttongroup .btn-half {
+  width: 100%;
+  margin-top: 1rem;
+  justify-self: end;
+  border-radius: var(--border-radius-default);
+  height: 2.5rem;
+  font-weight: bold;
+  background: var(--ion-headings-color) !important;
+  color: var(--ion-background-color);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.buttongroup .btn-half:nth-of-type(2) {
+  background: red !important;
+}
+
+.searchfield {
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.searchfield input {
+  height: 100%;
+  margin: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.searchfield button {
+  background: var(--ion-color-primary);
+  width: 3rem;
+  border-top-right-radius: var(--border-radius-default);
+  border-bottom-right-radius: var(--border-radius-default);
+  color: white;
+  border: 0px solid black;
+}
+
+ion-item {
+  color: black;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  margin-left: -20px;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+ion-item .item-native {
+  padding: 0px !important;
+}

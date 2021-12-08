@@ -129,3 +129,24 @@ ion-content {
   width: 100%;
   box-sizing: border-box;
 }
+
+input,
+textarea {
+  padding: 0.8rem 1rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  border-color: transparent;
+  border-radius: var(--border-radius-default);
+  background: var(--ion-color-primary);
+  color: white;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+button {
+  background: var(--ion-headings-color);
+  color: var(--ion-background-color) !important;
+}

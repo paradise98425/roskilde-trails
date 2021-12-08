@@ -1,5 +1,9 @@
+@import url("../../../theme/variables.scss");
+
 .personal-info {
-  h2, span {
+
+  h2,
+  span {
     font-weight: bold;
     font-size: 2rem;
     color: var(--ion-headings-color);
@@ -7,6 +11,15 @@
     text-transform: capitalize;
     margin: 0;
 
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--ion-headings-color);
+    font-family: var(--header-font);
+    text-transform: capitalize;
+    margin: 0;
   }
 }
 
@@ -20,23 +33,22 @@
   }
 }
 
-
-
-input,
-textarea {
-  padding: 12px 16px;
+.btn-full {
   width: 100%;
-  margin: 6px 0;
-  border: 2px solid rgb(230, 230, 230);
-  border-radius: 3px;
+  margin-top: 1rem;
+  justify-self: end;
+  border-radius: var(--border-radius-default);
+  height: 4rem;
+  font-weight: bold;
+  background: var(--ion-headings-color) !important;
+  color: var(--ion-background-color);
+  font-weight: bold;
+  font-size: 1.45rem;
 }
 
-.btn-success {
-  color: white;
 
 
 
-}
 
 .paddings {
   padding: 0px 10%;
@@ -54,23 +66,21 @@ textarea {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 
-  button {
+  .btn-half {
     width: 100%;
-    margin: 0px 6px 1rem 0px;
-    font-size: 14px;
-    color: white;
-    border-radius: 4px;
-    height: 2.3rem;
-    background: #758C35;
-    text-transform: uppercase;
-    box-shadow: 0px 2px 5px 0px rgb(131, 131, 131);
-
-    &:nth-child(2),
-    &:nth-child(3) {
-      background: #C83333;
-      margin: 0px 0px 1rem 6px;
-
+    margin-top: 1rem;
+    justify-self: end;
+    border-radius: var(--border-radius-default);
+    height: 2.5rem;
+    font-weight: bold;
+    background: var(--ion-headings-color) !important;
+    color: var(--ion-background-color);
+    font-weight: bold;
+    font-size: 1rem;
+    &:nth-of-type(2) {
+      background: red!important;
     }
   }
 }
@@ -86,19 +96,19 @@ textarea {
   input {
     height: 100%;
     margin: 0;
-    border: 0;
-    border-top: 2px solid #b4c582;
-    border-left: 2px solid #b4c582;
-    border-bottom: 2px solid #b4c582;
-
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    
   }
 
   button {
-    background-color: #b4c582;
-    color: white;
+
+    background: var(--ion-color-primary);
     width: 3rem;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius: var(--border-radius-default);
+    border-bottom-right-radius: var(--border-radius-default);
+    color: white;
+    border: 0px solid black;
   }
 }
 
@@ -107,7 +117,7 @@ ion-item {
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
   margin-left: -20px;
-  
+
   border-bottom: 2px solid rgb(230, 230, 230);
 
   .item-native {
