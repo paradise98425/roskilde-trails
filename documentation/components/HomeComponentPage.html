@@ -134,7 +134,25 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#currentIndex" >currentIndex</a>
+                            </li>
+                            <li>
+                                <a href="#currentTrail" >currentTrail</a>
+                            </li>
+                            <li>
+                                <a href="#message" >message</a>
+                            </li>
+                            <li>
+                                <a href="#name" >name</a>
+                            </li>
+                            <li>
                                 <a href="#storageItems" >storageItems</a>
+                            </li>
+                            <li>
+                                <a href="#trail" >trail</a>
+                            </li>
+                            <li>
+                                <a href="#trails" >trails</a>
                             </li>
                         </ul>
                     </td>
@@ -151,6 +169,15 @@
                             <li>
                                     <span class="modifier">Async</span>
                                 <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#retrieveTrails" >retrieveTrails</a>
+                            </li>
+                            <li>
+                                <a href="#searchName" >searchName</a>
+                            </li>
+                            <li>
+                                <a href="#setActiveTrail" >setActiveTrail</a>
                             </li>
                         </ul>
                     </td>
@@ -170,12 +197,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(storage: Storage)</code>
+<code>constructor(trailService: <a href="../injectables/TrailService.html" target="_self">TrailService</a>, storage: Storage)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/pages/home-component/home-component.page.ts:9</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/pages/home-component/home-component.page.ts:31</a></div>
                             </td>
                         </tr>
 
@@ -192,6 +219,18 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                                <tr>
+                                                        <td>trailService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TrailService.html" target="_self" >TrailService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
                                                 <tr>
                                                         <td>storage</td>
                                                   
@@ -244,8 +283,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="14"
-                            class="link-to-prism">src/app/pages/home-component/home-component.page.ts:14</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/pages/home-component/home-component.page.ts:36</a></div>
                 </td>
             </tr>
 
@@ -261,12 +300,278 @@
             </tr>
         </tbody>
     </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="retrieveTrails"></a>
+                    <span class="name">
+                        <span ><b>retrieveTrails</b></span>
+                        <a href="#retrieveTrails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>retrieveTrails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="58"
+                            class="link-to-prism">src/app/pages/home-component/home-component.page.ts:58</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchName"></a>
+                    <span class="name">
+                        <span ><b>searchName</b></span>
+                        <a href="#searchName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>searchName()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="46"
+                            class="link-to-prism">src/app/pages/home-component/home-component.page.ts:46</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setActiveTrail"></a>
+                    <span class="name">
+                        <span ><b>setActiveTrail</b></span>
+                        <a href="#setActiveTrail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setActiveTrail(trail, index)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">src/app/pages/home-component/home-component.page.ts:70</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>trail</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>index</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
     <section>
     
     <h3 id="inputs">
         Properties
     </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentIndex"></a>
+                    <span class="name">
+                        <span ><b>currentIndex</b></span>
+                        <a href="#currentIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>-1</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/pages/home-component/home-component.page.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentTrail"></a>
+                    <span class="name">
+                        <span ><b>currentTrail</b></span>
+                        <a href="#currentTrail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/pages/home-component/home-component.page.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="message"></a>
+                    <span class="name">
+                        <span ><b>message</b></span>
+                        <a href="#message"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/pages/home-component/home-component.page.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="name"></a>
+                    <span class="name">
+                        <span ><b>name</b></span>
+                        <a href="#name"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/pages/home-component/home-component.page.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
     <table class="table table-sm table-bordered">
         <tbody>
             <tr>
@@ -291,7 +596,72 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/pages/home-component/home-component.page.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trail"></a>
+                    <span class="name">
+                        <span ><b>trail</b></span>
+                        <a href="#trail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    name: &#x27;&#x27;,
+    description: &#x27;&#x27;,
+    length: &#x27;&#x27;,
+    est_time: &#x27;&#x27;,
+    category: &#x27;&#x27;,
+    trail_pic: &#x27;&#x27;,
+    rating: &#x27;&#x27;
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
                                 <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/pages/home-component/home-component.page.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trails"></a>
+                    <span class="name">
+                        <span ><b>trails</b></span>
+                        <a href="#trails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Trail.html" target="_self" >Trail[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/pages/home-component/home-component.page.ts:23</a></div>
                         </td>
                     </tr>
 
@@ -306,6 +676,8 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 import { Storage } from &#x27;@ionic/storage-angular&#x27;;
+import { Trail } from &#x27;src/app/models/trail.model&#x27;;
+import { TrailService } from &#x27;src/app/services/trail.service&#x27;;
 
 @Component({
   selector: &#x27;app-home-component&#x27;,
@@ -314,7 +686,27 @@ import { Storage } from &#x27;@ionic/storage-angular&#x27;;
 })
 export class HomeComponentPage implements OnInit {
 
-  constructor(private storage: Storage) { }
+  trail &#x3D; {
+    name: &#x27;&#x27;,
+    description: &#x27;&#x27;,
+    length: &#x27;&#x27;,
+    est_time: &#x27;&#x27;,
+    category: &#x27;&#x27;,
+    trail_pic: &#x27;&#x27;,
+    rating: &#x27;&#x27;
+  };
+
+  trails: Trail[];
+
+  currentTrail &#x3D; null;
+  currentIndex &#x3D; -1;
+
+  name &#x3D; &#x27;&#x27;;
+  message &#x3D; &#x27;&#x27;;
+
+  ;
+
+  constructor(private trailService: TrailService, private storage: Storage ) { }
 
   storageItems &#x3D; []
   async ngOnInit() {
@@ -323,6 +715,37 @@ export class HomeComponentPage implements OnInit {
     this.storageItems.push({&#x27;name&#x27;: name})
 
     console.log(&#x27;storageItems&#x27;, this.storageItems)
+
+    this.message &#x3D; &#x27;&#x27;;
+  }
+
+  searchName() {
+    this.trailService.findByName(this.name)
+      .subscribe(
+        data &#x3D;&gt; {
+          this.trails &#x3D; data;
+          console.log(data);
+        },
+        error &#x3D;&gt; {
+          console.log(error);
+        });
+  }
+  
+  retrieveTrails() {
+    this.trailService.getAll()
+      .subscribe(
+        data &#x3D;&gt; {
+          this.trails &#x3D; data;
+          console.log(data);
+        },
+        error &#x3D;&gt; {
+          console.log(error);
+        });
+  }
+
+  setActiveTrail(trail, index) {
+    this.currentTrail &#x3D; trail;
+    this.currentIndex &#x3D; index;
   }
 
 }
@@ -331,176 +754,54 @@ export class HomeComponentPage implements OnInit {
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;ion-header&gt;
-  &lt;span &gt;Hello, &lt;/span&gt;
-  &lt;span *ngFor&#x3D;&quot;let item of storageItems&quot;&gt;{{item[&#x27;name&#x27;]}}&lt;/span&gt;
-  &lt;p&gt;Here is a list of recommended trails&lt;/p&gt;
+  &lt;div class&#x3D;&quot;personal-info&quot;&gt;
+
+    &lt;h2&gt;Hello &lt;span *ngFor&#x3D;&quot;let item of storageItems&quot;&gt;{{item[&#x27;name&#x27;]}}&lt;/span&gt;&lt;/h2&gt;
+    &lt;p&gt;Welcome to Roskilde!&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/ion-header&gt;
 
 &lt;ion-content&gt;
+  &lt;div style&#x3D;&quot;height: 100px;&quot;&gt;&lt;/div&gt;
 
-  &lt;div class&#x3D;&quot;wrapper&quot;&gt; 
+  &lt;div class&#x3D;&quot;wrapper&quot;&gt;
 
-    &lt;div class&#x3D;&quot;left&quot;&gt;
+     &lt;!--&lt;div class&#x3D;&quot;input-group mb-3&quot; id&#x3D;&quot;search&quot;&gt;
+      &lt;div class&#x3D;&quot;input-group-append searchfield&quot;&gt;
+        &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Search added trails&quot; [(ngModel)]&#x3D;&quot;name&quot; /&gt;
+        &lt;button class&#x3D;&quot;btn btn-outline-secondary&quot; type&#x3D;&quot;button&quot; (click)&#x3D;&quot;searchName()&quot;&gt;
+          🔎︎
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;--&gt;
+    &lt;ion-searchbar placeholder&#x3D;&quot;Search for trails&quot; color&#x3D;&quot;primary&quot; [(ngModel)]&#x3D;&quot;name&quot; (click)&#x3D;&quot;searchName()&quot; &gt;&lt;/ion-searchbar&gt;
 
-      &lt;ion-card [routerLink]&#x3D;&quot;[&#x27;top-rated&#x27;]&quot;&gt; 
-        &lt;img src&#x3D;&quot;../../assets/top-rated.png&quot; alt&#x3D;&quot;Top Rated&quot;&gt;
-      &lt;/ion-card&gt;
+    &lt;ion-list&gt;
+      &lt;ion-item *ngFor&#x3D;&quot;let trail of trails; let i &#x3D; index&quot; [class.active]&#x3D;&quot;i &#x3D;&#x3D; currentIndex&quot;
+        (click)&#x3D;&quot;setActiveTrail(trail, i)&quot; style&#x3D;&quot;color: white;&quot;&gt;
+        {{ trail.name }}
+      &lt;/ion-item&gt;
+    &lt;/ion-list&gt;
+    &lt;br&gt;
 
-      &lt;ion-card&gt;
-        &lt;img src&#x3D;&quot;../../assets/sightseeing.png&quot; alt&#x3D;&quot;Sightseeing&quot;&gt;
-      &lt;/ion-card&gt;
+    &lt;app-category [routerLink]&#x3D;&quot;[&#x27;top-rated&#x27;]&quot; categorytitle&#x3D;&quot;Top Rated&quot; &gt;&lt;/app-category&gt;
+    &lt;app-categoryvariant [routerLink]&#x3D;&quot;[&#x27;lake&#x27;]&quot; categoryvarianttitle&#x3D;&quot;Lakes&quot;&gt;&lt;/app-categoryvariant&gt;
+    &lt;app-categoryvariant [routerLink]&#x3D;&quot;[&#x27;nature&#x27;]&quot; categoryvarianttitle&#x3D;&quot;Nature&quot;&gt;&lt;/app-categoryvariant&gt;
+  &lt;/div&gt; 
 
-      &lt;ion-card&gt;
-        &lt;img src&#x3D;&quot;../../assets/short-trails.png&quot; alt&#x3D;&quot;Short trails&quot;&gt;
-      &lt;/ion-card&gt;
 
-      &lt;ion-card&gt;
-        &lt;img src&#x3D;&quot;../../assets/long-trails.png&quot; alt&#x3D;&quot;Long Trails&quot;&gt;
-      &lt;/ion-card&gt;
-
-    &lt;/div&gt;
-
-    &lt;div class&#x3D;&quot;right&quot;&gt;
-
-      &lt;ion-card [routerLink]&#x3D;&quot;[&#x27;nature&#x27;]&quot;&gt;
-        &lt;img src&#x3D;&quot;../../assets/nature.png&quot; alt&#x3D;&quot;Nature&quot;&gt;
-      &lt;/ion-card&gt;
-
-      &lt;ion-card [routerLink]&#x3D;&quot;[&#x27;lake&#x27;]&quot;&gt; 
-        &lt;img src&#x3D;&quot;../../assets/lake.png&quot; alt&#x3D;&quot;Lake&quot;&gt;
-      &lt;/ion-card&gt;
-
-      &lt;ion-card&gt;
-        &lt;img src&#x3D;&quot;../../assets/long-trails.png&quot; alt&#x3D;&quot;Long trails&quot;&gt;
-      &lt;/ion-card&gt;
-
-      &lt;ion-card&gt;
-        &lt;img src&#x3D;&quot;../../assets/city.png&quot; alt&#x3D;&quot;Nature&quot;&gt;
-      &lt;/ion-card&gt;
-
-    &lt;/div&gt;
-
-  &lt;/div&gt;
 
   &lt;div class&#x3D;&quot;wrapper-saved&quot;&gt;
 
     &lt;div class&#x3D;&quot;tab&quot;&gt;
-      &lt;span class&#x3D;&quot;saved-trails&quot;&gt;Saved trails&lt;/span&gt;
+      &lt;span class&#x3D;&quot;saved-trails&quot;&gt;Favourite trails&lt;/span&gt;
     &lt;/div&gt;
-    
-    &lt;!-- Trial start --&gt;
-        &lt;div class&#x3D;&quot;trail&quot; style&#x3D;&quot;background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake.jpg);&quot;&gt;
-          &lt;div class&#x3D;&quot;fave&quot;&gt;
-            &lt;ion-button fill&#x3D;clear&gt;
-            &lt;img src&#x3D;&quot;../../assets/not-fave.png&quot; alt&#x3D;&quot;&quot;&gt;
-          &lt;/ion-button&gt;
-          &lt;/div&gt;
-    
-          &lt;div class&#x3D;&quot;info&quot;&gt;
-    
-            &lt;span&gt;
-              &lt;span class&#x3D;&quot;title&quot;&gt;Boserup Skov - Kattinge Værk - Boserup Sø&lt;/span&gt;
-              &lt;span class&#x3D;&quot;rating&quot;&gt;
-                &lt;img src&#x3D;&quot;../../assets/star.png&quot; alt&#x3D;&quot;&quot;&gt;
-                 4,5
-              &lt;/span&gt;
-            &lt;/span&gt;
-    
-            &lt;span&gt;
-              &lt;span class&#x3D;&quot;extra&quot;&gt;Length: 7,4 km&lt;/span&gt;
-              &lt;span class&#x3D;&quot;extra&quot;&gt; • Est: 2h 10m&lt;/span&gt;
-            &lt;/span&gt;
-    
-          &lt;/div&gt;
-    
-        &lt;/div&gt;
-    &lt;!-- Trial end --&gt;
 
-    &lt;!-- Trial start 2 --&gt;
-&lt;div class&#x3D;&quot;trail&quot; style&#x3D;&quot;background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/boserup.jpg);&quot;&gt;
-  &lt;div class&#x3D;&quot;fave&quot;&gt;
-    &lt;ion-button fill&#x3D;clear&gt;
-    &lt;img src&#x3D;&quot;../../assets/not-fave.png&quot; alt&#x3D;&quot;&quot;&gt;
-  &lt;/ion-button&gt;
+    &lt;app-saved-trailcard&gt;&lt;/app-saved-trailcard&gt;
+    &lt;div style&#x3D;&quot;height:125px;&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
 
-  &lt;div class&#x3D;&quot;info&quot;&gt;
 
-    &lt;span&gt;
-      &lt;span class&#x3D;&quot;title&quot;&gt;Bognæs og Storskov&lt;/span&gt;
-      &lt;span class&#x3D;&quot;rating&quot;&gt;
-        &lt;img src&#x3D;&quot;../../assets/star.png&quot; alt&#x3D;&quot;&quot;&gt;
-         4,5
-      &lt;/span&gt;
-    &lt;/span&gt;
-
-    &lt;span&gt;
-      &lt;span class&#x3D;&quot;extra&quot;&gt;Length: 9,0 km&lt;/span&gt;
-      &lt;span class&#x3D;&quot;extra&quot;&gt; • Est: 2h 37m&lt;/span&gt;
-    &lt;/span&gt;
-
-  &lt;/div&gt;
-
-&lt;/div&gt;
-&lt;!-- Trial end --&gt;
-
-&lt;!-- Trial start 3 --&gt;
-&lt;div class&#x3D;&quot;trail&quot; style&#x3D;&quot;background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/forest.jpg);&quot;&gt;
-  &lt;div class&#x3D;&quot;fave&quot;&gt;
-    &lt;ion-button fill&#x3D;clear&gt;
-    &lt;img src&#x3D;&quot;../../assets/not-fave.png&quot; alt&#x3D;&quot;&quot;&gt;
-  &lt;/ion-button&gt;
-  &lt;/div&gt;
-
-  &lt;div class&#x3D;&quot;info&quot;&gt;
-
-    &lt;span&gt;
-      &lt;span class&#x3D;&quot;title&quot;&gt;Boserup Skov - kattinge Værk - Boserup Sø&lt;/span&gt;
-      &lt;span class&#x3D;&quot;rating&quot;&gt;
-        &lt;img src&#x3D;&quot;../../assets/star.png&quot; alt&#x3D;&quot;&quot;&gt;
-         4,5
-      &lt;/span&gt;
-    &lt;/span&gt;
-
-    &lt;span&gt;
-      &lt;span class&#x3D;&quot;extra&quot;&gt;Length: 7,4 km&lt;/span&gt;
-      &lt;span class&#x3D;&quot;extra&quot;&gt; • Est: 2h 10m&lt;/span&gt;
-    &lt;/span&gt;
-
-  &lt;/div&gt;
-
-&lt;/div&gt;
-&lt;!-- Trial end --&gt;
-
-&lt;!-- Trial start 4 --&gt;
-&lt;div class&#x3D;&quot;trail&quot; style&#x3D;&quot;background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake2.jpg);&quot;&gt;
-  &lt;div class&#x3D;&quot;fave&quot;&gt;
-    &lt;ion-button fill&#x3D;clear&gt;
-    &lt;img src&#x3D;&quot;../../assets/not-fave.png&quot; alt&#x3D;&quot;&quot;&gt;
-  &lt;/ion-button&gt;
-  &lt;/div&gt;
-
-  &lt;div class&#x3D;&quot;info&quot;&gt;
-
-    &lt;span&gt;
-      &lt;span class&#x3D;&quot;title&quot; style&#x3D;&quot;font-size: 18px !important&quot;&gt;Trekroner Himmelev Skov&lt;/span&gt;
-      &lt;span class&#x3D;&quot;rating&quot;&gt;
-        &lt;img src&#x3D;&quot;../../assets/star.png&quot; alt&#x3D;&quot;&quot;&gt;
-         4,0
-      &lt;/span&gt;
-    &lt;/span&gt;
-
-    &lt;span&gt;
-      &lt;span class&#x3D;&quot;extra&quot;&gt;Length: 8,2 km&lt;/span&gt;
-      &lt;span class&#x3D;&quot;extra&quot;&gt; • Est: 4h 20m&lt;/span&gt;
-    &lt;/span&gt;
-
-  &lt;/div&gt;
-
-&lt;/div&gt;
-&lt;!-- Trial end --&gt;
-
-  &lt;/div&gt;
 
 &lt;/ion-content&gt;
 </code></pre>
@@ -510,113 +811,116 @@ export class HomeComponentPage implements OnInit {
                 <p class="comment">
                     <code>./home-component.page.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">.header-md::after{
-    background-image: none;
-}
-ion-header{
-    padding-top: 10%;
-    padding-left: 10%;
-}
-
-ion-header &gt; span{
-     
+                <pre class="line-numbers"><code class="language-scss">.personal-info {
+  h2, span {
     font-weight: bold;
-    font-size: 36px;
-}
+    font-size: 2rem;
+    color: var(--ion-headings-color);
+    font-family: var(--header-font);
+    text-transform: capitalize;
+    margin: 0;
 
-ion-header &gt; p{
-     
-    font-size: 18px;
-    color: #94ab51;
-    font-weight: 500;
-    margin: 12px 0 0 0;
+  }
 }
 
 .wrapper{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 100%;
-    padding: 5% 5% 0 5%;
+  height: auto !important;
 }
 
-// .left{
-//     border: 1px solid red;
-// }
-
-// .right{
-//     border: 1px solid green;
-// }
-
-ion-card{
-     margin: 0;
-     box-shadow: none;
- }
-
- .tab{
-    padding: 0% 0% 5% 5%;
-}
-select{
-    float: right;
-     
-    font-size: 12;
-    border: none;
-}
 .saved-trails{
-     
-    font-size: 18px;
-    font-weight: bold;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
 }
 /* changed name for saved trails to work on home */
 .wrapper-saved{
-    display: inline-block;
-    height: 100%;
-    padding:30% 10% 5% 10%;
+  display: inline-block;
+  height: 100%;
+  padding: 5% 8% 5% 8%;
 }
-.trail{
-    border: 1px solid #707070;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(145,145,145,1) 100%);
-    border-radius: 20px;
-    opacity: 70%;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 5%;
-    height: 165px;
-    margin-bottom: 5%;
 
-}
-.info{
-    display: grid;
-    gap: 5%;
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 5%;
-}
-.info &gt; span{
-    margin-left: 5%;
-}
-.title{
-     
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-}
-.extra{
-     
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
-}
-ion-button{
-    float: right;
-}
 .rating{
-    color: white;
-    border: 1px solid #000000;
-    background-color: #000000 !important;
-    border-radius: 25px;
-    padding: 1% 2% 1% 2%;
-    margin-left: 5%;
+  color: white;
+  border: 1px solid #000000;
+  background-color: #000000 !important;
+  border-radius: 25px;
+  padding: 1% 2% 1% 2%;
+  margin-left: 5%;
 }
+
+.buttongroup {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    width: 100%;
+    margin: 0px 6px 1rem 0px;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    height: 2.3rem;
+    background: #758C35;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 5px 0px rgb(131, 131, 131);
+
+    &amp;:nth-child(2),
+    &amp;:nth-child(3) {
+      background: #C83333;
+      margin: 0px 0px 1rem 6px;
+
+    }
+  }
+}
+
+.searchfield {
+  width: 100%;
+
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  input {
+    height: 100%;
+    margin: 0;
+    border: 0;
+    border-top: 2px solid #b4c582;
+    border-left: 2px solid #b4c582;
+    border-bottom: 2px solid #b4c582;
+
+  }
+
+  button {
+    background-color: #b4c582;
+    color: white;
+    width: 3rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+input,
+textarea {
+  padding: 12px 16px;
+  width: 100%;
+  margin-top: 50px;
+  border: 2px solid rgb(230, 230, 230);
+  border-radius: 3px;
+}
+
+#search{
+  margin-top: 30px;
+  color: black;
+}
+
+ion-searchbar{
+  background: var(--ion-color-primary);
+  border-radius: var(--border-radius-default);
+  --padding-start: 10px;
+  height: 3rem;
+}
+
 </code></pre>
     </div>
 
@@ -645,8 +949,8 @@ ion-button{
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-header>  <span >Hello, </span>  <span *ngFor="let item of storageItems">{{item[\'name\']}}</span>  <p>Here is a list of recommended trails</p></ion-header><ion-content>  <div class="wrapper">     <div class="left">      <ion-card [routerLink]="[\'top-rated\']">         <img src="../../assets/top-rated.png" alt="Top Rated">      </ion-card>      <ion-card>        <img src="../../assets/sightseeing.png" alt="Sightseeing">      </ion-card>      <ion-card>        <img src="../../assets/short-trails.png" alt="Short trails">      </ion-card>      <ion-card>        <img src="../../assets/long-trails.png" alt="Long Trails">      </ion-card>    </div>    <div class="right">      <ion-card [routerLink]="[\'nature\']">        <img src="../../assets/nature.png" alt="Nature">      </ion-card>      <ion-card [routerLink]="[\'lake\']">         <img src="../../assets/lake.png" alt="Lake">      </ion-card>      <ion-card>        <img src="../../assets/long-trails.png" alt="Long trails">      </ion-card>      <ion-card>        <img src="../../assets/city.png" alt="Nature">      </ion-card>    </div>  </div>  <div class="wrapper-saved">    <div class="tab">      <span class="saved-trails">Saved trails</span>    </div>        <!-- Trial start -->        <div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake.jpg);">          <div class="fave">            <ion-button fill=clear>            <img src="../../assets/not-fave.png" alt="">          </ion-button>          </div>              <div class="info">                <span>              <span class="title">Boserup Skov - Kattinge Værk - Boserup Sø</span>              <span class="rating">                <img src="../../assets/star.png" alt="">                 4,5              </span>            </span>                <span>              <span class="extra">Length: 7,4 km</span>              <span class="extra"> • Est: 2h 10m</span>            </span>              </div>            </div>    <!-- Trial end -->    <!-- Trial start 2 --><div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/boserup.jpg);">  <div class="fave">    <ion-button fill=clear>    <img src="../../assets/not-fave.png" alt="">  </ion-button>  </div>  <div class="info">    <span>      <span class="title">Bognæs og Storskov</span>      <span class="rating">        <img src="../../assets/star.png" alt="">         4,5      </span>    </span>    <span>      <span class="extra">Length: 9,0 km</span>      <span class="extra"> • Est: 2h 37m</span>    </span>  </div></div><!-- Trial end --><!-- Trial start 3 --><div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/forest.jpg);">  <div class="fave">    <ion-button fill=clear>    <img src="../../assets/not-fave.png" alt="">  </ion-button>  </div>  <div class="info">    <span>      <span class="title">Boserup Skov - kattinge Værk - Boserup Sø</span>      <span class="rating">        <img src="../../assets/star.png" alt="">         4,5      </span>    </span>    <span>      <span class="extra">Length: 7,4 km</span>      <span class="extra"> • Est: 2h 10m</span>    </span>  </div></div><!-- Trial end --><!-- Trial start 4 --><div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake2.jpg);">  <div class="fave">    <ion-button fill=clear>    <img src="../../assets/not-fave.png" alt="">  </ion-button>  </div>  <div class="info">    <span>      <span class="title" style="font-size: 18px !important">Trekroner Himmelev Skov</span>      <span class="rating">        <img src="../../assets/star.png" alt="">         4,0      </span>    </span>    <span>      <span class="extra">Length: 8,2 km</span>      <span class="extra"> • Est: 4h 20m</span>    </span>  </div></div><!-- Trial end -->  </div></ion-content></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgesPage', 'selector': 'app-badges'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LakePage', 'selector': 'app-lake'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'NaturePage', 'selector': 'app-nature'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'TopRatedPage', 'selector': 'app-top-rated'},{'name': 'TrailDetailsPage', 'selector': 'app-trail-details'}];
+        var COMPONENT_TEMPLATE = '<div><ion-header>  <div class="personal-info">    <h2>Hello <span *ngFor="let item of storageItems">{{item[\'name\']}}</span></h2>    <p>Welcome to Roskilde!</p>  </div></ion-header><ion-content>  <div style="height: 100px;"></div>  <div class="wrapper">     <!--<div class="input-group mb-3" id="search">      <div class="input-group-append searchfield">        <input type="text" class="form-control" placeholder="Search added trails" [(ngModel)]="name" />        <button class="btn btn-outline-secondary" type="button" (click)="searchName()">          🔎︎        </button>      </div>    </div>-->    <ion-searchbar placeholder="Search for trails" color="primary" [(ngModel)]="name" (click)="searchName()" ></ion-searchbar>    <ion-list>      <ion-item *ngFor="let trail of trails; let i = index" [class.active]="i == currentIndex"        (click)="setActiveTrail(trail, i)" style="color: white;">        {{ trail.name }}      </ion-item>    </ion-list>    <br>    <app-category [routerLink]="[\'top-rated\']" categorytitle="Top Rated" ></app-category>    <app-categoryvariant [routerLink]="[\'lake\']" categoryvarianttitle="Lakes"></app-categoryvariant>    <app-categoryvariant [routerLink]="[\'nature\']" categoryvarianttitle="Nature"></app-categoryvariant>  </div>   <div class="wrapper-saved">    <div class="tab">      <span class="saved-trails">Favourite trails</span>    </div>    <app-saved-trailcard></app-saved-trailcard>    <div style="height:125px;"></div>  </div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AdminPage', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgesPage', 'selector': 'app-badges'},{'name': 'CategoryComponent', 'selector': 'app-category'},{'name': 'CategoryvariantComponent', 'selector': 'app-categoryvariant'},{'name': 'CreateTrailPage', 'selector': 'app-create-trail'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LakePage', 'selector': 'app-lake'},{'name': 'LakeTrailcardComponent', 'selector': 'app-lake-trailcard'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'NaturePage', 'selector': 'app-nature'},{'name': 'NatureTrailcardComponent', 'selector': 'app-nature-trailcard'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'SavedTrailcardComponent', 'selector': 'app-saved-trailcard'},{'name': 'TopRatedPage', 'selector': 'app-top-rated'},{'name': 'TopratedTrailcardComponent', 'selector': 'app-toprated-trailcard'},{'name': 'TrailcardComponent', 'selector': 'app-trailcard'},{'name': 'TrailDetailsPage', 'selector': 'app-trail-details'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'HomeComponentPage'};
 </script>

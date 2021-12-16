@@ -1,0 +1,1435 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>roskilde-trails documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">roskilde-trails documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  AdminPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/admin/admin.page.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-admin</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./admin.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./admin.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#currentIndex" >currentIndex</a>
+                            </li>
+                            <li>
+                                <a href="#currentTrail" >currentTrail</a>
+                            </li>
+                            <li>
+                                <a href="#message" >message</a>
+                            </li>
+                            <li>
+                                <a href="#name" >name</a>
+                            </li>
+                            <li>
+                                <a href="#trail" >trail</a>
+                            </li>
+                            <li>
+                                <a href="#trails" >trails</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addTrail" >addTrail</a>
+                            </li>
+                            <li>
+                                <a href="#deleteTrail" >deleteTrail</a>
+                            </li>
+                            <li>
+                                <a href="#getTrail" >getTrail</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#refreshList" >refreshList</a>
+                            </li>
+                            <li>
+                                <a href="#removeAllTrails" >removeAllTrails</a>
+                            </li>
+                            <li>
+                                <a href="#retrieveTrails" >retrieveTrails</a>
+                            </li>
+                            <li>
+                                <a href="#searchName" >searchName</a>
+                            </li>
+                            <li>
+                                <a href="#setActiveTrail" >setActiveTrail</a>
+                            </li>
+                            <li>
+                                <a href="#updateTrail" >updateTrail</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(trailService: <a href="../injectables/TrailService.html" target="_self">TrailService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/pages/admin/admin.page.ts:28</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>trailService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TrailService.html" target="_self" >TrailService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addTrail"></a>
+                    <span class="name">
+                        <span ><b>addTrail</b></span>
+                        <a href="#addTrail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addTrail()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/app/pages/admin/admin.page.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteTrail"></a>
+                    <span class="name">
+                        <span ><b>deleteTrail</b></span>
+                        <a href="#deleteTrail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteTrail()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="140"
+                            class="link-to-prism">src/app/pages/admin/admin.page.ts:140</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTrail"></a>
+                    <span class="name">
+                        <span ><b>getTrail</b></span>
+                        <a href="#getTrail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTrail(id)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/app/pages/admin/admin.page.ts:114</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="33"
+                            class="link-to-prism">src/app/pages/admin/admin.page.ts:33</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="refreshList"></a>
+                    <span class="name">
+                        <span ><b>refreshList</b></span>
+                        <a href="#refreshList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>refreshList()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">src/app/pages/admin/admin.page.ts:76</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeAllTrails"></a>
+                    <span class="name">
+                        <span ><b>removeAllTrails</b></span>
+                        <a href="#removeAllTrails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeAllTrails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="101"
+                            class="link-to-prism">src/app/pages/admin/admin.page.ts:101</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="retrieveTrails"></a>
+                    <span class="name">
+                        <span ><b>retrieveTrails</b></span>
+                        <a href="#retrieveTrails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>retrieveTrails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/app/pages/admin/admin.page.ts:40</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchName"></a>
+                    <span class="name">
+                        <span ><b>searchName</b></span>
+                        <a href="#searchName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>searchName()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="88"
+                            class="link-to-prism">src/app/pages/admin/admin.page.ts:88</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setActiveTrail"></a>
+                    <span class="name">
+                        <span ><b>setActiveTrail</b></span>
+                        <a href="#setActiveTrail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setActiveTrail(trail, index)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/pages/admin/admin.page.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>trail</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>index</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateTrail"></a>
+                    <span class="name">
+                        <span ><b>updateTrail</b></span>
+                        <a href="#updateTrail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateTrail()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="127"
+                            class="link-to-prism">src/app/pages/admin/admin.page.ts:127</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentIndex"></a>
+                    <span class="name">
+                        <span ><b>currentIndex</b></span>
+                        <a href="#currentIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>-1</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/pages/admin/admin.page.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentTrail"></a>
+                    <span class="name">
+                        <span ><b>currentTrail</b></span>
+                        <a href="#currentTrail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/pages/admin/admin.page.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="message"></a>
+                    <span class="name">
+                        <span ><b>message</b></span>
+                        <a href="#message"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/pages/admin/admin.page.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="name"></a>
+                    <span class="name">
+                        <span ><b>name</b></span>
+                        <a href="#name"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/pages/admin/admin.page.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trail"></a>
+                    <span class="name">
+                        <span ><b>trail</b></span>
+                        <a href="#trail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    name: &#x27;&#x27;,
+    description: &#x27;&#x27;,
+    length: &#x27;&#x27;,
+    est_time: &#x27;&#x27;,
+    category: &#x27;&#x27;,
+    trail_pic: &#x27;&#x27;,
+    rating: &#x27;&#x27;
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/pages/admin/admin.page.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trails"></a>
+                    <span class="name">
+                        <span ><b>trails</b></span>
+                        <a href="#trails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Trail.html" target="_self" >Trail[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/pages/admin/admin.page.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Trail } from &#x27;src/app/models/trail.model&#x27;;
+import { TrailService } from &#x27;src/app/services/trail.service&#x27;;
+
+@Component({
+  selector: &#x27;app-admin&#x27;,
+  templateUrl: &#x27;./admin.page.html&#x27;,
+  styleUrls: [&#x27;./admin.page.scss&#x27;],
+})
+export class AdminPage implements OnInit{
+
+  trail &#x3D; {
+    name: &#x27;&#x27;,
+    description: &#x27;&#x27;,
+    length: &#x27;&#x27;,
+    est_time: &#x27;&#x27;,
+    category: &#x27;&#x27;,
+    trail_pic: &#x27;&#x27;,
+    rating: &#x27;&#x27;
+  };
+
+  trails: Trail[];
+
+  currentTrail &#x3D; null;
+  currentIndex &#x3D; -1;
+
+  name &#x3D; &#x27;&#x27;;
+  message &#x3D; &#x27;&#x27;;
+
+
+  constructor(private trailService: TrailService) { }
+
+  ngOnInit() {
+    this.retrieveTrails();
+    this.message &#x3D; &#x27;&#x27;;
+
+  }
+
+  //get all trails
+  retrieveTrails() {
+    this.trailService.getAll()
+      .subscribe(
+        data &#x3D;&gt; {
+          this.trails &#x3D; data;
+          console.log(data);
+        },
+        error &#x3D;&gt; {
+          console.log(error);
+        });
+  }
+
+  //add trail
+addTrail() {
+  const data &#x3D; {
+    name: this.trail.name,
+    description: this.trail.description,
+    est_time: this.trail.est_time,
+    length: this.trail.length,
+    category: this.trail.category,
+    trail_pic: this.trail.trail_pic,
+    rating: this.trail.rating
+  };
+  console.log(this.trail.est_time);
+
+  this.trailService.create(data)
+    .subscribe(
+      response &#x3D;&gt; {
+        console.log(response);
+        this.retrieveTrails();
+      },
+      error &#x3D;&gt; {
+        console.log(error);
+      });
+}
+  //automatically refresh list - doesn&#x27;t work atm
+  refreshList() {
+    this.retrieveTrails();
+    this.currentTrail &#x3D; null;
+    this.currentIndex &#x3D; -1;
+  }
+
+  setActiveTrail(trail, index) {
+    this.currentTrail &#x3D; trail;
+    this.currentIndex &#x3D; index;
+  }
+ 
+  //find by name
+  searchName() {
+    this.trailService.findByName(this.name)
+      .subscribe(
+        data &#x3D;&gt; {
+          this.trails &#x3D; data;
+          console.log(data);
+        },
+        error &#x3D;&gt; {
+          console.log(error);
+        });
+  }
+  
+  //delete all trails
+  removeAllTrails() {
+    this.trailService.deleteAll()
+      .subscribe(
+        response &#x3D;&gt; {
+          console.log(response);
+          this.retrieveTrails();
+        },
+        error &#x3D;&gt; {
+          console.log(error);
+        });
+  }
+
+  //get trail
+  getTrail(id) {
+    this.trailService.get(id)
+      .subscribe(
+        data &#x3D;&gt; {
+          this.currentTrail &#x3D; data;
+          console.log(data);
+        },
+        error &#x3D;&gt; {
+          console.log(error);
+        });
+  }
+
+  //update trail
+  updateTrail() {
+    this.trailService.update(this.currentTrail.id, this.currentTrail)
+      .subscribe(
+        response &#x3D;&gt; {
+          console.log(response);
+          this.message &#x3D; &#x27;The trail was updated successfully!&#x27;;
+          this.retrieveTrails();
+        },
+        error &#x3D;&gt; {
+          console.log(error);
+        });
+  }
+
+  deleteTrail() {
+    this.trailService.delete(this.currentTrail.id)
+      .subscribe(
+        response &#x3D;&gt; {
+          console.log(response);
+          this.retrieveTrails();
+        },
+        error &#x3D;&gt; {
+          console.log(error);
+        });
+  }
+
+ }
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">
+&lt;ion-header&gt;
+  &lt;div class&#x3D;&quot;personal-info&quot;&gt;
+    &lt;h2&gt;Admin page&lt;/h2&gt;
+    &lt;p&gt;Add, update and delete trails&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/ion-header&gt;
+
+
+&lt;ion-content class&#x3D;&quot;&quot;&gt;
+  &lt;div class&#x3D;&quot;paddings&quot;&gt;
+
+    &lt;!-- Form for adding a trail --&gt;
+    &lt;div style&#x3D;&quot;height: 125px;&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;submit-form&quot; style&#x3D;&quot;color:black;&quot;&gt;
+      &lt;div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;name&quot;&gt;&lt;/label&gt;
+          &lt;input placeholder&#x3D;&quot;Name&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;name&quot; required [(ngModel)]&#x3D;&quot;trail.name&quot;
+            name&#x3D;&quot;name&quot; /&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;lenght&quot;&gt;&lt;/label&gt;
+          &lt;input type&#x3D;&quot;tel&quot; placeholder&#x3D;&quot;Length&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;length&quot; required [(ngModel)]&#x3D;&quot;trail.length&quot;
+            name&#x3D;&quot;length&quot; /&gt;
+            &lt;!-- maxlength&#x3D;&quot;2&quot; --&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group inputfield&quot;&gt;
+          &lt;label for&#x3D;&quot;description&quot;&gt;&lt;/label&gt;
+          &lt;textarea rows&#x3D;&quot;3&quot; placeholder&#x3D;&quot;Trail description&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;description&quot; required
+            [(ngModel)]&#x3D;&quot;trail.description&quot; name&#x3D;&quot;description&quot;&gt;&lt;/textarea&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;est_time&quot;&gt;&lt;/label&gt;
+          &lt;input placeholder&#x3D;&quot;Estimated completion time&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;est_time&quot; required [(ngModel)]&#x3D;&quot;trail.est_time&quot;
+            name&#x3D;&quot;est_time&quot; /&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;category&quot;&gt;&lt;/label&gt;
+          &lt;input placeholder&#x3D;&quot;Category&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;category&quot; required [(ngModel)]&#x3D;&quot;trail.category&quot;
+            name&#x3D;&quot;category&quot;/&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group inputfield&quot;&gt;
+          &lt;label for&#x3D;&quot;trail_pic&quot;&gt;&lt;/label&gt;
+          &lt;textarea rows&#x3D;&quot;3&quot; placeholder&#x3D;&quot;Link to trial picture&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;trail_pic&quot; required
+            [(ngModel)]&#x3D;&quot;trail.trail_pic&quot; name&#x3D;&quot;trail_pic&quot;&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;rating&quot;&gt;&lt;/label&gt;
+          &lt;input placeholder&#x3D;&quot;Trail rating&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;rating&quot; required [(ngModel)]&#x3D;&quot;trail.rating&quot;
+            name&#x3D;&quot;rating&quot; /&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;buttongroup&quot;&gt;
+          &lt;button (click)&#x3D;&quot;addTrail()&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Add Trail&lt;/button&gt;
+          &lt;!-- &lt;button class&#x3D;&quot;m-3 btn btn-sm btn-danger&quot; (click)&#x3D;&quot;removeAllTrails()&quot;&gt;delete all&lt;/button&gt; --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;!-- End of form for adding a trail --&gt;
+
+    &lt;!-- Display list of trails --&gt;
+    &lt;div class&#x3D;&quot;col-md-8&quot;&gt;
+      &lt;ion-header class&#x3D;&quot;headerpadding&quot;&gt;
+        &lt;div class&#x3D;&quot;personal-info&quot;&gt;
+          &lt;h2&gt;Added trails&lt;/h2&gt;
+          &lt;p&gt;Added trails will appear here&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/ion-header&gt;
+      &lt;!-- Search --&gt;
+      &lt;div class&#x3D;&quot;input-group mb-3&quot;&gt;
+        &lt;div class&#x3D;&quot;input-group-append searchfield&quot;&gt;
+          &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Search added trails&quot; [(ngModel)]&#x3D;&quot;name&quot; /&gt;
+          &lt;button class&#x3D;&quot;btn btn-outline-secondary&quot; type&#x3D;&quot;button&quot; (click)&#x3D;&quot;searchName()&quot;&gt;
+            🔎︎
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;div style&#x3D;&quot;height: 100px;&quot;&gt;&lt;/div&gt;
+
+    &lt;ion-list&gt;
+      &lt;ion-item *ngFor&#x3D;&quot;let trail of trails; let i &#x3D; index&quot; [class.active]&#x3D;&quot;i &#x3D;&#x3D; currentIndex&quot;
+        (click)&#x3D;&quot;setActiveTrail(trail, i)&quot; style&#x3D;&quot;color: white;&quot;&gt;
+        {{ trail.name }}
+      &lt;/ion-item&gt;
+    &lt;/ion-list&gt;
+
+        &lt;!-- End of display list of trails --&gt;
+
+
+
+
+    &lt;!-- Update or delete trail --&gt;
+        &lt;div *ngIf&#x3D;&quot;currentTrail&quot; class&#x3D;&quot;edit-form&quot; style&#x3D;&quot;color:black;&quot;&gt;
+          &lt;form&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;label for&#x3D;&quot;name&quot;&gt;&lt;/label&gt;
+              &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;name&quot; [(ngModel)]&#x3D;&quot;currentTrail.name&quot; name&#x3D;&quot;name&quot; /&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;label for&#x3D;&quot;description&quot;&gt;&lt;/label&gt;
+              &lt;textarea type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;description&quot; [(ngModel)]&#x3D;&quot;currentTrail.description&quot;
+                name&#x3D;&quot;description&quot;&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;label for&#x3D;&quot;length&quot;&gt;&lt;/label&gt;
+              &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;length&quot; [(ngModel)]&#x3D;&quot;currentTrail.length&quot; name&#x3D;&quot;length&quot; /&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;label for&#x3D;&quot;est_time&quot;&gt;&lt;/label&gt;
+              &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;est_time&quot; [(ngModel)]&#x3D;&quot;currentTrail.est_time&quot; name&#x3D;&quot;est_time&quot; /&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;label for&#x3D;&quot;category&quot;&gt;&lt;/label&gt;
+              &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;category&quot; [(ngModel)]&#x3D;&quot;currentTrail.category&quot; name&#x3D;&quot;category&quot; /&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;label for&#x3D;&quot;trail_pic&quot;&gt;&lt;/label&gt;
+              &lt;textarea type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;trail_pic&quot; [(ngModel)]&#x3D;&quot;currentTrail.trail_pic&quot;
+                name&#x3D;&quot;trail_pic&quot;&gt;
+              &lt;/textarea&gt;
+            &lt;/div&gt; 
+
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;label for&#x3D;&quot;rating&quot;&gt;&lt;/label&gt;
+              &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;rating&quot; [(ngModel)]&#x3D;&quot;currentTrail.rating&quot; name&#x3D;&quot;rating&quot; /&gt;
+            &lt;/div&gt;
+
+
+            &lt;div class&#x3D;&quot;buttongroup&quot;&gt;
+              &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;badge badge-success&quot; (click)&#x3D;&quot;updateTrail()&quot;&gt;
+                Update
+              &lt;/button&gt;
+              &lt;button class&#x3D;&quot;badge badge-danger mr-2&quot; (click)&#x3D;&quot;deleteTrail()&quot;&gt;
+                Delete
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;p&gt;{{ message }}&lt;/p&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+            &lt;!-- End of update or delete trail --&gt;
+
+
+  &lt;/div&gt;
+&lt;/ion-content&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./admin.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.personal-info {
+  h2, span {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--ion-headings-color);
+    font-family: var(--header-font);
+    text-transform: capitalize;
+    margin: 0;
+
+  }
+}
+
+.headerpadding {
+  padding: unset;
+  padding-bottom: 1rem;
+
+  span {
+    font-size: 1.5rem;
+    color: rgb(107, 107, 107);
+  }
+}
+
+
+
+input,
+textarea {
+  padding: 12px 16px;
+  width: 100%;
+  margin: 6px 0;
+  border: 2px solid rgb(230, 230, 230);
+  border-radius: 3px;
+}
+
+.btn-success {
+  color: white;
+
+
+
+}
+
+.paddings {
+  padding: 0px 10%;
+
+  .submit-form {
+    padding-top: 1rem;
+    border-top: 2px solid #ccc;
+    margin-bottom: 3rem;
+  }
+}
+
+
+
+.buttongroup {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    width: 100%;
+    margin: 0px 6px 1rem 0px;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    height: 2.3rem;
+    background: #758C35;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 5px 0px rgb(131, 131, 131);
+
+    &amp;:nth-child(2),
+    &amp;:nth-child(3) {
+      background: #C83333;
+      margin: 0px 0px 1rem 6px;
+
+    }
+  }
+}
+
+.searchfield {
+  width: 100%;
+
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  input {
+    height: 100%;
+    margin: 0;
+    border: 0;
+    border-top: 2px solid #b4c582;
+    border-left: 2px solid #b4c582;
+    border-bottom: 2px solid #b4c582;
+
+  }
+
+  button {
+    background-color: #b4c582;
+    color: white;
+    width: 3rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+ion-item {
+  color: black;
+  font-weight: bold;
+  font-family: &#x27;Roboto&#x27;, sans-serif;
+  margin-left: -20px;
+  
+  border-bottom: 2px solid rgb(230, 230, 230);
+
+  .item-native {
+    padding: 0px !important;
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-header>  <div class="personal-info">    <h2>Admin page</h2>    <p>Add, update and delete trails</p>  </div></ion-header><ion-content class="">  <div class="paddings">    <!-- Form for adding a trail -->    <div style="height: 125px;"></div>    <div class="submit-form" style="color:black;">      <div>        <div class="form-group">          <label for="name"></label>          <input placeholder="Name" type="text" class="form-control" id="name" required [(ngModel)]="trail.name"            name="name" />        </div>        <div class="form-group">          <label for="lenght"></label>          <input type="tel" placeholder="Length" class="form-control" id="length" required [(ngModel)]="trail.length"            name="length" />            <!-- maxlength="2" -->        </div>        <div class="form-group inputfield">          <label for="description"></label>          <textarea rows="3" placeholder="Trail description" class="form-control" id="description" required            [(ngModel)]="trail.description" name="description"></textarea>        </div>        <div class="form-group">          <label for="est_time"></label>          <input placeholder="Estimated completion time" type="text" class="form-control" id="est_time" required [(ngModel)]="trail.est_time"            name="est_time" />        </div>        <div class="form-group">          <label for="category"></label>          <input placeholder="Category" type="text" class="form-control" id="category" required [(ngModel)]="trail.category"            name="category"/>        </div>        <div class="form-group inputfield">          <label for="trail_pic"></label>          <textarea rows="3" placeholder="Link to trial picture" class="form-control" id="trail_pic" required            [(ngModel)]="trail.trail_pic" name="trail_pic"></textarea>        </div>        <div class="form-group">          <label for="rating"></label>          <input placeholder="Trail rating" type="text" class="form-control" id="rating" required [(ngModel)]="trail.rating"            name="rating" />        </div>        <div class="buttongroup">          <button (click)="addTrail()" class="btn btn-success">Add Trail</button>          <!-- <button class="m-3 btn btn-sm btn-danger" (click)="removeAllTrails()">delete all</button> -->        </div>      </div>    </div>    <!-- End of form for adding a trail -->    <!-- Display list of trails -->    <div class="col-md-8">      <ion-header class="headerpadding">        <div class="personal-info">          <h2>Added trails</h2>          <p>Added trails will appear here</p>        </div>      </ion-header>      <!-- Search -->      <div class="input-group mb-3">        <div class="input-group-append searchfield">          <input type="text" class="form-control" placeholder="Search added trails" [(ngModel)]="name" />          <button class="btn btn-outline-secondary" type="button" (click)="searchName()">            🔎︎          </button>        </div>      </div>    </div><div style="height: 100px;"></div>    <ion-list>      <ion-item *ngFor="let trail of trails; let i = index" [class.active]="i == currentIndex"        (click)="setActiveTrail(trail, i)" style="color: white;">        {{ trail.name }}      </ion-item>    </ion-list>        <!-- End of display list of trails -->    <!-- Update or delete trail -->        <div *ngIf="currentTrail" class="edit-form" style="color:black;">          <form>            <div class="form-group">              <label for="name"></label>              <input type="text" class="form-control" id="name" [(ngModel)]="currentTrail.name" name="name" />            </div>            <div class="form-group">              <label for="description"></label>              <textarea type="text" class="form-control" id="description" [(ngModel)]="currentTrail.description"                name="description"></textarea>            </div>            <div class="form-group">              <label for="length"></label>              <input type="text" class="form-control" id="length" [(ngModel)]="currentTrail.length" name="length" />            </div>            <div class="form-group">              <label for="est_time"></label>              <input type="text" class="form-control" id="est_time" [(ngModel)]="currentTrail.est_time" name="est_time" />            </div>            <div class="form-group">              <label for="category"></label>              <input type="text" class="form-control" id="category" [(ngModel)]="currentTrail.category" name="category" />            </div>            <div class="form-group">              <label for="trail_pic"></label>              <textarea type="text" class="form-control" id="trail_pic" [(ngModel)]="currentTrail.trail_pic"                name="trail_pic">              </textarea>            </div>             <div class="form-group">              <label for="rating"></label>              <input type="text" class="form-control" id="rating" [(ngModel)]="currentTrail.rating" name="rating" />            </div>            <div class="buttongroup">              <button type="submit" class="badge badge-success" (click)="updateTrail()">                Update              </button>              <button class="badge badge-danger mr-2" (click)="deleteTrail()">                Delete              </button>            </div>            <p>{{ message }}</p>          </form>        </div>            <!-- End of update or delete trail -->  </div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AdminPage', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgesPage', 'selector': 'app-badges'},{'name': 'CategoryComponent', 'selector': 'app-category'},{'name': 'CategoryvariantComponent', 'selector': 'app-categoryvariant'},{'name': 'CreateTrailPage', 'selector': 'app-create-trail'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LakePage', 'selector': 'app-lake'},{'name': 'LakeTrailcardComponent', 'selector': 'app-lake-trailcard'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'NaturePage', 'selector': 'app-nature'},{'name': 'NatureTrailcardComponent', 'selector': 'app-nature-trailcard'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'SavedTrailcardComponent', 'selector': 'app-saved-trailcard'},{'name': 'TopRatedPage', 'selector': 'app-top-rated'},{'name': 'TopratedTrailcardComponent', 'selector': 'app-toprated-trailcard'},{'name': 'TrailcardComponent', 'selector': 'app-trailcard'},{'name': 'TrailDetailsPage', 'selector': 'app-trail-details'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'AdminPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AdminPage.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

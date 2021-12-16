@@ -116,6 +116,14 @@ const routes: Routes &#x3D; [
     path: &#x27;trail-details&#x27;,
     loadChildren: () &#x3D;&gt; &quot;import(&#x27;./pages/trail-details/trail-details.module&#x27;).then( m &#x3D;&gt; m.TrailDetailsPageModule)&quot;
   },
+  {
+    path: &#x27;admin&#x27;,
+    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./pages/admin/admin.module&#x27;).then( m &#x3D;&gt; m.AdminPageModule)&quot;
+  },
+  {
+    path: &#x27;create-trail&#x27;,
+    loadChildren: () &#x3D;&gt; &quot;import(&#x27;./pages/create-trail/create-trail.module&#x27;).then( m &#x3D;&gt; m.CreateTrailPageModule)&quot;
+  },
 ];
 @NgModule({
   imports: [

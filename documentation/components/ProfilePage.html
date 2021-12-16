@@ -338,31 +338,32 @@ export class ProfilePage implements OnInit {
         <pre class="line-numbers"><code class="language-html">&lt;ion-header&gt;
 
   &lt;div class&#x3D;&quot;profile-pic&quot;&gt;
-    &lt;img src&#x3D;&quot;../../assets/profilepic.png&quot; alt&#x3D;&quot;Profile picture&quot;&gt;
+    &lt;img src&#x3D;&quot;../../assets/profilepic1.png&quot; alt&#x3D;&quot;Profile picture&quot;&gt;
   &lt;/div&gt;
 
   &lt;div class&#x3D;&quot;personal-info&quot;&gt;
     &lt;span *ngFor&#x3D;&quot;let item of storageItems&quot;&gt;{{item[&#x27;name&#x27;]}}&lt;/span&gt;
-    &lt;p&gt;Profile overview&lt;/p&gt;
+    &lt;p&gt;Edit profile&lt;/p&gt;
   &lt;/div&gt;
 
 &lt;/ion-header&gt;
 
 &lt;ion-content&gt;
+  &lt;div style&#x3D;&quot;height: 100px; &quot; &gt;&lt;/div&gt;
 
   &lt;div class&#x3D;&quot;stats&quot;&gt;
     &lt;div class&#x3D;&quot;stats-info&quot;&gt;
       &lt;span class&#x3D;&quot;number&quot;&gt;45,7&lt;/span&gt;
-      &lt;span class&#x3D;&quot;text&quot;&gt;km walked&lt;/span&gt;
+      &lt;span class&#x3D;&quot;text&quot;&gt;Km walked&lt;/span&gt;
     &lt;/div&gt;
     &lt;div class&#x3D;&quot;stats-info&quot;&gt;
       &lt;span class&#x3D;&quot;number&quot;&gt;8&lt;/span&gt;
-      &lt;span class&#x3D;&quot;text&quot;&gt;trails completed&lt;/span&gt;
+      &lt;span class&#x3D;&quot;text&quot;&gt;Trails completed&lt;/span&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;div class&#x3D;&quot;tab&quot;&gt;
-    &lt;span class&#x3D;&quot;saved-trails&quot;&gt;Saved trails&lt;/span&gt;
+    &lt;span class&#x3D;&quot;saved-trails&quot;&gt;Favourite trails&lt;/span&gt;
 
     &lt;select name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
       &lt;option value&#x3D;&quot;date-added&quot;&gt;Date added&lt;/option&gt;
@@ -374,117 +375,8 @@ export class ProfilePage implements OnInit {
 
   &lt;div class&#x3D;&quot;wrapper&quot;&gt;
 
-    &lt;!-- Trial start --&gt;
-        &lt;div class&#x3D;&quot;trail&quot; style&#x3D;&quot;background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake.jpg);&quot;&gt;
-          &lt;div class&#x3D;&quot;fave&quot;&gt;
-            &lt;ion-button fill&#x3D;clear&gt;
-            &lt;img src&#x3D;&quot;../../assets/not-fave.png&quot; alt&#x3D;&quot;&quot;&gt;
-          &lt;/ion-button&gt;
-          &lt;/div&gt;
-    
-          &lt;div class&#x3D;&quot;info&quot;&gt;
-    
-            &lt;span&gt;
-              &lt;span class&#x3D;&quot;title&quot;&gt;Boserup Skov - Kattinge Værk - Boserup Sø&lt;/span&gt;
-              &lt;span class&#x3D;&quot;rating&quot;&gt;
-                &lt;img src&#x3D;&quot;../../assets/star.png&quot; alt&#x3D;&quot;&quot;&gt;
-                 4,5
-              &lt;/span&gt;
-            &lt;/span&gt;
-    
-            &lt;span&gt;
-              &lt;span class&#x3D;&quot;extra&quot;&gt;Length: 7,4 km&lt;/span&gt;
-              &lt;span class&#x3D;&quot;extra&quot;&gt; • Est: 2h 10m&lt;/span&gt;
-            &lt;/span&gt;
-    
-          &lt;/div&gt;
-    
-        &lt;/div&gt;
-    &lt;!-- Trial end --&gt;
-
-    &lt;!-- Trial start 2 --&gt;
-&lt;div class&#x3D;&quot;trail&quot; style&#x3D;&quot;background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/boserup.jpg);&quot;&gt;
-  &lt;div class&#x3D;&quot;fave&quot;&gt;
-    &lt;ion-button fill&#x3D;clear&gt;
-    &lt;img src&#x3D;&quot;../../assets/not-fave.png&quot; alt&#x3D;&quot;&quot;&gt;
-  &lt;/ion-button&gt;
-  &lt;/div&gt;
-
-  &lt;div class&#x3D;&quot;info&quot;&gt;
-
-    &lt;span&gt;
-      &lt;span class&#x3D;&quot;title&quot;&gt;Bognæs og Storskov&lt;/span&gt;
-      &lt;span class&#x3D;&quot;rating&quot;&gt;
-        &lt;img src&#x3D;&quot;../../assets/star.png&quot; alt&#x3D;&quot;&quot;&gt;
-         4,5
-      &lt;/span&gt;
-    &lt;/span&gt;
-
-    &lt;span&gt;
-      &lt;span class&#x3D;&quot;extra&quot;&gt;Length: 9,0 km&lt;/span&gt;
-      &lt;span class&#x3D;&quot;extra&quot;&gt; • Est: 2h 37m&lt;/span&gt;
-    &lt;/span&gt;
-
-  &lt;/div&gt;
-
-&lt;/div&gt;
-&lt;!-- Trial end --&gt;
-
-&lt;!-- Trial start 3 --&gt;
-&lt;div class&#x3D;&quot;trail&quot; style&#x3D;&quot;background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/forest.jpg);&quot;&gt;
-  &lt;div class&#x3D;&quot;fave&quot;&gt;
-    &lt;ion-button fill&#x3D;clear&gt;
-    &lt;img src&#x3D;&quot;../../assets/not-fave.png&quot; alt&#x3D;&quot;&quot;&gt;
-  &lt;/ion-button&gt;
-  &lt;/div&gt;
-
-  &lt;div class&#x3D;&quot;info&quot;&gt;
-
-    &lt;span&gt;
-      &lt;span class&#x3D;&quot;title&quot;&gt;Boserup Skov - kattinge Værk - Boserup Sø&lt;/span&gt;
-      &lt;span class&#x3D;&quot;rating&quot;&gt;
-        &lt;img src&#x3D;&quot;../../assets/star.png&quot; alt&#x3D;&quot;&quot;&gt;
-         4,5
-      &lt;/span&gt;
-    &lt;/span&gt;
-
-    &lt;span&gt;
-      &lt;span class&#x3D;&quot;extra&quot;&gt;Length: 7,4 km&lt;/span&gt;
-      &lt;span class&#x3D;&quot;extra&quot;&gt; • Est: 2h 10m&lt;/span&gt;
-    &lt;/span&gt;
-
-  &lt;/div&gt;
-
-&lt;/div&gt;
-&lt;!-- Trial end --&gt;
-
-&lt;!-- Trial start 4 --&gt;
-&lt;div class&#x3D;&quot;trail&quot; style&#x3D;&quot;background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake2.jpg);&quot;&gt;
-  &lt;div class&#x3D;&quot;fave&quot;&gt;
-    &lt;ion-button fill&#x3D;clear&gt;
-    &lt;img src&#x3D;&quot;../../assets/not-fave.png&quot; alt&#x3D;&quot;&quot;&gt;
-  &lt;/ion-button&gt;
-  &lt;/div&gt;
-
-  &lt;div class&#x3D;&quot;info&quot;&gt;
-
-    &lt;span&gt;
-      &lt;span class&#x3D;&quot;title&quot; style&#x3D;&quot;font-size: 18px !important&quot;&gt;Trekroner Himmelev Skov&lt;/span&gt;
-      &lt;span class&#x3D;&quot;rating&quot;&gt;
-        &lt;img src&#x3D;&quot;../../assets/star.png&quot; alt&#x3D;&quot;&quot;&gt;
-         4,0
-      &lt;/span&gt;
-    &lt;/span&gt;
-
-    &lt;span&gt;
-      &lt;span class&#x3D;&quot;extra&quot;&gt;Length: 8,2 km&lt;/span&gt;
-      &lt;span class&#x3D;&quot;extra&quot;&gt; • Est: 4h 20m&lt;/span&gt;
-    &lt;/span&gt;
-
-  &lt;/div&gt;
-
-&lt;/div&gt;
-&lt;!-- Trial end --&gt;
+    &lt;app-saved-trailcard&gt;&lt;/app-saved-trailcard&gt;
+    &lt;div style&#x3D;&quot;height:125px;&quot;&gt;&lt;/div&gt;  
 
   &lt;/div&gt;
 
@@ -496,122 +388,113 @@ export class ProfilePage implements OnInit {
                 <p class="comment">
                     <code>./profile.page.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">.header-md::after{
+                <pre class="line-numbers"><code class="language-scss">@import url(&quot;../../../theme/variables.scss&quot;);
+
+.header-md {
+  &amp;::after {
     background-image: none;
+  }
 }
-ion-header{
-    padding-top: 8%;
-    padding-left: 8%;
-    display: flex;
-    gap: 10%;
-}
+
+
 .personal-info{
-    margin-top: 2%;
+  p{
+    text-decoration: underline;
+  }
 }
-.personal-info &gt; span{
-     
-    font-weight: bold;
-    font-size: 36px;
+
+
+
+
+.profile-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 4.5rem;
+    border-radius: var(--border-radius-default);
+    
+  }
 }
-.personal-info &gt; p{
-     
-    font-size: 16px;
-    color: #94ab51;
-    font-weight: medium;
-    margin: -5px 0 0 0;
- }
-.profile-pic &gt; img{
-    height: 85px;
-}
-.stats-info{
-    border-radius: 5%;
-    padding: 5% 14% 5% 15%;
-    box-shadow: 2px 2px 5px 0px rgb(182, 175, 175);
-    display: grid;
-}
-.stats{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5%;
-    margin: 5% 10% 5% 10%;
-}
-.stats-info &gt; span{
-    text-align: center;
-}
-.number{
-     
-    font-size: 28px;
-    font-weight: bold;
-}
-.text{
-     
-    font-size: 14px;
-    color: #6D6D6D;
-}
-.tab{
-    padding: 2% 10% 2% 10%;
-}
-select{
-    float: right;
-     
-    font-size: 12;
-    border: none;
-}
-.saved-trails{
-     
-    font-size: 18px;
-    font-weight: bold;
-}
-.wrapper{
-    display: inline-block;
-    height: 100%;
-    padding: 5% 10% 5% 10%;
-}
-.trail{
-    border: 1px solid #707070;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(145,145,145,1) 100%);
-    border-radius: 20px;
-    opacity: 70%;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 5%;
-    height: 165px;
-    margin-bottom: 5%;
+
+
+.stats {
+  margin: 2rem;
+  margin-top: 1rem;
+  display: flex; 
+  flex-direction: row;
+  background-color: var(--ion-color-primary);
+  align-items: center;
+  height: 4rem;
+  justify-content: center;
+  border-radius: var(--border-radius-default);
+  .stats-info {
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      width: 50%;
+      height: 100%;
+      .number{
+          font-size: var(--default-font-size);
+      }
+
+      .text {
+        font-size: 0.9rem;
+        color: var(--greyed-out-text);
+      }
+      
+      &amp;:nth-child(1){
+          border-right: 1px solid var(--ion-background-color);
+      }
+
+      &amp;:nth-child(2) {
+        border-left: 1px solid var(--ion-background-color);
+      }
+      
+
+    span {
+      text-align: center;
+    }
+  }
 
 }
-.info{
-    display: grid;
-    gap: 5%;
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 5%;
+
+
+
+
+
+select {
+  float: right;
+  font-size: 12;
+  border: none;
 }
-.info &gt; span{
-    margin-left: 5%;
+
+
+.tab {
+  margin: 2rem;
+  margin-bottom: 0;
+  .saved-trails {
+    font-weight: 600;
+    font-size: var(--default-font-size);
+    font-family: var(--header-font);
+  }
+  select {
+    color: var(--greyed-out-text);
+    background: transparent;
+    border: 0;
+    outline: 0;
+    option{
+      color: var(--greyed-out-text);
+      background: var(--ion-background-color);
+      
+    }
+  }
+
 }
-.title{
-     
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-}
-.extra{
-     
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
-}
-ion-button{
-    float: right;
-}
-.rating{
-    color: white;
-    border: 1px solid #000000;
-    background-color: #000000 !important;
-    border-radius: 25px;
-    padding: 1% 2% 1% 2%;
-    margin-left: 5%;
-}
+
+
+
+
 </code></pre>
     </div>
 
@@ -640,8 +523,8 @@ ion-button{
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-header>  <div class="profile-pic">    <img src="../../assets/profilepic.png" alt="Profile picture">  </div>  <div class="personal-info">    <span *ngFor="let item of storageItems">{{item[\'name\']}}</span>    <p>Profile overview</p>  </div></ion-header><ion-content>  <div class="stats">    <div class="stats-info">      <span class="number">45,7</span>      <span class="text">km walked</span>    </div>    <div class="stats-info">      <span class="number">8</span>      <span class="text">trails completed</span>    </div>  </div>  <div class="tab">    <span class="saved-trails">Saved trails</span>    <select name="" id="">      <option value="date-added">Date added</option>      <option value="most-popular">Most popular</option>      <option value="shortest-first">Shortest first</option>      <option value="longest-first">Longest first</option>    </select>  </div>  <div class="wrapper">    <!-- Trial start -->        <div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake.jpg);">          <div class="fave">            <ion-button fill=clear>            <img src="../../assets/not-fave.png" alt="">          </ion-button>          </div>              <div class="info">                <span>              <span class="title">Boserup Skov - Kattinge Værk - Boserup Sø</span>              <span class="rating">                <img src="../../assets/star.png" alt="">                 4,5              </span>            </span>                <span>              <span class="extra">Length: 7,4 km</span>              <span class="extra"> • Est: 2h 10m</span>            </span>              </div>            </div>    <!-- Trial end -->    <!-- Trial start 2 --><div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/boserup.jpg);">  <div class="fave">    <ion-button fill=clear>    <img src="../../assets/not-fave.png" alt="">  </ion-button>  </div>  <div class="info">    <span>      <span class="title">Bognæs og Storskov</span>      <span class="rating">        <img src="../../assets/star.png" alt="">         4,5      </span>    </span>    <span>      <span class="extra">Length: 9,0 km</span>      <span class="extra"> • Est: 2h 37m</span>    </span>  </div></div><!-- Trial end --><!-- Trial start 3 --><div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/forest.jpg);">  <div class="fave">    <ion-button fill=clear>    <img src="../../assets/not-fave.png" alt="">  </ion-button>  </div>  <div class="info">    <span>      <span class="title">Boserup Skov - kattinge Værk - Boserup Sø</span>      <span class="rating">        <img src="../../assets/star.png" alt="">         4,5      </span>    </span>    <span>      <span class="extra">Length: 7,4 km</span>      <span class="extra"> • Est: 2h 10m</span>    </span>  </div></div><!-- Trial end --><!-- Trial start 4 --><div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%), url(../../assets/lake2.jpg);">  <div class="fave">    <ion-button fill=clear>    <img src="../../assets/not-fave.png" alt="">  </ion-button>  </div>  <div class="info">    <span>      <span class="title" style="font-size: 18px !important">Trekroner Himmelev Skov</span>      <span class="rating">        <img src="../../assets/star.png" alt="">         4,0      </span>    </span>    <span>      <span class="extra">Length: 8,2 km</span>      <span class="extra"> • Est: 4h 20m</span>    </span>  </div></div><!-- Trial end -->  </div></ion-content></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgesPage', 'selector': 'app-badges'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LakePage', 'selector': 'app-lake'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'NaturePage', 'selector': 'app-nature'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'TopRatedPage', 'selector': 'app-top-rated'},{'name': 'TrailDetailsPage', 'selector': 'app-trail-details'}];
+        var COMPONENT_TEMPLATE = '<div><ion-header>  <div class="profile-pic">    <img src="../../assets/profilepic1.png" alt="Profile picture">  </div>  <div class="personal-info">    <span *ngFor="let item of storageItems">{{item[\'name\']}}</span>    <p>Edit profile</p>  </div></ion-header><ion-content>  <div style="height: 100px; " ></div>  <div class="stats">    <div class="stats-info">      <span class="number">45,7</span>      <span class="text">Km walked</span>    </div>    <div class="stats-info">      <span class="number">8</span>      <span class="text">Trails completed</span>    </div>  </div>  <div class="tab">    <span class="saved-trails">Favourite trails</span>    <select name="" id="">      <option value="date-added">Date added</option>      <option value="most-popular">Most popular</option>      <option value="shortest-first">Shortest first</option>      <option value="longest-first">Longest first</option>    </select>  </div>  <div class="wrapper">    <app-saved-trailcard></app-saved-trailcard>    <div style="height:125px;"></div>    </div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AdminPage', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgesPage', 'selector': 'app-badges'},{'name': 'CategoryComponent', 'selector': 'app-category'},{'name': 'CategoryvariantComponent', 'selector': 'app-categoryvariant'},{'name': 'CreateTrailPage', 'selector': 'app-create-trail'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LakePage', 'selector': 'app-lake'},{'name': 'LakeTrailcardComponent', 'selector': 'app-lake-trailcard'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'NaturePage', 'selector': 'app-nature'},{'name': 'NatureTrailcardComponent', 'selector': 'app-nature-trailcard'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'SavedTrailcardComponent', 'selector': 'app-saved-trailcard'},{'name': 'TopRatedPage', 'selector': 'app-top-rated'},{'name': 'TopratedTrailcardComponent', 'selector': 'app-toprated-trailcard'},{'name': 'TrailcardComponent', 'selector': 'app-trailcard'},{'name': 'TrailDetailsPage', 'selector': 'app-trail-details'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'ProfilePage'};
 </script>

@@ -511,35 +511,38 @@ export class LoginPage implements OnInit {
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;ion-content&gt;
   &lt;div class&#x3D;&quot;login-container&quot;&gt;
-    &lt;div class&#x3D;&quot;images-parent&quot;&gt;
+    
+    &lt;div class&#x3D;&quot;login-form&quot;&gt;&lt;div class&#x3D;&quot;images-parent&quot;&gt;
       &lt;img class&#x3D;&quot;image1&quot; src&#x3D;&quot;../../../assets/login-background.svg&quot; /&gt;
     &lt;/div&gt;
-    &lt;div class&#x3D;&quot;login-form&quot;&gt;
       &lt;form [formGroup]&#x3D;&quot;loginForm&quot; (ngSubmit)&#x3D;&quot;submitForm()&quot; novalidate&gt;
-        &lt;ion-text color&#x3D;&quot;dark&quot; lines&#x3D;&quot;none&quot;&gt;
-          &lt;h1 style&#x3D;&quot;font-weight: bold; margin-top: 5vh; margin-bottom: 4vh;&quot;&gt;Log in&lt;/h1&gt;
+        &lt;ion-text color&#x3D;&quot;light&quot; lines&#x3D;&quot;none&quot;&gt;
+          &lt;h1&gt;Welcome to Roskilde!&lt;/h1&gt;
         &lt;/ion-text&gt;
 
-        &lt;small class&#x3D;&quot;error-message&quot; *ngIf&#x3D;&quot;isSubmitted &amp;&amp; errorControl.username.errors?.required&quot;&gt;Username is required&lt;/small&gt;
-        &lt;ion-item lines&#x3D;&quot;full&quot; style&#x3D;&quot;margin-bottom: 4vh;&quot;&gt;
-          &lt;ion-input type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Username&quot; formControlName&#x3D;&quot;username&quot; required&gt;&lt;/ion-input&gt;
-        &lt;/ion-item&gt;
-        
-        &lt;small class&#x3D;&quot;error-message&quot; *ngIf&#x3D;&quot;isSubmitted &amp;&amp; errorControl.password.errors?.required&quot;&gt;Password is required&lt;/small&gt;
-        &lt;ion-item lines&#x3D;&quot;full&quot; style&#x3D;&quot;margin-bottom: 4vh;&quot;&gt;
-          &lt;ion-input type&#x3D;&quot;password&quot; placeholder&#x3D;&quot;***********&quot; formControlName&#x3D;&quot;password&quot; required&gt;&lt;/ion-input&gt;
+        &lt;small class&#x3D;&quot;error-message&quot; *ngIf&#x3D;&quot;isSubmitted &amp;&amp; errorControl.username.errors?.required&quot;&gt;Username is
+          required&lt;/small&gt;
+        &lt;ion-item lines&#x3D;&quot;none&quot; class&#x3D;&quot;ion-no-padding&quot; &gt;
+          &lt;ion-input class&#x3D;&quot;ion-no-padding&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Username&quot; formControlName&#x3D;&quot;username&quot; required&gt;&lt;ion-icon name&#x3D;&quot;person&quot;&gt;&lt;/ion-icon&gt;&lt;/ion-input&gt;
         &lt;/ion-item&gt;
 
-        &lt;ion-button type&#x3D;&quot;submit&quot; &gt;Login&lt;/ion-button&gt;
+        &lt;small class&#x3D;&quot;error-message&quot; *ngIf&#x3D;&quot;isSubmitted &amp;&amp; errorControl.password.errors?.required&quot;&gt;Password is
+          required&lt;/small&gt;
+        &lt;ion-item lines&#x3D;&quot;none&quot; class&#x3D;&quot;ion-no-padding&quot; &gt;
+          &lt;ion-input class&#x3D;&quot;ion-no-padding&quot; type&#x3D;&quot;password&quot; placeholder&#x3D;&quot;***********&quot; formControlName&#x3D;&quot;password&quot; required&gt;&lt;ion-icon name&#x3D;&quot;lock-closed&quot;&gt;&lt;/ion-icon&gt;&lt;/ion-input&gt;
+        &lt;/ion-item&gt;
+        &lt;ion-text color&#x3D;&quot;light&quot;&gt;
+          &lt;p &gt;Don&#x27;t have an account? &lt;ion-text
+              &gt;&lt;u&gt;Sign up &lt;/u&gt;&lt;/ion-text&gt;
+          &lt;/p&gt;
+        &lt;/ion-text&gt;
+        &lt;ion-button class&#x3D;&quot;button-color&quot; type&#x3D;&quot;submit&quot;&gt;Log in&lt;/ion-button&gt;
       &lt;/form&gt;
       &lt;br /&gt;
-      &lt;ion-text color&#x3D;&quot;dark&quot;&gt;
-        &lt;p style&#x3D;&quot;margin-top: 8vh; padding-left: 6vw; font-weight: 400;&quot;&gt;Don&#x27;t have an account? &lt;ion-text style&#x3D;&quot;color: #94ab51&quot;&gt;&lt;u&gt;Sign up &lt;/u&gt;&lt;/ion-text&gt;&lt;/p&gt;
-      &lt;/ion-text&gt;
+
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/ion-content&gt;
-
 </code></pre>
     </div>
 
@@ -547,59 +550,93 @@ export class LoginPage implements OnInit {
                 <p class="comment">
                     <code>./login.page.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">  ion-content {
-    --background: #94ab51;
-  }
-  
-  .login-container {
-    display: flex;
-    flex-direction: column;   
-  }
-  
-  @media(max-width: 768px) {
-    .images-parent {
-        margin-top: 27vh;
+                <pre class="line-numbers"><code class="language-scss">.login-container {
+
+  height: 100%;
+  border: 1px solid red;
+  box-sizing: border-box;
+  background: hsl(0, 0%, 10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .images-parent {
+    img {
+      filter: invert(0.9);
     }
-    .login-form {
-        margin-top: -6px;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        bottom:0;
-        height: 60.5vh;
-        background-color: white;
-    }
-  }
-  
-  @media(min-width: 768px) {
-    .login-form {
-        margin-top: -6px;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        bottom:0;
-        height: 74.5vh;
-        background-color: white;
-    }
-  }
-  
-  ion-item {
-    border: 1px lightgray solid;
-  }
-  
-  .item-interactive {
-    --highlight-background: unset;
-  }
-  
-  ion-button {
-    --background: #758c35;
-    --background-activated: #758c35;
-    --ripple-color: #94ab51;
-    --border-radius: 0px;
-    float: right;
   }
 
-  .error-message {
-      color: var(--ion-color-danger);
-  }</code></pre>
+  .login-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    form {
+      padding: 2rem;
+      ion-text {
+        p {
+          font-weight: 600;
+          margin-top: 0.1rem;
+        }
+
+        u {
+          color: var(--ion-headings-color);
+        }
+
+        h1 {
+          font-family: var(--header-font);
+          font-weight: 600;
+          font-size: 1.1rem;
+          letter-spacing: 1px;
+        }
+      }
+
+      ion-item {
+        padding-inline-start: 0;
+
+        ion-input {
+          background: var(--ion-color-primary);
+          height: 3rem;
+          border-radius: var(--border-radius-default);
+          padding-left: 1rem !important;
+          margin-bottom: 1rem;
+
+
+          ion-icon {
+            margin-right: 0.5rem;
+            color: grey;
+
+          }
+        }
+      }
+      ion-button{
+        width: 100%;
+        margin-top: 30%;
+        justify-self: end;
+        border-radius: var(--border-radius-default);
+        height: 4rem;
+        font-weight: bold;
+        --background: var(--ion-headings-color) !important;
+        color: var(--ion-background-color);
+
+        font-weight: bold;
+        font-size: 1.45rem;
+        
+
+
+        
+      }
+    }
+  }
+}
+
+ion-input:focus-within {
+  ion-icon {
+    color: white !important;
+  }
+}
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -627,8 +664,8 @@ export class LoginPage implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-content>  <div class="login-container">    <div class="images-parent">      <img class="image1" src="../../../assets/login-background.svg" />    </div>    <div class="login-form">      <form [formGroup]="loginForm" (ngSubmit)="submitForm()" novalidate>        <ion-text color="dark" lines="none">          <h1 style="font-weight: bold; margin-top: 5vh; margin-bottom: 4vh;">Log in</h1>        </ion-text>        <small class="error-message" *ngIf="isSubmitted && errorControl.username.errors?.required">Username is required</small>        <ion-item lines="full" style="margin-bottom: 4vh;">          <ion-input type="text" placeholder="Username" formControlName="username" required></ion-input>        </ion-item>                <small class="error-message" *ngIf="isSubmitted && errorControl.password.errors?.required">Password is required</small>        <ion-item lines="full" style="margin-bottom: 4vh;">          <ion-input type="password" placeholder="***********" formControlName="password" required></ion-input>        </ion-item>        <ion-button type="submit" >Login</ion-button>      </form>      <br />      <ion-text color="dark">        <p style="margin-top: 8vh; padding-left: 6vw; font-weight: 400;">Don\'t have an account? <ion-text style="color: #94ab51"><u>Sign up </u></ion-text></p>      </ion-text>    </div>  </div></ion-content></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgesPage', 'selector': 'app-badges'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LakePage', 'selector': 'app-lake'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'NaturePage', 'selector': 'app-nature'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'TopRatedPage', 'selector': 'app-top-rated'},{'name': 'TrailDetailsPage', 'selector': 'app-trail-details'}];
+        var COMPONENT_TEMPLATE = '<div><ion-content>  <div class="login-container">        <div class="login-form"><div class="images-parent">      <img class="image1" src="../../../assets/login-background.svg" />    </div>      <form [formGroup]="loginForm" (ngSubmit)="submitForm()" novalidate>        <ion-text color="light" lines="none">          <h1>Welcome to Roskilde!</h1>        </ion-text>        <small class="error-message" *ngIf="isSubmitted && errorControl.username.errors?.required">Username is          required</small>        <ion-item lines="none" class="ion-no-padding" >          <ion-input class="ion-no-padding" type="text" placeholder="Username" formControlName="username" required><ion-icon name="person"></ion-icon></ion-input>        </ion-item>        <small class="error-message" *ngIf="isSubmitted && errorControl.password.errors?.required">Password is          required</small>        <ion-item lines="none" class="ion-no-padding" >          <ion-input class="ion-no-padding" type="password" placeholder="***********" formControlName="password" required><ion-icon name="lock-closed"></ion-icon></ion-input>        </ion-item>        <ion-text color="light">          <p >Don\'t have an account? <ion-text              ><u>Sign up </u></ion-text>          </p>        </ion-text>        <ion-button class="button-color" type="submit">Log in</ion-button>      </form>      <br />    </div>  </div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AdminPage', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgesPage', 'selector': 'app-badges'},{'name': 'CategoryComponent', 'selector': 'app-category'},{'name': 'CategoryvariantComponent', 'selector': 'app-categoryvariant'},{'name': 'CreateTrailPage', 'selector': 'app-create-trail'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LakePage', 'selector': 'app-lake'},{'name': 'LakeTrailcardComponent', 'selector': 'app-lake-trailcard'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'NaturePage', 'selector': 'app-nature'},{'name': 'NatureTrailcardComponent', 'selector': 'app-nature-trailcard'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'SavedTrailcardComponent', 'selector': 'app-saved-trailcard'},{'name': 'TopRatedPage', 'selector': 'app-top-rated'},{'name': 'TopratedTrailcardComponent', 'selector': 'app-toprated-trailcard'},{'name': 'TrailcardComponent', 'selector': 'app-trailcard'},{'name': 'TrailDetailsPage', 'selector': 'app-trail-details'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'LoginPage'};
 </script>

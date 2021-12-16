@@ -125,6 +125,20 @@
     <h3 id="index">Index</h3>
     <table class="table table-sm table-bordered index-table">
         <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#storageItems" >storageItems</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
 
                 <tr>
                     <td class="col-md-4">
@@ -135,6 +149,7 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                    <span class="modifier">Async</span>
                                 <a href="#ngOnInit" >ngOnInit</a>
                             </li>
                         </ul>
@@ -155,15 +170,45 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor()</code>
+<code>constructor(storage: Storage)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/pages/badges/badges.page.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/pages/badges/badges.page.ts:11</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>storage</td>
+                                                  
+                                                        <td>
+                                                                    <code>Storage</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 </section>
@@ -183,6 +228,7 @@
                 <td class="col-md-4">
                     <a name="ngOnInit"></a>
                     <span class="name">
+                        <span class="modifier">Async</span>
                         <span ><b>ngOnInit</b></span>
                         <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -190,15 +236,16 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>ngOnInit()</code>
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="12"
-                            class="link-to-prism">src/app/pages/badges/badges.page.ts:12</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="16"
+                            class="link-to-prism">src/app/pages/badges/badges.page.ts:16</a></div>
                 </td>
             </tr>
 
@@ -207,11 +254,48 @@
                 <td class="col-md-4">
 
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                     </div>
                 </td>
             </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="storageItems"></a>
+                    <span class="name">
+                        <span ><b>storageItems</b></span>
+                        <a href="#storageItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/pages/badges/badges.page.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
         </tbody>
     </table>
 </section>
@@ -222,6 +306,9 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 
+import { Storage } from &#x27;@ionic/storage-angular&#x27;;
+
+
 @Component({
   selector: &#x27;app-badges&#x27;,
   templateUrl: &#x27;./badges.page.html&#x27;,
@@ -229,10 +316,19 @@
 })
 export class BadgesPage implements OnInit {
 
-  constructor() { }
+    constructor(private storage: Storage) { }
 
-  ngOnInit() {
+  storageItems &#x3D; []
+  async ngOnInit() {
+    await this.storage.create();
+    const name &#x3D; await this.storage.get(&#x27;name&#x27;)
+    this.storageItems.push({&#x27;name&#x27;: name})
+
+    console.log(&#x27;storageItems&#x27;, this.storageItems)
   }
+
+
+  
 
 }
 </code></pre>
@@ -240,118 +336,127 @@ export class BadgesPage implements OnInit {
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;ion-header&gt;
-  &lt;span&gt;Badges&lt;/span&gt;
-  &lt;p&gt;You almost have your next badge&lt;/p&gt;
+
+
+
+  &lt;div class&#x3D;&quot;personal-info&quot;&gt;
+    &lt;span *ngFor&#x3D;&quot;let item of storageItems&quot;&gt;{{item[&#x27;name&#x27;]}}&#x27;s badges&lt;/span&gt;
+    &lt;p&gt;You almost have your next badge!&lt;/p&gt;
+  &lt;/div&gt;
+
 &lt;/ion-header&gt;
 
 &lt;ion-content&gt;
-  &lt;ion-card style&#x3D;&quot;margin: 5vh 4vh 0vh 4vh; border-radius: 3%;&quot;&gt;
-    &lt;ion-item lines&#x3D;&quot;none&quot; style&#x3D;&quot;margin-top: 7px;&quot;&gt;
-      &lt;ion-label slot&#x3D;&quot;start&quot; style&#x3D;&quot;  font-weight: bold;font-size: 20px;&quot;&gt;Next badge
-        &lt;br&gt;
-        &lt;span style&#x3D;&quot;font-weight: 400; font-size: 18px; color: #94ab51&quot;&gt;Walk 20km&lt;/span&gt;
-      &lt;/ion-label&gt;
-      
-      &lt;ion-img src&#x3D;&quot;../../assets/badge_20km.svg&quot; slot&#x3D;&quot;end&quot; class&#x3D;&quot;card-badge-img&quot;&gt;View&lt;/ion-img&gt;
-    &lt;/ion-item&gt;
-  
-    &lt;ion-card-content&gt;
+  &lt;div style&#x3D;&quot;height: 100px; &quot;&gt;&lt;/div&gt;
+  &lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    &lt;ion-card&gt;
+      &lt;ion-item class&#x3D;&quot;ion-no-padding&quot; color&#x3D;&quot;transparent&quot; lines&#x3D;&quot;none&quot;&gt;
+        &lt;ion-label slot&#x3D;&quot;start&quot;&gt;Next badge
+          &lt;br&gt;
+          &lt;span&gt;Walk 20km&lt;/span&gt;
+        &lt;/ion-label&gt;
+        &lt;ion-img src&#x3D;&quot;../../assets/badge_20km.svg&quot; slot&#x3D;&quot;end&quot; class&#x3D;&quot;card-badge-img&quot;&gt;View&lt;/ion-img&gt;
+      &lt;/ion-item&gt;
+      &lt;ion-card-content class&#x3D;&quot;ion-no-padding&quot;&gt;
+        &lt;ion-grid&gt;
+          &lt;ion-row&gt;
+            &lt;ion-col size&#x3D;&quot;2&quot;&gt;
+              &lt;p&gt;&lt;b&gt;25%&lt;/b&gt;&lt;/p&gt;
+            &lt;/ion-col&gt;
+            &lt;ion-col size&#x3D;&quot;10&quot;&gt;
+              &lt;ion-progress-bar value&#x3D;&quot;0.25&quot; buffer&#x3D;&quot;0.5&quot;&gt;&lt;/ion-progress-bar&gt;
+            &lt;/ion-col&gt;
+          &lt;/ion-row&gt;
+        &lt;/ion-grid&gt;
+      &lt;/ion-card-content&gt;
+    &lt;/ion-card&gt;
+
+    &lt;div class&#x3D;&quot;latest-acheivement&quot;&gt;
+      &lt;p&gt;&lt;b&gt;Latest badges&lt;/b&gt;&lt;/p&gt;
       &lt;ion-grid&gt;
         &lt;ion-row&gt;
-          &lt;ion-col size&#x3D;&quot;2&quot;&gt;&lt;p style&#x3D;&quot;font-size: 16px;&quot;&gt;&lt;b&gt;25%&lt;/b&gt;&lt;/p&gt;&lt;/ion-col&gt;
-          &lt;ion-col size&#x3D;&quot;10&quot;&gt;
-            &lt;ion-progress-bar value&#x3D;&quot;0.25&quot; buffer&#x3D;&quot;0.5&quot;&gt;&lt;/ion-progress-bar&gt;
+          &lt;ion-col size&#x3D;&quot;3&quot;&gt;
+            &lt;div class&#x3D;&quot;acheivements&quot;&gt;
+              &lt;ion-img src&#x3D;&quot;../../assets/badge_10km.svg&quot;&gt;&lt;/ion-img&gt;
+            &lt;/div&gt;
+            &lt;p&gt;&lt;b&gt;10 km walked&lt;/b&gt;&lt;/p&gt;
+          &lt;/ion-col&gt;
+          &lt;ion-col size&#x3D;&quot;3&quot;&gt;
+            &lt;div class&#x3D;&quot;acheivements&quot;&gt;
+              &lt;ion-img src&#x3D;&quot;../../assets/badge_2days.svg&quot;&gt;&lt;/ion-img&gt;
+            &lt;/div&gt;
+            &lt;p&gt;&lt;b&gt;2 days in a row&lt;/b&gt;&lt;/p&gt;
           &lt;/ion-col&gt;
         &lt;/ion-row&gt;
       &lt;/ion-grid&gt;
-    &lt;/ion-card-content&gt;
-  &lt;/ion-card&gt;
+    &lt;/div&gt;
 
-  &lt;div class&#x3D;&quot;latest-acheivement&quot;&gt;
-    &lt;p style&#x3D;&quot;font-size: 19px;&quot; color&#x3D;&quot;dark&quot;&gt;&lt;b&gt;Latest acheivement&lt;/b&gt;&lt;/p&gt;
-    &lt;ion-grid&gt;
-      &lt;ion-row&gt;
-        &lt;ion-col size&#x3D;&quot;4&quot; &gt;
-          &lt;div class&#x3D;&quot;acheivements&quot;&gt;
-            &lt;ion-img src&#x3D;&quot;../../assets/badge_10km.svg&quot;&gt;&lt;/ion-img&gt;
-          &lt;/div&gt;
-          &lt;p style&#x3D;&quot;margin-top: 12px; font-size: 10px; font-weight: 400;&quot;&gt;&lt;b&gt;10 km walked&lt;/b&gt;&lt;/p&gt;
-        &lt;/ion-col&gt;
-        &lt;ion-col size&#x3D;&quot;4&quot; &gt;
-          &lt;div class&#x3D;&quot;acheivements&quot;&gt;
-            &lt;ion-img src&#x3D;&quot;../../assets/badge_2days.svg&quot;&gt;&lt;/ion-img&gt;
-          &lt;/div&gt;
-          &lt;p style&#x3D;&quot;margin-top: 12px; font-size: 10px; font-weight: 400;&quot;&gt;&lt;b&gt;2 days in a row&lt;/b&gt;&lt;/p&gt;
-        &lt;/ion-col&gt;
-      &lt;/ion-row&gt;
-    &lt;/ion-grid&gt;
-  &lt;/div&gt;
+    &lt;div class&#x3D;&quot;all-acheivement&quot;&gt;
+      &lt;p color&#x3D;&quot;dark&quot;&gt;&lt;b&gt;All badges&lt;/b&gt;&lt;/p&gt;
+      &lt;ion-grid&gt;
+        &lt;ion-row&gt;
+          &lt;ion-col size&#x3D;&quot;3&quot;&gt;
+            &lt;div class&#x3D;&quot;acheivements&quot;&gt;
+              &lt;ion-img src&#x3D;&quot;../../assets/badge_1km.svg&quot;&gt;&lt;/ion-img&gt;
+            &lt;/div&gt;
+            &lt;p&gt;&lt;b&gt;1 km walked&lt;/b&gt;&lt;/p&gt;
+          &lt;/ion-col&gt;
+          &lt;ion-col size&#x3D;&quot;3&quot;&gt;
+            &lt;div class&#x3D;&quot;acheivements&quot;&gt;
+              &lt;ion-img src&#x3D;&quot;../../assets/badge_5km.svg&quot;&gt;&lt;/ion-img&gt;
+            &lt;/div&gt;
+            &lt;p&gt;&lt;b&gt;5 km walked&lt;/b&gt;&lt;/p&gt;
+          &lt;/ion-col&gt;
+          &lt;ion-col size&#x3D;&quot;3&quot;&gt;
+            &lt;div class&#x3D;&quot;acheivements&quot;&gt;
+              &lt;ion-img src&#x3D;&quot;../../assets/badge_10km.svg&quot;&gt;&lt;/ion-img&gt;
+            &lt;/div&gt;
+            &lt;p&gt;&lt;b&gt;10 km walked&lt;/b&gt;&lt;/p&gt;
+          &lt;/ion-col&gt;          &lt;ion-col size&#x3D;&quot;3&quot;&gt;
+            &lt;div class&#x3D;&quot;acheivements&quot;&gt;
+              &lt;ion-img src&#x3D;&quot;../../assets/badge_20km.svg&quot; style&#x3D;&quot;opacity: 0.3;&quot;&gt;&lt;/ion-img&gt;
+            &lt;/div&gt;
+            &lt;p&gt;&lt;b&gt;20 km walked&lt;/b&gt;&lt;/p&gt;
+          &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+        &lt;ion-row&gt;
 
-  &lt;div class&#x3D;&quot;all-acheivement&quot;&gt;
-    &lt;p style&#x3D;&quot;font-size: 19px;&quot; color&#x3D;&quot;dark&quot;&gt;&lt;b&gt;All acheivement&lt;/b&gt;&lt;/p&gt;
-    &lt;ion-grid&gt;
-      &lt;ion-row&gt;
-        &lt;ion-col size&#x3D;&quot;4&quot; &gt;
-          &lt;div class&#x3D;&quot;acheivements&quot;&gt;
-            &lt;ion-img src&#x3D;&quot;../../assets/badge_1km.svg&quot;&gt;&lt;/ion-img&gt;
-          &lt;/div&gt;
-          &lt;p style&#x3D;&quot;margin-top: 15px; font-size: 10px; font-weight: 400;&quot;&gt;&lt;b&gt;1 km walked&lt;/b&gt;&lt;/p&gt;
-        &lt;/ion-col&gt;
-        &lt;ion-col size&#x3D;&quot;4&quot; &gt;
-          &lt;div class&#x3D;&quot;acheivements&quot;&gt;
-            &lt;ion-img src&#x3D;&quot;../../assets/badge_5km.svg&quot;&gt;&lt;/ion-img&gt;
-          &lt;/div&gt;
-          &lt;p style&#x3D;&quot;margin-top: 15px; font-size: 10px; font-weight: 400;&quot;&gt;&lt;b&gt;5 km walked&lt;/b&gt;&lt;/p&gt;
-        &lt;/ion-col&gt;
-        &lt;ion-col size&#x3D;&quot;4&quot; &gt;
-          &lt;div class&#x3D;&quot;acheivements&quot;&gt;
-            &lt;ion-img src&#x3D;&quot;../../assets/badge_10km.svg&quot;&gt;&lt;/ion-img&gt;
-          &lt;/div&gt;
-          &lt;p style&#x3D;&quot;margin-top: 15px; font-size: 10px; font-weight: 400;&quot;&gt;&lt;b&gt;10 km walked&lt;/b&gt;&lt;/p&gt;
-        &lt;/ion-col&gt;
-      &lt;/ion-row&gt;
-      &lt;ion-row&gt;
-        &lt;ion-col size&#x3D;&quot;4&quot; &gt;
-          &lt;div class&#x3D;&quot;acheivements&quot;&gt;
-            &lt;ion-img src&#x3D;&quot;../../assets/badge_20km.svg&quot; style&#x3D;&quot;opacity: 0.3;&quot;&gt;&lt;/ion-img&gt;
-          &lt;/div&gt;
-          &lt;p style&#x3D;&quot;margin-top: 15px; font-size: 10px; font-weight: 400;&quot;&gt;&lt;b&gt;20 km walked&lt;/b&gt;&lt;/p&gt;
-        &lt;/ion-col&gt;
-        &lt;ion-col size&#x3D;&quot;4&quot; &gt;
-          &lt;div class&#x3D;&quot;acheivements&quot;&gt;
-            &lt;ion-img src&#x3D;&quot;../../assets/badge_2days.svg&quot;&gt;&lt;/ion-img&gt;
-          &lt;/div&gt;
-          &lt;p style&#x3D;&quot;margin-top: 15px; font-size: 10px; font-weight: 400;&quot;&gt;&lt;b&gt;2 days in a row&lt;/b&gt;&lt;/p&gt;
-        &lt;/ion-col&gt;
-        &lt;ion-col size&#x3D;&quot;4&quot; &gt;
-          &lt;div class&#x3D;&quot;acheivements&quot;&gt;
-            &lt;ion-img src&#x3D;&quot;../../assets/badge_3days.svg&quot;&gt;&lt;/ion-img&gt;
-          &lt;/div&gt;
-          &lt;p style&#x3D;&quot;margin-top: 15px; font-size: 10px; font-weight: 400;&quot;&gt;&lt;b&gt;3 days in a row&lt;/b&gt;&lt;/p&gt;
-        &lt;/ion-col&gt;
-      &lt;/ion-row&gt;
-      &lt;ion-row&gt;
-        &lt;ion-col size&#x3D;&quot;4&quot; &gt;
-          &lt;div class&#x3D;&quot;acheivements&quot;&gt;
-            &lt;ion-img src&#x3D;&quot;../../assets/badge_4days.svg&quot; style&#x3D;&quot;opacity: 0.3;&quot;&gt;&lt;/ion-img&gt;
-          &lt;/div&gt;
-          &lt;p style&#x3D;&quot;margin-top: 15px; font-size: 10px; font-weight: 400;&quot;&gt;&lt;b&gt;4 days in a row&lt;/b&gt;&lt;/p&gt;
-        &lt;/ion-col&gt;
-        &lt;ion-col size&#x3D;&quot;4&quot; &gt;
-          &lt;div class&#x3D;&quot;acheivements&quot;&gt;
-            &lt;ion-img src&#x3D;&quot;../../assets/badge_5days.svg&quot;&gt;&lt;/ion-img&gt;
-          &lt;/div&gt;
-          &lt;p style&#x3D;&quot;margin-top: 15px; font-size: 10px; font-weight: 400;&quot;&gt;&lt;b&gt;5 days in a row&lt;/b&gt;&lt;/p&gt;
-        &lt;/ion-col&gt;
-        &lt;ion-col size&#x3D;&quot;4&quot; &gt;
-          &lt;div class&#x3D;&quot;acheivements&quot;&gt;
-            &lt;ion-img src&#x3D;&quot;../../assets/badge_1trail.svg&quot;&gt;&lt;/ion-img&gt;
-          &lt;/div&gt;
-          &lt;p style&#x3D;&quot;margin-top: 15px; font-size: 10px; font-weight: 400;&quot;&gt;&lt;b&gt;1 trail completed&lt;/b&gt;&lt;/p&gt;
-        &lt;/ion-col&gt;
-      &lt;/ion-row&gt;
-    &lt;/ion-grid&gt;
-  &lt;/div&gt;
+          &lt;ion-col size&#x3D;&quot;3&quot;&gt;
+            &lt;div class&#x3D;&quot;acheivements&quot;&gt;
+              &lt;ion-img src&#x3D;&quot;../../assets/badge_2days.svg&quot; &gt;&lt;/ion-img&gt;
+            &lt;/div&gt;
+            &lt;p&gt;&lt;b&gt;2 days in a row&lt;/b&gt;&lt;/p&gt;
+          &lt;/ion-col&gt;
+          &lt;ion-col size&#x3D;&quot;3&quot;&gt;
+            &lt;div class&#x3D;&quot;acheivements&quot;&gt;
+              &lt;ion-img src&#x3D;&quot;../../assets/badge_3days.svg&quot;&gt;&lt;/ion-img&gt;
+            &lt;/div&gt;
+            &lt;p&gt;&lt;b&gt;3 days in a row&lt;/b&gt;&lt;/p&gt;
+          &lt;/ion-col&gt; &lt;ion-col size&#x3D;&quot;3&quot;&gt;
+            &lt;div class&#x3D;&quot;acheivements&quot;&gt;
+              &lt;ion-img src&#x3D;&quot;../../assets/badge_4days.svg&quot;  style&#x3D;&quot;opacity: 0.3;&quot;&gt;&lt;/ion-img&gt;
+            &lt;/div&gt;
+            &lt;p&gt;&lt;b&gt;4 days in a row&lt;/b&gt;&lt;/p&gt;
+          &lt;/ion-col&gt;
+          &lt;ion-col size&#x3D;&quot;3&quot;&gt;
+            &lt;div class&#x3D;&quot;acheivements&quot;&gt;
+              &lt;ion-img src&#x3D;&quot;../../assets/badge_5days.svg&quot; style&#x3D;&quot;opacity: 0.3;&quot;&gt;&lt;/ion-img&gt;
+            &lt;/div&gt;
+            &lt;p&gt;&lt;b&gt;5 days in a row&lt;/b&gt;&lt;/p&gt;
+          &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+        &lt;ion-row&gt;
+         
+          &lt;ion-col size&#x3D;&quot;3&quot;&gt;
+            &lt;div class&#x3D;&quot;acheivements&quot;&gt;
+              &lt;ion-img src&#x3D;&quot;../../assets/badge_1trail.svg&quot;&gt;&lt;/ion-img&gt;
+            &lt;/div&gt;
+            &lt;p&gt;&lt;b&gt;1 trail completed&lt;/b&gt;&lt;/p&gt;
+          &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+      &lt;/ion-grid&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;div style&#x3D;&quot;height: 180px; &quot; &gt;&lt;/div&gt;
 &lt;/ion-content&gt;
 </code></pre>
     </div>
@@ -360,58 +465,39 @@ export class BadgesPage implements OnInit {
                 <p class="comment">
                     <code>./badges.page.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">/* bagdes css */
+                <pre class="line-numbers"><code class="language-scss">@import url(&quot;../../../theme/variables.scss&quot;);
+
 .header-md::after{
     background-image: none;
 }
-ion-header{
-    padding-top: 10%;
-    padding-left: 10%;
+ion-card{
+    background: var(--ion-color-primary);
+    padding: 1rem;
+    margin: 0;
+    height:9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-ion-header &gt; span{
-     
-    font-weight: bold;
-    font-size: 36px;
+
+ion-item{
+   
+    ion-label{
+       
+       font-family: var(--header-font);
+       font-weight: 600;
+       letter-spacing: 0.7px;
+       font-size: 1rem;
+
+       span{
+           font-family: var(--ion-font-family);
+           font-weight: 200;
+           margin-top: 10px;
+       }
+    }
 }
-
-ion-header &gt; p{
-     
-    font-size: 18px;
-    color: #94ab51;
-    font-weight: 500;
-    margin: 12px 0 0 0;
-}
-
-.card-badge-img {
-    height: 47px;
-    opacity: 0.3;
-}
-
-ion-progress-bar {
-    --background: #94ab51;
-    --buffer-background: #d5deba;
-    --progress-background: #94ab51;
-    margin-top: 8px;
-  }
-
-.latest-acheivement {
-    margin: 5vh 5vh 0vh 5vh;
-}
-
-.acheivements {
-    height: 70px;
-    width: 70px;
-    border-radius: 35px;
-    padding: 12px;
-    -webkit-box-shadow: 2px 2px 5px 0px rgb(182, 175, 175);
-    -moz-box-shadow: 2px 2px 5px 0px rgb(190, 185, 185);
-    box-shadow: 2px 2px 5px 0px rgb(187, 184, 184);
-}
-
-.all-acheivement {
-    margin: 5vh 5vh 0vh 5vh;
-}</code></pre>
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -439,8 +525,8 @@ ion-progress-bar {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-header>  <span>Badges</span>  <p>You almost have your next badge</p></ion-header><ion-content>  <ion-card style="margin: 5vh 4vh 0vh 4vh; border-radius: 3%;">    <ion-item lines="none" style="margin-top: 7px;">      <ion-label slot="start" style="  font-weight: bold;font-size: 20px;">Next badge        <br>        <span style="font-weight: 400; font-size: 18px; color: #94ab51">Walk 20km</span>      </ion-label>            <ion-img src="../../assets/badge_20km.svg" slot="end" class="card-badge-img">View</ion-img>    </ion-item>      <ion-card-content>      <ion-grid>        <ion-row>          <ion-col size="2"><p style="font-size: 16px;"><b>25%</b></p></ion-col>          <ion-col size="10">            <ion-progress-bar value="0.25" buffer="0.5"></ion-progress-bar>          </ion-col>        </ion-row>      </ion-grid>    </ion-card-content>  </ion-card>  <div class="latest-acheivement">    <p style="font-size: 19px;" color="dark"><b>Latest acheivement</b></p>    <ion-grid>      <ion-row>        <ion-col size="4" >          <div class="acheivements">            <ion-img src="../../assets/badge_10km.svg"></ion-img>          </div>          <p style="margin-top: 12px; font-size: 10px; font-weight: 400;"><b>10 km walked</b></p>        </ion-col>        <ion-col size="4" >          <div class="acheivements">            <ion-img src="../../assets/badge_2days.svg"></ion-img>          </div>          <p style="margin-top: 12px; font-size: 10px; font-weight: 400;"><b>2 days in a row</b></p>        </ion-col>      </ion-row>    </ion-grid>  </div>  <div class="all-acheivement">    <p style="font-size: 19px;" color="dark"><b>All acheivement</b></p>    <ion-grid>      <ion-row>        <ion-col size="4" >          <div class="acheivements">            <ion-img src="../../assets/badge_1km.svg"></ion-img>          </div>          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>1 km walked</b></p>        </ion-col>        <ion-col size="4" >          <div class="acheivements">            <ion-img src="../../assets/badge_5km.svg"></ion-img>          </div>          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>5 km walked</b></p>        </ion-col>        <ion-col size="4" >          <div class="acheivements">            <ion-img src="../../assets/badge_10km.svg"></ion-img>          </div>          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>10 km walked</b></p>        </ion-col>      </ion-row>      <ion-row>        <ion-col size="4" >          <div class="acheivements">            <ion-img src="../../assets/badge_20km.svg" style="opacity: 0.3;"></ion-img>          </div>          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>20 km walked</b></p>        </ion-col>        <ion-col size="4" >          <div class="acheivements">            <ion-img src="../../assets/badge_2days.svg"></ion-img>          </div>          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>2 days in a row</b></p>        </ion-col>        <ion-col size="4" >          <div class="acheivements">            <ion-img src="../../assets/badge_3days.svg"></ion-img>          </div>          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>3 days in a row</b></p>        </ion-col>      </ion-row>      <ion-row>        <ion-col size="4" >          <div class="acheivements">            <ion-img src="../../assets/badge_4days.svg" style="opacity: 0.3;"></ion-img>          </div>          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>4 days in a row</b></p>        </ion-col>        <ion-col size="4" >          <div class="acheivements">            <ion-img src="../../assets/badge_5days.svg"></ion-img>          </div>          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>5 days in a row</b></p>        </ion-col>        <ion-col size="4" >          <div class="acheivements">            <ion-img src="../../assets/badge_1trail.svg"></ion-img>          </div>          <p style="margin-top: 15px; font-size: 10px; font-weight: 400;"><b>1 trail completed</b></p>        </ion-col>      </ion-row>    </ion-grid>  </div></ion-content></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgesPage', 'selector': 'app-badges'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LakePage', 'selector': 'app-lake'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'NaturePage', 'selector': 'app-nature'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'TopRatedPage', 'selector': 'app-top-rated'},{'name': 'TrailDetailsPage', 'selector': 'app-trail-details'}];
+        var COMPONENT_TEMPLATE = '<div><ion-header>  <div class="personal-info">    <span *ngFor="let item of storageItems">{{item[\'name\']}}\'s badges</span>    <p>You almost have your next badge!</p>  </div></ion-header><ion-content>  <div style="height: 100px; "></div>  <div class="wrapper">    <ion-card>      <ion-item class="ion-no-padding" color="transparent" lines="none">        <ion-label slot="start">Next badge          <br>          <span>Walk 20km</span>        </ion-label>        <ion-img src="../../assets/badge_20km.svg" slot="end" class="card-badge-img">View</ion-img>      </ion-item>      <ion-card-content class="ion-no-padding">        <ion-grid>          <ion-row>            <ion-col size="2">              <p><b>25%</b></p>            </ion-col>            <ion-col size="10">              <ion-progress-bar value="0.25" buffer="0.5"></ion-progress-bar>            </ion-col>          </ion-row>        </ion-grid>      </ion-card-content>    </ion-card>    <div class="latest-acheivement">      <p><b>Latest badges</b></p>      <ion-grid>        <ion-row>          <ion-col size="3">            <div class="acheivements">              <ion-img src="../../assets/badge_10km.svg"></ion-img>            </div>            <p><b>10 km walked</b></p>          </ion-col>          <ion-col size="3">            <div class="acheivements">              <ion-img src="../../assets/badge_2days.svg"></ion-img>            </div>            <p><b>2 days in a row</b></p>          </ion-col>        </ion-row>      </ion-grid>    </div>    <div class="all-acheivement">      <p color="dark"><b>All badges</b></p>      <ion-grid>        <ion-row>          <ion-col size="3">            <div class="acheivements">              <ion-img src="../../assets/badge_1km.svg"></ion-img>            </div>            <p><b>1 km walked</b></p>          </ion-col>          <ion-col size="3">            <div class="acheivements">              <ion-img src="../../assets/badge_5km.svg"></ion-img>            </div>            <p><b>5 km walked</b></p>          </ion-col>          <ion-col size="3">            <div class="acheivements">              <ion-img src="../../assets/badge_10km.svg"></ion-img>            </div>            <p><b>10 km walked</b></p>          </ion-col>          <ion-col size="3">            <div class="acheivements">              <ion-img src="../../assets/badge_20km.svg" style="opacity: 0.3;"></ion-img>            </div>            <p><b>20 km walked</b></p>          </ion-col>        </ion-row>        <ion-row>          <ion-col size="3">            <div class="acheivements">              <ion-img src="../../assets/badge_2days.svg" ></ion-img>            </div>            <p><b>2 days in a row</b></p>          </ion-col>          <ion-col size="3">            <div class="acheivements">              <ion-img src="../../assets/badge_3days.svg"></ion-img>            </div>            <p><b>3 days in a row</b></p>          </ion-col> <ion-col size="3">            <div class="acheivements">              <ion-img src="../../assets/badge_4days.svg"  style="opacity: 0.3;"></ion-img>            </div>            <p><b>4 days in a row</b></p>          </ion-col>          <ion-col size="3">            <div class="acheivements">              <ion-img src="../../assets/badge_5days.svg" style="opacity: 0.3;"></ion-img>            </div>            <p><b>5 days in a row</b></p>          </ion-col>        </ion-row>        <ion-row>                   <ion-col size="3">            <div class="acheivements">              <ion-img src="../../assets/badge_1trail.svg"></ion-img>            </div>            <p><b>1 trail completed</b></p>          </ion-col>        </ion-row>      </ion-grid>    </div>  </div><div style="height: 180px; " ></div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AdminPage', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgesPage', 'selector': 'app-badges'},{'name': 'CategoryComponent', 'selector': 'app-category'},{'name': 'CategoryvariantComponent', 'selector': 'app-categoryvariant'},{'name': 'CreateTrailPage', 'selector': 'app-create-trail'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LakePage', 'selector': 'app-lake'},{'name': 'LakeTrailcardComponent', 'selector': 'app-lake-trailcard'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'NaturePage', 'selector': 'app-nature'},{'name': 'NatureTrailcardComponent', 'selector': 'app-nature-trailcard'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'SavedTrailcardComponent', 'selector': 'app-saved-trailcard'},{'name': 'TopRatedPage', 'selector': 'app-top-rated'},{'name': 'TopratedTrailcardComponent', 'selector': 'app-toprated-trailcard'},{'name': 'TrailcardComponent', 'selector': 'app-trailcard'},{'name': 'TrailDetailsPage', 'selector': 'app-trail-details'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'BadgesPage'};
 </script>

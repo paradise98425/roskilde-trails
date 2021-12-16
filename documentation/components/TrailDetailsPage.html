@@ -125,6 +125,35 @@
     <h3 id="index">Index</h3>
     <table class="table table-sm table-bordered index-table">
         <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#currentIndex" >currentIndex</a>
+                            </li>
+                            <li>
+                                <a href="#currentTrail" >currentTrail</a>
+                            </li>
+                            <li>
+                                <a href="#message" >message</a>
+                            </li>
+                            <li>
+                                <a href="#name" >name</a>
+                            </li>
+                            <li>
+                                <a href="#trail" >trail</a>
+                            </li>
+                            <li>
+                                <a href="#trails" >trails</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
 
                 <tr>
                     <td class="col-md-4">
@@ -136,6 +165,15 @@
                         <ul class="index-list">
                             <li>
                                 <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#refreshList" >refreshList</a>
+                            </li>
+                            <li>
+                                <a href="#retrieveTrails" >retrieveTrails</a>
+                            </li>
+                            <li>
+                                <a href="#setActiveTrail" >setActiveTrail</a>
                             </li>
                         </ul>
                     </td>
@@ -155,15 +193,45 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor()</code>
+<code>constructor(trailService: <a href="../injectables/TrailService.html" target="_self">TrailService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/pages/trail-details/trail-details.page.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/pages/trail-details/trail-details.page.ts:23</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>trailService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TrailService.html" target="_self" >TrailService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 </section>
@@ -197,8 +265,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="12"
-                            class="link-to-prism">src/app/pages/trail-details/trail-details.page.ts:12</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/pages/trail-details/trail-details.page.ts:27</a></div>
                 </td>
             </tr>
 
@@ -214,6 +282,339 @@
             </tr>
         </tbody>
     </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="refreshList"></a>
+                    <span class="name">
+                        <span ><b>refreshList</b></span>
+                        <a href="#refreshList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>refreshList()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/pages/trail-details/trail-details.page.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="retrieveTrails"></a>
+                    <span class="name">
+                        <span ><b>retrieveTrails</b></span>
+                        <a href="#retrieveTrails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>retrieveTrails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="33"
+                            class="link-to-prism">src/app/pages/trail-details/trail-details.page.ts:33</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setActiveTrail"></a>
+                    <span class="name">
+                        <span ><b>setActiveTrail</b></span>
+                        <a href="#setActiveTrail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setActiveTrail(trail, index)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">src/app/pages/trail-details/trail-details.page.ts:51</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>trail</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>index</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentIndex"></a>
+                    <span class="name">
+                        <span ><b>currentIndex</b></span>
+                        <a href="#currentIndex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>-1</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/pages/trail-details/trail-details.page.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentTrail"></a>
+                    <span class="name">
+                        <span ><b>currentTrail</b></span>
+                        <a href="#currentTrail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/pages/trail-details/trail-details.page.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="message"></a>
+                    <span class="name">
+                        <span ><b>message</b></span>
+                        <a href="#message"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/pages/trail-details/trail-details.page.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="name"></a>
+                    <span class="name">
+                        <span ><b>name</b></span>
+                        <a href="#name"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/pages/trail-details/trail-details.page.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trail"></a>
+                    <span class="name">
+                        <span ><b>trail</b></span>
+                        <a href="#trail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    name: &#x27;&#x27;,
+    description: &#x27;&#x27;,
+    length: &#x27;&#x27;
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/pages/trail-details/trail-details.page.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trails"></a>
+                    <span class="name">
+                        <span ><b>trails</b></span>
+                        <a href="#trails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Trail.html" target="_self" >Trail[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/pages/trail-details/trail-details.page.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
 </section>
 
 </div>
@@ -221,6 +622,8 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Trail } from &#x27;src/app/models/trail.model&#x27;;
+import { TrailService } from &#x27;src/app/services/trail.service&#x27;;
 
 @Component({
   selector: &#x27;app-trail-details&#x27;,
@@ -229,9 +632,48 @@
 })
 export class TrailDetailsPage implements OnInit {
 
-  constructor() { }
+  trail &#x3D; {
+    name: &#x27;&#x27;,
+    description: &#x27;&#x27;,
+    length: &#x27;&#x27;
+  };
+  trails: Trail[];
+
+  currentTrail &#x3D; null;
+  currentIndex &#x3D; -1;
+
+  name &#x3D; &#x27;&#x27;;
+  message &#x3D; &#x27;&#x27;;
+
+  constructor(private trailService: TrailService) { }
 
   ngOnInit() {
+    this.retrieveTrails();
+    this.message &#x3D; &#x27;&#x27;;
+  }
+
+//get all trails
+retrieveTrails() {
+  this.trailService.getAll()
+    .subscribe(
+      data &#x3D;&gt; {
+        this.trails &#x3D; data;
+        console.log(data);
+      },
+      error &#x3D;&gt; {
+        console.log(error);
+      });
+}
+//refresh list
+  refreshList() {
+    this.retrieveTrails();
+    this.currentTrail &#x3D; null;
+    this.currentIndex &#x3D; -1;
+  }
+
+  setActiveTrail(trail, index) {
+    this.currentTrail &#x3D; trail;
+    this.currentIndex &#x3D; index;
   }
 
 }
@@ -282,121 +724,17 @@ export class TrailDetailsPage implements OnInit {
     The trail offers a number of activity options and is accessible year-round. Dogs are also able to use this trail but must be kept on a leash.  &lt;/p&gt;
 &lt;/div&gt;
 
+&lt;div class&#x3D;&quot;iframe&quot;&gt;
+  &lt;iframe style&#x3D;&quot;pointer-events: none;&quot; src&#x3D;&quot;https://www.google.com/maps/embed/v1/directions?origin&#x3D;55.66594, 12.01688&amp;destination&#x3D;55.75342, 12.57399&amp;key&#x3D;AIzaSyDvZyV2RYUonVjsaM1-L8sJXD7nccLQDfA&amp;&quot; scrolling&#x3D;&quot;No&quot; height&#x3D;&quot;500px&quot; width&#x3D;&quot;100%&quot; style&#x3D;&quot;border: none;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;!-- &lt;div class&#x3D;&quot;iframe&quot;&gt;&lt;iframe src&#x3D;&quot;https://www.google.com/maps/search//@55.6538307,12.0448121,13.5z/data&#x3D;!4m16!1m12!4m11!1m6!1m2!1s0x46525304c64bcaf5:0x85887f127ff32493!2sLockton+Denmark+(Current+Location),+Strandvejen+203,+2900+Hellerup!2m2!1d12.5753053!2d55.7375245!1m3!2m2!1d12.01699!2d55.66577!2m2!3m1!5e2&quot; scrolling&#x3D;&quot;No&quot; height&#x3D;&quot;500px&quot; width&#x3D;&quot;100%&quot; style&#x3D;&quot;border: none;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt; --&gt;
+
 &lt;span class&#x3D;&quot;similar&quot;&gt;Similar trails&lt;/span&gt;
 
 
 &lt;div class&#x3D;&quot;wrapper&quot;&gt;
-&lt;!-- Trial start --&gt;
-&lt;div class&#x3D;&quot;trail&quot; [routerLink]&#x3D;&quot;[&#x27;details&#x27;]&quot; style&#x3D;&quot;background-image: linear-gradient(0deg, black 0%, #ffffff00 100%),url(../../assets/boserup.jpg);&quot;&gt;
-  &lt;div class&#x3D;&quot;fave&quot;&gt;
-    &lt;ion-button fill&#x3D;clear&gt;
-    &lt;img src&#x3D;&quot;../../assets/not-fave.png&quot; alt&#x3D;&quot;&quot;&gt;
-  &lt;/ion-button&gt;
-  &lt;/div&gt;
-
-  &lt;div class&#x3D;&quot;info&quot;&gt;
-
-    &lt;span&gt;
-      &lt;span class&#x3D;&quot;title&quot;&gt;Boserup Skov - Kattinge Værk - Boserup Sø&lt;/span&gt;
-      &lt;span class&#x3D;&quot;rating&quot;&gt;
-        &lt;img src&#x3D;&quot;../../assets/star.png&quot; alt&#x3D;&quot;&quot;&gt;
-         4,5
-      &lt;/span&gt;
-    &lt;/span&gt;
-
-    &lt;span&gt;
-      &lt;span class&#x3D;&quot;extra&quot;&gt;Length: 7,4 km&lt;/span&gt;
-      &lt;span class&#x3D;&quot;extra&quot;&gt; • Est: 2h 10m&lt;/span&gt;
-    &lt;/span&gt;
-
-  &lt;/div&gt;
-
-&lt;/div&gt;
-&lt;!-- Trial end --&gt;
-
-&lt;!-- Trial start --&gt;
-&lt;div class&#x3D;&quot;trail&quot; style&#x3D;&quot;background-image: linear-gradient(0deg, black 0%, #ffffff00 100%),url(../../assets/forest.jpg);&quot;&gt;
-&lt;div class&#x3D;&quot;fave&quot;&gt;
-&lt;ion-button fill&#x3D;clear&gt;
-&lt;img src&#x3D;&quot;../../assets/not-fave.png&quot; alt&#x3D;&quot;&quot;&gt;
-&lt;/ion-button&gt;
-&lt;/div&gt;
-
-&lt;div class&#x3D;&quot;info&quot;&gt;
-
-&lt;span&gt;
-  &lt;span class&#x3D;&quot;title&quot;&gt;Roskilde, Boserup Forest, Bognæs, Svogerslev, Roskilde Loop&lt;/span&gt;
-  &lt;span class&#x3D;&quot;rating&quot;&gt;
-    &lt;img src&#x3D;&quot;../../assets/star.png&quot; alt&#x3D;&quot;&quot;&gt;
-     4,0
-  &lt;/span&gt;
-&lt;/span&gt;
-
-&lt;span&gt;
-  &lt;span class&#x3D;&quot;extra&quot;&gt;Length: 36,7 km&lt;/span&gt;
-  &lt;span class&#x3D;&quot;extra&quot;&gt; • Est: 10h 26m&lt;/span&gt;
-&lt;/span&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;!-- Trial end --&gt;
-
-&lt;!-- Trial start --&gt;
-&lt;div class&#x3D;&quot;trail&quot; style&#x3D;&quot;background-image: linear-gradient(0deg, black 0%, #ffffff00 100%),url(../../assets/lake.jpg);&quot;&gt;
-&lt;div class&#x3D;&quot;fave&quot;&gt;
-&lt;ion-button fill&#x3D;clear&gt;
-&lt;img src&#x3D;&quot;../../assets/not-fave.png&quot; alt&#x3D;&quot;&quot;&gt;
-&lt;/ion-button&gt;
-&lt;/div&gt;
-
-&lt;div class&#x3D;&quot;info&quot;&gt;
-
-&lt;span&gt;
-  &lt;span class&#x3D;&quot;title&quot;&gt;Roskilde - Boserup Skov - Kattinge Vig&lt;/span&gt;
-  &lt;span class&#x3D;&quot;rating&quot;&gt;
-    &lt;img src&#x3D;&quot;../../assets/star.png&quot; alt&#x3D;&quot;&quot;&gt;
-     5,0
-  &lt;/span&gt;
-&lt;/span&gt;
-
-&lt;span&gt;
-  &lt;span class&#x3D;&quot;extra&quot;&gt;Length: 13,5 km&lt;/span&gt;
-  &lt;span class&#x3D;&quot;extra&quot;&gt; • Est: 3h 45m&lt;/span&gt;
-&lt;/span&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;!-- Trial end --&gt;
-
-&lt;!-- Trial start --&gt;
-&lt;div class&#x3D;&quot;trail&quot; style&#x3D;&quot;background-image: linear-gradient(0deg, black 0%, #ffffff00 100%),url(../../assets/lake2.jpg);&quot;&gt;
-&lt;div class&#x3D;&quot;fave&quot;&gt;
-&lt;ion-button fill&#x3D;clear&gt;
-&lt;img src&#x3D;&quot;../../assets/not-fave.png&quot; alt&#x3D;&quot;&quot;&gt;
-&lt;/ion-button&gt;
-&lt;/div&gt;
-
-&lt;div class&#x3D;&quot;info&quot;&gt;
-
-&lt;span&gt;
-  &lt;span class&#x3D;&quot;title&quot;&gt;Vesterskov Loop&lt;/span&gt;
-  &lt;span class&#x3D;&quot;rating&quot;&gt;
-    &lt;img src&#x3D;&quot;../../assets/star.png&quot; alt&#x3D;&quot;&quot;&gt;
-     4,0
-  &lt;/span&gt;
-&lt;/span&gt;
-
-&lt;span&gt;
-  &lt;span class&#x3D;&quot;extra&quot;&gt;Length: 6,6 km&lt;/span&gt;
-  &lt;span class&#x3D;&quot;extra&quot;&gt; • Est: 2h 2m&lt;/span&gt;
-&lt;/span&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;!-- Trial end --&gt;
+  &lt;app-saved-trailcard&gt;&lt;/app-saved-trailcard&gt;
 &lt;/div&gt;
 
 &lt;/ion-content&gt;
@@ -528,6 +866,10 @@ ion-button{
 a{
     text-decoration: none;
     color: black;
+}
+
+.iframe{
+    padding: 5%;
 }</code></pre>
     </div>
 
@@ -556,8 +898,8 @@ a{
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-header>  <div>    <img class="image" src="../../assets/citypark.png" alt="">  </div></ion-header><div class="green-wrapper">  <div class="complications">    <div class="detail">      <img src="../../assets/directions.png">      <span>Directions</span>    </div>    <div class="detail">      <img src="../../assets/share.png">      <span>Share</span>    </div>    <a href="home/explore">    <div class="detail">      <img src="../../assets/start.png">      <span>Start</span>    </div>  </a>  </div></div><ion-content><div class="text">  <span>Boserup Skov - Kattinge Værk - Boserup Sø </span>  <p>Length: 7,4 km • Est: 2h 10m</p></div><div class="description">  <p>    Boserup Skov - Kattinge Værk - Boserup Sø is a 7.4 kilometer loop trail located near Roskilde, Zealand, Denmark that features a lake and is rated as moderate.  </p>  <p>    The trail offers a number of activity options and is accessible year-round. Dogs are also able to use this trail but must be kept on a leash.  </p></div><span class="similar">Similar trails</span><div class="wrapper"><!-- Trial start --><div class="trail" [routerLink]="[\'details\']" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%),url(../../assets/boserup.jpg);">  <div class="fave">    <ion-button fill=clear>    <img src="../../assets/not-fave.png" alt="">  </ion-button>  </div>  <div class="info">    <span>      <span class="title">Boserup Skov - Kattinge Værk - Boserup Sø</span>      <span class="rating">        <img src="../../assets/star.png" alt="">         4,5      </span>    </span>    <span>      <span class="extra">Length: 7,4 km</span>      <span class="extra"> • Est: 2h 10m</span>    </span>  </div></div><!-- Trial end --><!-- Trial start --><div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%),url(../../assets/forest.jpg);"><div class="fave"><ion-button fill=clear><img src="../../assets/not-fave.png" alt=""></ion-button></div><div class="info"><span>  <span class="title">Roskilde, Boserup Forest, Bognæs, Svogerslev, Roskilde Loop</span>  <span class="rating">    <img src="../../assets/star.png" alt="">     4,0  </span></span><span>  <span class="extra">Length: 36,7 km</span>  <span class="extra"> • Est: 10h 26m</span></span></div></div><!-- Trial end --><!-- Trial start --><div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%),url(../../assets/lake.jpg);"><div class="fave"><ion-button fill=clear><img src="../../assets/not-fave.png" alt=""></ion-button></div><div class="info"><span>  <span class="title">Roskilde - Boserup Skov - Kattinge Vig</span>  <span class="rating">    <img src="../../assets/star.png" alt="">     5,0  </span></span><span>  <span class="extra">Length: 13,5 km</span>  <span class="extra"> • Est: 3h 45m</span></span></div></div><!-- Trial end --><!-- Trial start --><div class="trail" style="background-image: linear-gradient(0deg, black 0%, #ffffff00 100%),url(../../assets/lake2.jpg);"><div class="fave"><ion-button fill=clear><img src="../../assets/not-fave.png" alt=""></ion-button></div><div class="info"><span>  <span class="title">Vesterskov Loop</span>  <span class="rating">    <img src="../../assets/star.png" alt="">     4,0  </span></span><span>  <span class="extra">Length: 6,6 km</span>  <span class="extra"> • Est: 2h 2m</span></span></div></div><!-- Trial end --></div></ion-content></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgesPage', 'selector': 'app-badges'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LakePage', 'selector': 'app-lake'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'NaturePage', 'selector': 'app-nature'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'TopRatedPage', 'selector': 'app-top-rated'},{'name': 'TrailDetailsPage', 'selector': 'app-trail-details'}];
+        var COMPONENT_TEMPLATE = '<div><ion-header>  <div>    <img class="image" src="../../assets/citypark.png" alt="">  </div></ion-header><div class="green-wrapper">  <div class="complications">    <div class="detail">      <img src="../../assets/directions.png">      <span>Directions</span>    </div>    <div class="detail">      <img src="../../assets/share.png">      <span>Share</span>    </div>    <a href="home/explore">    <div class="detail">      <img src="../../assets/start.png">      <span>Start</span>    </div>  </a>  </div></div><ion-content><div class="text">  <span>Boserup Skov - Kattinge Værk - Boserup Sø </span>  <p>Length: 7,4 km • Est: 2h 10m</p></div><div class="description">  <p>    Boserup Skov - Kattinge Værk - Boserup Sø is a 7.4 kilometer loop trail located near Roskilde, Zealand, Denmark that features a lake and is rated as moderate.  </p>  <p>    The trail offers a number of activity options and is accessible year-round. Dogs are also able to use this trail but must be kept on a leash.  </p></div><div class="iframe">  <iframe style="pointer-events: none;" src="https://www.google.com/maps/embed/v1/directions?origin=55.66594, 12.01688&destination=55.75342, 12.57399&key=AIzaSyDvZyV2RYUonVjsaM1-L8sJXD7nccLQDfA&" scrolling="No" height="500px" width="100%" style="border: none;"></iframe></div><!-- <div class="iframe"><iframe src="https://www.google.com/maps/search//@55.6538307,12.0448121,13.5z/data=!4m16!1m12!4m11!1m6!1m2!1s0x46525304c64bcaf5:0x85887f127ff32493!2sLockton+Denmark+(Current+Location),+Strandvejen+203,+2900+Hellerup!2m2!1d12.5753053!2d55.7375245!1m3!2m2!1d12.01699!2d55.66577!2m2!3m1!5e2" scrolling="No" height="500px" width="100%" style="border: none;"></iframe></div> --><span class="similar">Similar trails</span><div class="wrapper">  <app-saved-trailcard></app-saved-trailcard></div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AdminPage', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgesPage', 'selector': 'app-badges'},{'name': 'CategoryComponent', 'selector': 'app-category'},{'name': 'CategoryvariantComponent', 'selector': 'app-categoryvariant'},{'name': 'CreateTrailPage', 'selector': 'app-create-trail'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LakePage', 'selector': 'app-lake'},{'name': 'LakeTrailcardComponent', 'selector': 'app-lake-trailcard'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'NaturePage', 'selector': 'app-nature'},{'name': 'NatureTrailcardComponent', 'selector': 'app-nature-trailcard'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'SavedTrailcardComponent', 'selector': 'app-saved-trailcard'},{'name': 'TopRatedPage', 'selector': 'app-top-rated'},{'name': 'TopratedTrailcardComponent', 'selector': 'app-toprated-trailcard'},{'name': 'TrailcardComponent', 'selector': 'app-trailcard'},{'name': 'TrailDetailsPage', 'selector': 'app-trail-details'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'TrailDetailsPage'};
 </script>

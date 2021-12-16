@@ -168,13 +168,17 @@ import { IonicModule } from &#x27;@ionic/angular&#x27;;
 import { BadgesPageRoutingModule } from &#x27;./badges-routing.module&#x27;;
 
 import { BadgesPage } from &#x27;./badges.page&#x27;;
+import { IonicStorageModule } from &#x27;@ionic/storage-angular&#x27;;
+
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BadgesPageRoutingModule
+    BadgesPageRoutingModule,
+    IonicStorageModule.forRoot()
   ],
   declarations: [BadgesPage]
 })
