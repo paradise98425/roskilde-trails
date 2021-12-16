@@ -50,6 +50,10 @@ const routes: Routes = [
     path: 'create-trail',
     loadChildren: () => import('./pages/create-trail/create-trail.module').then( m => m.CreateTrailPageModule)
   },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
 ];
 @NgModule({
   imports: [
