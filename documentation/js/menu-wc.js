@@ -51,16 +51,36 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                         </a>
                         <ul class="links collapse " ${ isNormalMode ? 'id="modules-links"' : 'id="xs-modules-links"' }>
                             <li class="link">
-                                <a href="modules/AppModule.html" data-type="entity-link" >AppModule</a>
+                                <a href="modules/AdminPageModule.html" data-type="entity-link" >AdminPageModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-AppModule-4b1377e6244533a2659f511595c434bf"' : 'data-target="#xs-components-links-module-AppModule-4b1377e6244533a2659f511595c434bf"' }>
+                                            'data-target="#components-links-module-AdminPageModule-06f3b99f1d4db0110ed9b302c6baa889"' : 'data-target="#xs-components-links-module-AdminPageModule-06f3b99f1d4db0110ed9b302c6baa889"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AppModule-4b1377e6244533a2659f511595c434bf"' :
-                                            'id="xs-components-links-module-AppModule-4b1377e6244533a2659f511595c434bf"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AdminPageModule-06f3b99f1d4db0110ed9b302c6baa889"' :
+                                            'id="xs-components-links-module-AdminPageModule-06f3b99f1d4db0110ed9b302c6baa889"' }>
+                                            <li class="link">
+                                                <a href="components/AdminPage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >AdminPage</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/AdminPageRoutingModule.html" data-type="entity-link" >AdminPageRoutingModule</a>
+                            </li>
+                            <li class="link">
+                                <a href="modules/AppModule.html" data-type="entity-link" >AppModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-AppModule-ef760ab3300cf85612c3fc9bcd0109d7"' : 'data-target="#xs-components-links-module-AppModule-ef760ab3300cf85612c3fc9bcd0109d7"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AppModule-ef760ab3300cf85612c3fc9bcd0109d7"' :
+                                            'id="xs-components-links-module-AppModule-ef760ab3300cf85612c3fc9bcd0109d7"' }>
                                             <li class="link">
                                                 <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >AppComponent</a>
                                             </li>
@@ -74,13 +94,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/BadgesPageModule.html" data-type="entity-link" >BadgesPageModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-BadgesPageModule-15083ccc043dcbc079622a1b37f04a40"' : 'data-target="#xs-components-links-module-BadgesPageModule-15083ccc043dcbc079622a1b37f04a40"' }>
+                                            'data-target="#components-links-module-BadgesPageModule-fc042b78f73a18e0b3b2b7d9f82e9616"' : 'data-target="#xs-components-links-module-BadgesPageModule-fc042b78f73a18e0b3b2b7d9f82e9616"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-BadgesPageModule-15083ccc043dcbc079622a1b37f04a40"' :
-                                            'id="xs-components-links-module-BadgesPageModule-15083ccc043dcbc079622a1b37f04a40"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-BadgesPageModule-fc042b78f73a18e0b3b2b7d9f82e9616"' :
+                                            'id="xs-components-links-module-BadgesPageModule-fc042b78f73a18e0b3b2b7d9f82e9616"' }>
                                             <li class="link">
                                                 <a href="components/BadgesPage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >BadgesPage</a>
                                             </li>
@@ -89,6 +109,26 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </li>
                             <li class="link">
                                 <a href="modules/BadgesPageRoutingModule.html" data-type="entity-link" >BadgesPageRoutingModule</a>
+                            </li>
+                            <li class="link">
+                                <a href="modules/CreateTrailPageModule.html" data-type="entity-link" >CreateTrailPageModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-CreateTrailPageModule-c2633dd01dff666579ae082a894a2523"' : 'data-target="#xs-components-links-module-CreateTrailPageModule-c2633dd01dff666579ae082a894a2523"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-CreateTrailPageModule-c2633dd01dff666579ae082a894a2523"' :
+                                            'id="xs-components-links-module-CreateTrailPageModule-c2633dd01dff666579ae082a894a2523"' }>
+                                            <li class="link">
+                                                <a href="components/CreateTrailPage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >CreateTrailPage</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/CreateTrailPageRoutingModule.html" data-type="entity-link" >CreateTrailPageRoutingModule</a>
                             </li>
                             <li class="link">
                                 <a href="modules/ExplorePageModule.html" data-type="entity-link" >ExplorePageModule</a>
@@ -134,15 +174,27 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/HomeComponentPageModule.html" data-type="entity-link" >HomeComponentPageModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-HomeComponentPageModule-dfd1210ad9c94df661e762adb0b64fa5"' : 'data-target="#xs-components-links-module-HomeComponentPageModule-dfd1210ad9c94df661e762adb0b64fa5"' }>
+                                            'data-target="#components-links-module-HomeComponentPageModule-ef60c54c4b15cea1fa5fbddc3da54f3a"' : 'data-target="#xs-components-links-module-HomeComponentPageModule-ef60c54c4b15cea1fa5fbddc3da54f3a"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-HomeComponentPageModule-dfd1210ad9c94df661e762adb0b64fa5"' :
-                                            'id="xs-components-links-module-HomeComponentPageModule-dfd1210ad9c94df661e762adb0b64fa5"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-HomeComponentPageModule-ef60c54c4b15cea1fa5fbddc3da54f3a"' :
+                                            'id="xs-components-links-module-HomeComponentPageModule-ef60c54c4b15cea1fa5fbddc3da54f3a"' }>
+                                            <li class="link">
+                                                <a href="components/CategoryComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >CategoryComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/CategoryvariantComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >CategoryvariantComponent</a>
+                                            </li>
                                             <li class="link">
                                                 <a href="components/HomeComponentPage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >HomeComponentPage</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/SavedTrailcardComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >SavedTrailcardComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/TrailcardComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >TrailcardComponent</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -194,15 +246,18 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/LakePageModule.html" data-type="entity-link" >LakePageModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-LakePageModule-951c56931004b7bf310110bd22cd8a1b"' : 'data-target="#xs-components-links-module-LakePageModule-951c56931004b7bf310110bd22cd8a1b"' }>
+                                            'data-target="#components-links-module-LakePageModule-f05851bacd4343e23f64757a3b620531"' : 'data-target="#xs-components-links-module-LakePageModule-f05851bacd4343e23f64757a3b620531"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-LakePageModule-951c56931004b7bf310110bd22cd8a1b"' :
-                                            'id="xs-components-links-module-LakePageModule-951c56931004b7bf310110bd22cd8a1b"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-LakePageModule-f05851bacd4343e23f64757a3b620531"' :
+                                            'id="xs-components-links-module-LakePageModule-f05851bacd4343e23f64757a3b620531"' }>
                                             <li class="link">
                                                 <a href="components/LakePage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >LakePage</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/LakeTrailcardComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >LakeTrailcardComponent</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -234,15 +289,18 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/NaturePageModule.html" data-type="entity-link" >NaturePageModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-NaturePageModule-75fd38e317bd6d977990de72b89aca69"' : 'data-target="#xs-components-links-module-NaturePageModule-75fd38e317bd6d977990de72b89aca69"' }>
+                                            'data-target="#components-links-module-NaturePageModule-de77ba9e970e4465afb4fe40b9bf3d61"' : 'data-target="#xs-components-links-module-NaturePageModule-de77ba9e970e4465afb4fe40b9bf3d61"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-NaturePageModule-75fd38e317bd6d977990de72b89aca69"' :
-                                            'id="xs-components-links-module-NaturePageModule-75fd38e317bd6d977990de72b89aca69"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-NaturePageModule-de77ba9e970e4465afb4fe40b9bf3d61"' :
+                                            'id="xs-components-links-module-NaturePageModule-de77ba9e970e4465afb4fe40b9bf3d61"' }>
                                             <li class="link">
                                                 <a href="components/NaturePage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >NaturePage</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/NatureTrailcardComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >NatureTrailcardComponent</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -254,15 +312,21 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/ProfilePageModule.html" data-type="entity-link" >ProfilePageModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-ProfilePageModule-eb052985e91e533393b85fd928df9659"' : 'data-target="#xs-components-links-module-ProfilePageModule-eb052985e91e533393b85fd928df9659"' }>
+                                            'data-target="#components-links-module-ProfilePageModule-201524f687a9e42fe38e130c06cb324d"' : 'data-target="#xs-components-links-module-ProfilePageModule-201524f687a9e42fe38e130c06cb324d"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-ProfilePageModule-eb052985e91e533393b85fd928df9659"' :
-                                            'id="xs-components-links-module-ProfilePageModule-eb052985e91e533393b85fd928df9659"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-ProfilePageModule-201524f687a9e42fe38e130c06cb324d"' :
+                                            'id="xs-components-links-module-ProfilePageModule-201524f687a9e42fe38e130c06cb324d"' }>
                                             <li class="link">
                                                 <a href="components/ProfilePage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >ProfilePage</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/SavedTrailcardComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >SavedTrailcardComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/TrailcardComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >TrailcardComponent</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -274,15 +338,18 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/TopRatedPageModule.html" data-type="entity-link" >TopRatedPageModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-TopRatedPageModule-597db81652e9167680330e651c9e64b7"' : 'data-target="#xs-components-links-module-TopRatedPageModule-597db81652e9167680330e651c9e64b7"' }>
+                                            'data-target="#components-links-module-TopRatedPageModule-5b633c066a7406e1980d9195969cc13f"' : 'data-target="#xs-components-links-module-TopRatedPageModule-5b633c066a7406e1980d9195969cc13f"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-TopRatedPageModule-597db81652e9167680330e651c9e64b7"' :
-                                            'id="xs-components-links-module-TopRatedPageModule-597db81652e9167680330e651c9e64b7"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-TopRatedPageModule-5b633c066a7406e1980d9195969cc13f"' :
+                                            'id="xs-components-links-module-TopRatedPageModule-5b633c066a7406e1980d9195969cc13f"' }>
                                             <li class="link">
                                                 <a href="components/TopRatedPage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >TopRatedPage</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/TopratedTrailcardComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >TopratedTrailcardComponent</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -294,13 +361,16 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/TrailDetailsPageModule.html" data-type="entity-link" >TrailDetailsPageModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-TrailDetailsPageModule-bc88b29fd79b5a7d539fe78c3a34912d"' : 'data-target="#xs-components-links-module-TrailDetailsPageModule-bc88b29fd79b5a7d539fe78c3a34912d"' }>
+                                            'data-target="#components-links-module-TrailDetailsPageModule-90138a44bc799ceccab77180cb977386"' : 'data-target="#xs-components-links-module-TrailDetailsPageModule-90138a44bc799ceccab77180cb977386"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-TrailDetailsPageModule-bc88b29fd79b5a7d539fe78c3a34912d"' :
-                                            'id="xs-components-links-module-TrailDetailsPageModule-bc88b29fd79b5a7d539fe78c3a34912d"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-TrailDetailsPageModule-90138a44bc799ceccab77180cb977386"' :
+                                            'id="xs-components-links-module-TrailDetailsPageModule-90138a44bc799ceccab77180cb977386"' }>
+                                            <li class="link">
+                                                <a href="components/SavedTrailcardComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >SavedTrailcardComponent</a>
+                                            </li>
                                             <li class="link">
                                                 <a href="components/TrailDetailsPage.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >TrailDetailsPage</a>
                                             </li>
@@ -323,6 +393,9 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             <li class="link">
                                 <a href="classes/AppPage.html" data-type="entity-link" >AppPage</a>
                             </li>
+                            <li class="link">
+                                <a href="classes/Trail.html" data-type="entity-link" >Trail</a>
+                            </li>
                         </ul>
                     </li>
                         <li class="chapter">
@@ -335,6 +408,9 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             <ul class="links collapse " ${ isNormalMode ? 'id="injectables-links"' : 'id="xs-injectables-links"' }>
                                 <li class="link">
                                     <a href="injectables/PhotoService.html" data-type="entity-link" >PhotoService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="injectables/TrailService.html" data-type="entity-link" >TrailService</a>
                                 </li>
                             </ul>
                         </li>

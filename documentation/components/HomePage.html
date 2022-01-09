@@ -293,21 +293,45 @@ export class HomePage implements OnInit {
                 <p class="comment">
                     <code>./home.page.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">ion-tab-bar, ion-tab-button{
-    background-color: #94ab51;
-   }
+                <pre class="line-numbers"><code class="language-scss">@import url(&quot;../../theme/variables.scss&quot;);
+
+ion-tabs{
+  background: rgba(255, 255, 255, 0);
+}
+ion-tab-bar,
+ion-tab-button {
+  background-color: var(--ion-color-primary);
+
+}
+
+ion-tab-bar {
+  padding: 0.5rem 0;
+  margin: 1.5rem 2rem;
+  border-radius: var(--border-radius-default);
   
-ion-label{
-    color: white;
-  }
-  
-ion-tab-button{
-    opacity: 40%;
-  }
-  
-ion-tab-button:focus{
-    opacity: 100%;
-  }
+}
+
+ion-label {
+  color: white;
+  font-family: var(--ion-font-family);
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+ion-tab-button {
+  opacity: 40%;
+}
+
+ion-tab-button:focus {
+  opacity: 100%;
+  color: white;
+}
+
+
+
+ion-icon {
+  height: 1.4rem;
+}
 </code></pre>
     </div>
 
@@ -337,7 +361,7 @@ ion-tab-button:focus{
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><ion-tabs>  <ion-tab-bar slot="bottom">  <ion-tab-button tab="home-component">    <ion-icon src="../../assets/home.svg"></ion-icon>    <ion-label>Home</ion-label>  </ion-tab-button>  <ion-tab-button tab="explore">    <ion-icon src="../../assets/explore.svg"></ion-icon>    <ion-label>Explore</ion-label>  </ion-tab-button>  <ion-tab-button tab="badges">    <ion-icon src="../../assets/md-badge.svg"></ion-icon>    <ion-label>Badges</ion-label>  </ion-tab-button>  <ion-tab-button tab="profile">    <ion-icon src="../../assets/person.svg"></ion-icon>    <ion-label>Profile</ion-label>  </ion-tab-button>  <ion-tab-button tab="home-component/top-rated" style="display: none;">    <ion-icon src="../../assets/person.svg"></ion-icon>    <ion-label>Profile</ion-label>  </ion-tab-button>  <ion-tab-button tab="home-component/lake" style="display: none;">    <ion-icon src="../../assets/person.svg"></ion-icon>    <ion-label>Profile</ion-label>  </ion-tab-button>  <ion-tab-button tab="home-component/nature" style="display: none;">    <ion-icon src="../../assets/person.svg"></ion-icon>    <ion-label>Profile</ion-label>  </ion-tab-button>  <ion-tab-button tab="home-component/top-rated/details" style="display: none;">    <ion-icon src="../../assets/person.svg"></ion-icon>    <ion-label>Profile</ion-label>  </ion-tab-button></ion-tab-bar></ion-tabs></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgesPage', 'selector': 'app-badges'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LakePage', 'selector': 'app-lake'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'NaturePage', 'selector': 'app-nature'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'TopRatedPage', 'selector': 'app-top-rated'},{'name': 'TrailDetailsPage', 'selector': 'app-trail-details'}];
+    var COMPONENTS = [{'name': 'AdminPage', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BadgesPage', 'selector': 'app-badges'},{'name': 'CategoryComponent', 'selector': 'app-category'},{'name': 'CategoryvariantComponent', 'selector': 'app-categoryvariant'},{'name': 'CreateTrailPage', 'selector': 'app-create-trail'},{'name': 'ExplorePage', 'selector': 'app-explore'},{'name': 'GalleryPage', 'selector': 'app-gallery'},{'name': 'HomeComponentPage', 'selector': 'app-home-component'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'IndexPage', 'selector': 'app-index'},{'name': 'LakePage', 'selector': 'app-lake'},{'name': 'LakeTrailcardComponent', 'selector': 'app-lake-trailcard'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'NaturePage', 'selector': 'app-nature'},{'name': 'NatureTrailcardComponent', 'selector': 'app-nature-trailcard'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'SavedTrailcardComponent', 'selector': 'app-saved-trailcard'},{'name': 'TopRatedPage', 'selector': 'app-top-rated'},{'name': 'TopratedTrailcardComponent', 'selector': 'app-toprated-trailcard'},{'name': 'TrailcardComponent', 'selector': 'app-trailcard'},{'name': 'TrailDetailsPage', 'selector': 'app-trail-details'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'HomePage'};
 </script>
