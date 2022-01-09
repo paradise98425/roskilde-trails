@@ -4,27 +4,30 @@
     <div class="register-form"><div class="images-parent">
       <img class="image1" src="../../../assets/login-background2.svg" />
     </div>
-      <form [formGroup]="loginForm" (ngSubmit)="submitForm()" novalidate>
+    <form>
         <ion-text color="light" lines="none">
           <h1>Register user</h1>
         </ion-text>
 
         <small class="error-message" *ngIf="isSubmitted && errorControl.username.errors?.required">Username is
           required</small>
-        <ion-item lines="none" class="ion-no-padding" >
-          <ion-input class="ion-no-padding" type="text" placeholder="Username" formControlName="username" required><ion-icon name="person"></ion-icon></ion-input>
+
+        <ion-item lines="none" class="ion-no-padding form-group">
+          <ion-input class="ion-no-padding form-control" type="text" placeholder="Username" id="username" [(ngModel)]="user.username" name="username" required><ion-icon name="person"></ion-icon></ion-input>
         </ion-item>
 
         <small class="error-message" *ngIf="isSubmitted && errorControl.password.errors?.required">Email is
           required</small>
-        <ion-item lines="none" class="ion-no-padding" >
-          <ion-input class="ion-no-padding" type="email" placeholder="Email" formControlName="email" required><ion-icon name="mail"></ion-icon></ion-input>
+
+        <ion-item lines="none" class="ion-no-padding form-group">
+          <ion-input class="ion-no-padding form-control" type="email" placeholder="Email" id="email" [(ngModel)]="user.email" name="email" required><ion-icon name="mail"></ion-icon></ion-input>
         </ion-item>
 
         <small class="error-message" *ngIf="isSubmitted && errorControl.password.errors?.required">Password is
           required</small>
-        <ion-item lines="none" class="ion-no-padding" >
-          <ion-input class="ion-no-padding" type="password" placeholder="***********" formControlName="password" required><ion-icon name="lock-closed"></ion-icon></ion-input>
+
+        <ion-item lines="none" class="ion-no-padding form-group">
+          <ion-input class="ion-no-padding form-control" type="password" placeholder="***********" id="password" [(ngModel)]="user.password" name="password" required><ion-icon name="lock-closed"></ion-icon></ion-input>
         </ion-item>
 
         <ion-text color="light">
@@ -32,10 +35,11 @@
               ><u>Terms of Service </u> and <u>Privacy Policy</u></ion-text>
           </p>
         </ion-text>
-        <ion-button class="button-color" type="submit">Register</ion-button>
+        <ion-button  (click)="addUser()" class="button-color" type="submit">Register</ion-button>
       </form>
-      <br />
+      <br/>
 
     </div>
+
   </div>
 </ion-content>

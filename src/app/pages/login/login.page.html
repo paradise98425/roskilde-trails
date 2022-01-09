@@ -11,15 +11,18 @@
 
         <small class="error-message" *ngIf="isSubmitted && errorControl.username.errors?.required">Username is
           required</small>
+
         <ion-item lines="none" class="ion-no-padding" >
           <ion-input class="ion-no-padding" type="text" placeholder="Username" formControlName="username" required><ion-icon name="person"></ion-icon></ion-input>
         </ion-item>
 
         <small class="error-message" *ngIf="isSubmitted && errorControl.password.errors?.required">Password is
           required</small>
+
         <ion-item lines="none" class="ion-no-padding" >
           <ion-input class="ion-no-padding" type="password" placeholder="***********" formControlName="password" required><ion-icon name="lock-closed"></ion-icon></ion-input>
         </ion-item>
+        
         <ion-text color="light">
           <p >Don't have an account? <ion-text
               ><u>Sign up </u></ion-text>

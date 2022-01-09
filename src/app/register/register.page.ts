@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 import { Router } from '@angular/router';
 import { Storage } from '@ionic/storage-angular';
+import { User } from 'src/app/models/user.model';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-register',
@@ -10,12 +12,24 @@ import { Storage } from '@ionic/storage-angular';
 })
 export class RegisterPage implements OnInit {
 
+  user = {
+    username: '',
+    password: '',
+    email: '',
+  };
+
+  users: User[];
+
+  username = '';
+  message = '';
+
   registerForm: FormGroup;
   isSubmitted = false;
 
   constructor( public formBuilder: FormBuilder,
                private router: Router,
-               private storage: Storage
+               private storage: Storage,
+               private userService: UserService
                ) { }
 
   ngOnInit() {
@@ -42,5 +56,22 @@ export class RegisterPage implements OnInit {
       this.router.navigateByUrl('/home');
     }
   }
+
+ //add user
+ addUser() {
+  const data = {
+    username: this.user.username,
+    password: this.user.password,
+    email: this.user.email
+  };
+  this.userService.create(data)
+    .subscribe(
+      response => {
+        console.log(response);
+      },
+      error => {
+        console.log(error);
+      });
+}
 
 }
